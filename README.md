@@ -20,20 +20,10 @@ We created a Virtual Reality environment with the Unity Game Engine designed for
 ## Assets/dependencies
 While the source code is available here, most of the 3D models, textures, and materials have been omitted in order to comply with the licenses and usage rights granted at the time of purchase. As a result, this repository is intended primarily as an example to demonstrate the structure, logic, and implementation approach rather than a fully functional, ready-to-run Unity project. The resulting build is still available free to use.
 
-## Installation
-
-To open this Unity project, clone or download this repository and open the folder with **Unity 6000.2.2f1**.
-
-You now have access to the source code in the various subfolders of the project (for example, in `Assets/Scenes/*/Scripts`) and to the audio files in `Assets/Scenes/*/Audio`.  
-You can also explore the `EventSequence` scripts in the **Hierarchy** to understand how the events are structured. If you need more information, consider checking our [preprint]().
-
-Please note that since most 3D models, textures, and materials have been omitted to comply with the licenses purchased, pressing the **Play** button may not work as expected. This repository is therefore intended primarily as a **reference and study resource** rather than a fully functional project. However, the full resulting Mission Control application is provided and free to use.
-
----
-
+## Mission Control Application Installation
 To install the **Mission Control** application on your VR headset:
 
-1. Download the APK [here](LINK).
+1. Download the latest APK [here](https://github.com/CRISPGroup/Mission-Control-MRI-VR/releases).
 2. Enable **Developer Mode** on your Meta account.
 3. Transfer the APK to your headset using tools such as **Meta Developer Hub**, **ADB**, or any similar method.
 4. On your headset, go to the **Library** and launch the app from the **Unknown Sources** tab.
@@ -41,6 +31,15 @@ To install the **Mission Control** application on your VR headset:
 We hope to make this process easier in the future by publishing the application directly on the **Meta Store**.
 
 If either you want to mirror the VR view, please use this [script](https://github.com/carodak/missioncontrol-view-mirrorer).
+
+## Mission Control Source Code Installation
+If you are more interested in the source code, to open this Unity project, clone or download this repository and open the folder with **Unity 6000.2.2f1**.
+
+You now have access to the source code in the various subfolders of the project (for example, in `Assets/Scenes/*/Scripts`) and to the audio files in `Assets/Scenes/*/Audio`.  
+You can also explore the `EventSequence` scripts in the **Hierarchy** to understand how the events are structured. If you need more information, consider checking our [preprint]().
+
+Please note that since most 3D models, textures, and materials have been omitted to comply with the licenses purchased, pressing the **Play** button may not work as expected. This repository is therefore intended primarily as a **reference and study resource** rather than a fully functional project. However, the full resulting Mission Control application is provided and free to use.
+
 
 ## API Documentation
 
