@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 CRISPGROUP <https://www.crispdouglas.ca/>
+Copyright (c) 2025 Douglas Research Centre <https://douglas.research.mcgill.ca/>, <https://www.crispdouglas.ca/>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

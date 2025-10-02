@@ -1,6 +1,6 @@
 # Mission Control (MRI VR)
 **Project Links:**  
-[GitHub Repository](https://github.com/carodak/puzzlegen/) | [OSF Project](https://doi.org/10.17605/OSF.IO/HNAQ9) | [Preprint](https://osf.io/preprints/psyarxiv/bysa2_v1)
+[GitHub Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint]()
 <div align="center">
     <img height="320px" src="https://github.com/J-Scan/MRIExperience/blob/main/Submission/mission-control-logo.png">
     <img height="320px" src="https://github.com/J-Scan/MRIExperience/blob/main/Submission/MRIVR.png">
@@ -39,6 +39,8 @@ To install the **Mission Control** application on your VR headset:
 4. On your headset, go to the **Library** and launch the app from the **Unknown Sources** tab.
 
 We hope to make this process easier in the future by publishing the application directly on the **Meta Store**.
+
+If either you want to mirror the VR view, please use this [script](https://github.com/carodak/missioncontrol-view-mirrorer).
 
 ## API Documentation
 
