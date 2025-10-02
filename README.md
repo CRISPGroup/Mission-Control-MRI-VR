@@ -1,13 +1,14 @@
 # Mission Control (MRI VR)
 **Project Links:**  
-[GitHub Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint]()
+[GitHub Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint]() | [Download Mission Control VR app](https://github.com/CRISPGroup/Mission-Control-MRI-VR/releases)
+
 <div align="center">
-    <img height="320px" src="https://github.com/J-Scan/MRIExperience/blob/main/Submission/mission-control-logo.png">
-    <img height="320px" src="https://github.com/J-Scan/MRIExperience/blob/main/Submission/MRIVR.png">
+<img height="320px" src="https://raw.githubusercontent.com/CRISPGroup/Mission-Control-MRI-VR/refs/heads/main/Submission/mission-control-logo.png">
+    <img height="320px" src="https://raw.githubusercontent.com/CRISPGroup/Mission-Control-MRI-VR/refs/heads/main/Submission/MRIVR.png">
 </div>
 
 ## Trailer Video
-https://youtu.be/6e5fm8P5fFA
+https://www.youtube.com/watch?v=DJ-NxDSIV08
 
 ## Project description
 Children undergoing MRI scans can often feel anxious and restless, leading to movement artifacts and the potential need for sedation during the procedure. To enhance patient experience and reduce the need for sedation, we created Mission Control, an immersive VR simulation that simulates a rocket landing to prepare children for the MRI process. After familiarizing themselves with the MRI room and scanner, children board their spaceship and observe the launch and landing through a window. To successfully land, they must focus on the target, keep their head still, and follow visual and audio cues to minimize head movement and safely reach the moon.
@@ -30,7 +31,7 @@ To install the **Mission Control** application on your VR headset:
 
 We hope to make this process easier in the future by publishing the application directly on the **Meta Store**.
 
-If either you want to mirror the VR view, please use this [script](https://github.com/carodak/missioncontrol-view-mirrorer).
+If either you want to mirror the VR view or download the VR data, please use this [script](https://github.com/carodak/missioncontrol-view-mirrorer).
 
 ## Mission Control Source Code Installation
 If you are more interested in the source code, to open this Unity project, clone or download this repository and open the folder with **Unity 6000.2.2f1**.
@@ -38,7 +39,36 @@ If you are more interested in the source code, to open this Unity project, clone
 You now have access to the source code in the various subfolders of the project (for example, in `Assets/Scenes/*/Scripts`) and to the audio files in `Assets/Scenes/*/Audio`.  
 You can also explore the `EventSequence` scripts in the **Hierarchy** to understand how the events are structured. If you need more information, consider checking our [preprint]().
 
-Please note that since most 3D models, textures, and materials have been omitted to comply with the licenses purchased, pressing the **Play** button may not work as expected. This repository is therefore intended primarily as a **reference and study resource** rather than a fully functional project. However, the full resulting Mission Control application is provided and free to use.
+Please note that since most 3D models, textures, and materials have been omitted to comply with the licenses purchased, pressing the **Play** button may not work as expected. This repository is therefore intended primarily as a **reference and study resource** rather than a fully functional project. However, the full resulting Mission Control application is provided above and free to use.
+
+## Data Output
+
+Mission Control (MRI VR) can record data related to head stillness training during the experience. The data is exported as a `.csv` file with the following structure:
+
+| ID       | session  | date                      | time      | feedback             |
+|----------|----------|--------------------------|-----------|----------------------|
+| XXX | X  | 2025-01-01 11:21:30.418  | 484.2849  | Correct              |
+|          |          |                          | 488.4269  | Incorrect            |
+|          |          |                          | 490.2605  | TrajectoryCorrected  |
+|          |          |                          | 490.2605  | Correct              |
+
+- **ID** – unique identifier provided by the user.  
+- **session** – session identifier.  
+- **date** – date and time when the file was created.  
+- **time** – timestamp (in seconds since the launch of the application) when the feedback event was recorded. A new feedback entry is generated each time a change in head trajectory is detected.  
+- **feedback** – indicates the state of stillness (*Correct*), loss of stillness (*Incorrect*), or a successful trajectory adjustment (*TrajectoryCorrected*).
+
+The output file is saved in the headset at:
+/sdcard/Android/data/com.douglasresearch.missioncontrol/files/
+
+
+You can retrieve the data from the headset using the **ADB** tool. After connecting the headset via USB and accepting the debugging prompt, run:
+
+```bash
+adb pull /sdcard/Android/data/com.douglasresearch.missioncontrol/files/ .
+```
+
+Here, . refers to the destination folder on your local machine where the data will be copied.
 
 
 ## API Documentation
