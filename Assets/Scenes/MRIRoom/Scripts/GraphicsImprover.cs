@@ -21,7 +21,7 @@ public class GraphicsImprover : MonoBehaviour
         urp.renderScale = GetTargetRenderScale();
         InitXRDisplay();
         SetRefreshRate();
-        SetFoveatedRenderingLevel(1);
+        SetFoveatedRenderingLevel(2);
     }
     private void InitXRDisplay()
     {
@@ -41,6 +41,8 @@ public class GraphicsImprover : MonoBehaviour
     }
     public void SetRefreshRate()
     {
+        XRSettings.eyeTextureResolutionScale = 0.8f;
+
         if (display == null) return;
 
         if (DetectHeadset() == HeadsetType.Quest3)
@@ -81,6 +83,7 @@ public class GraphicsImprover : MonoBehaviour
 
     private float GetTargetRenderScale()
     {
+        XRSettings.eyeTextureResolutionScale = 0.9f;
         switch (DetectHeadset())
         {
             case HeadsetType.Quest3:

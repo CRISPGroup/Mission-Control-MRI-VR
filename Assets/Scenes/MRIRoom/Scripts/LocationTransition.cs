@@ -19,11 +19,17 @@ public class LocationTransition : MonoBehaviour
     private Vector3 savedHeadForward;
 
 
+
     public void Start()
     {
         //StartCoroutine(GoToFirstLocation(1));
         SaveReferenceOrientation();
     }
+
+    public void SetLocationTransitionDuration(float duration)
+    {
+        locationTransitionDuration = duration;
+    }   
 
     public void SaveReferenceOrientation()
     {
