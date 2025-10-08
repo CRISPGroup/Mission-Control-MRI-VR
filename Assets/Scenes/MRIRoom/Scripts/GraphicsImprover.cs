@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -22,6 +23,7 @@ public class GraphicsImprover : MonoBehaviour
         InitXRDisplay();
         SetRefreshRate();
         SetFoveatedRenderingLevel(2);
+        Application.backgroundLoadingPriority = ThreadPriority.Low;
     }
     private void InitXRDisplay()
     {
@@ -31,11 +33,11 @@ public class GraphicsImprover : MonoBehaviour
             display = loader.GetLoadedSubsystem<XRDisplaySubsystem>();
             if (display != null)
             {
-                Debug.Log("[GraphicsImprover] XRDisplaySubsystem actif.");
+                //Debug.Log("[GraphicsImprover] XRDisplaySubsystem actif.");
             }
             else
             {
-                Debug.LogWarning("[GraphicsImprover] Aucun XRDisplaySubsystem trouvé.");
+                //Debug.LogWarning("[GraphicsImprover] Aucun XRDisplaySubsystem trouvé.");
             }
         }
     }
