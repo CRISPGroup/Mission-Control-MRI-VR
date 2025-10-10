@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 13805906}
   - component: {fileID: 13805905}
   - component: {fileID: 13805904}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: AdjustPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,9 @@ GameObject:
   - component: {fileID: 14537346}
   - component: {fileID: 14537344}
   - component: {fileID: 14537345}
-  m_Layer: 8
+  - component: {fileID: 14537349}
+  - component: {fileID: 14537348}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,6 +352,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &14537348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14537343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &14537349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14537343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &32689988
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +388,9 @@ GameObject:
   - component: {fileID: 32689991}
   - component: {fileID: 32689989}
   - component: {fileID: 32689990}
-  m_Layer: 8
+  - component: {fileID: 32689994}
+  - component: {fileID: 32689993}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,6 +468,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &32689993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32689988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &32689994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32689988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &41763396
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +504,9 @@ GameObject:
   - component: {fileID: 41763399}
   - component: {fileID: 41763397}
   - component: {fileID: 41763398}
-  m_Layer: 8
+  - component: {fileID: 41763402}
+  - component: {fileID: 41763401}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,6 +584,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &41763401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41763396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &41763402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41763396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &53088235
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +619,9 @@ GameObject:
   - component: {fileID: 53088236}
   - component: {fileID: 53088238}
   - component: {fileID: 53088237}
-  m_Layer: 8
+  - component: {fileID: 53088240}
+  - component: {fileID: 53088239}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,6 +685,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53088235}
   m_CullTransparentMesh: 0
+--- !u!114 &53088239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53088235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &53088240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53088235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &59272916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,7 +5575,9 @@ GameObject:
   - component: {fileID: 75384412}
   - component: {fileID: 75384411}
   - component: {fileID: 75384410}
-  m_Layer: 8
+  - component: {fileID: 75384414}
+  - component: {fileID: 75384413}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5549,6 +5655,208 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75384408}
   m_CullTransparentMesh: 1
+--- !u!114 &75384413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75384408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &75384414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75384408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
+--- !u!43 &77151561
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Composition Layer Plane
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020003000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf000000bf0000000000000000000000000000803f0000803f00000000000000bf0000003f0000000000000000000000000000803f0000803f0000803f0000003f0000003f0000000000000000000000000000803f000000000000803f0000003f000000bf0000000000000000000000000000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1 &113141087
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,7 +5902,9 @@ GameObject:
   - component: {fileID: 118740010}
   - component: {fileID: 118740012}
   - component: {fileID: 118740011}
-  m_Layer: 8
+  - component: {fileID: 118740014}
+  - component: {fileID: 118740013}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5658,6 +5968,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118740009}
   m_CullTransparentMesh: 0
+--- !u!114 &118740013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118740009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &118740014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118740009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &122206562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,7 +6007,7 @@ GameObject:
   - component: {fileID: 122206566}
   - component: {fileID: 122206565}
   - component: {fileID: 122206564}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: RotDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5835,7 +6169,9 @@ GameObject:
   - component: {fileID: 128352573}
   - component: {fileID: 128352572}
   - component: {fileID: 128352571}
-  m_Layer: 8
+  - component: {fileID: 128352575}
+  - component: {fileID: 128352574}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5983,6 +6319,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128352569}
   m_CullTransparentMesh: 1
+--- !u!114 &128352574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128352569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &128352575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128352569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &129592438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5995,7 +6355,9 @@ GameObject:
   - component: {fileID: 129592442}
   - component: {fileID: 129592441}
   - component: {fileID: 129592440}
-  m_Layer: 8
+  - component: {fileID: 129592444}
+  - component: {fileID: 129592443}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6143,6 +6505,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129592438}
   m_CullTransparentMesh: 1
+--- !u!114 &129592443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129592438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &129592444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129592438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1001 &167528073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6191,6 +6577,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 24253696548144175, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 73056479981098359, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 126765523799336212, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -6216,10 +6612,35 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 129703899460669500, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 235408721716264810, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Order
-      value: 6
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317564792385907317, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 325291449829790176, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 404549504839884644, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 413664710201894795, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 503690994931764560, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6271,11 +6692,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 562898813279830351, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 563725221473314446, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 858659011}
+    - target: {fileID: 584946156459202704, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 585008548342800701, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -6311,15 +6742,145 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[14].m_MethodName
       value: SetFadeDuration
       objectReference: {fileID: 0}
+    - target: {fileID: 592062260111771647, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 656237426513355390, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 230139223}
+    - target: {fileID: 656237426513355390, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
+    - target: {fileID: 700732069650335091, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 705370030696629137, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 734077389384264902, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 782588070603807745, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 786964638738114768, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 799756459840501738, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 904950130860850823, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 947944574469031435, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021513145621781821, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039717347010037465, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115674083674432405, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132195794003786592, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158996209089147972, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211923871763193641, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214394875091627438, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214525974598386782, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229187247767867069, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232868359738184956, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318646157078859290, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329576618956714490, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333342742928683539, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345709624785349285, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 1377702004515425143, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398224797560603864, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442578884460473838, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1474057193691877780, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6345,6 +6906,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1545650733677705128, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Order
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555816564739629968, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572989542656951099, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594714976918472895, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630744334607749862, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689994641694407687, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1782943682137268393, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6376,6 +6967,41 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1941333145166880727, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955829738755242357, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: parentRoot
+      value: 
+      objectReference: {fileID: 113141087}
+    - target: {fileID: 2022311416787615989, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049394474363104745, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081723965470146076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089893670284565445, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171739358740527346, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2178283820092293796, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: locations.Array.size
@@ -6391,6 +7017,16 @@ PrefabInstance:
       propertyPath: locations.Array.data[0].locationPoint
       value: 
       objectReference: {fileID: 1428819069}
+    - target: {fileID: 2233651173825735708, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298939504352866983, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2344308098648563801, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6431,10 +7067,125 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 2398819463914098136, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462658659641485914, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463071943749223198, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2557455336205815425, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603013257260654712, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606608852744333665, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644593675142322596, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645899314675064157, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688161851597229842, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688459020584394165, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692321277548591066, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714387403630249615, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725842701381288737, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786007511232473184, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794245276625315441, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2816932847031713210, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830261903750350285, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845483690263903673, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851809441808653426, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866824267248610367, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2925882734961025909, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: CurrentLang
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933564932794369433, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951685179968052101, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999537359500653403, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3005337374625502649, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6481,15 +7232,240 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3168857805819601559, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181605954219589400, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217136940806185204, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3307710611571081939, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317856950119033267, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475898125410900689, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506030270743217444, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3509417769997773970, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3509621548303600437, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554724492162786922, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627149807041656707, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686470038559913974, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3718625020565833472, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785247498142755564, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862773332498784754, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915929164548252436, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921592448896353185, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4292878335
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987159587494522968, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000337688009900592, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030578121011247204, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090932811039238789, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096502855034017888, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131139221364362713, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137784814193902270, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218622728735057537, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238995791901885334, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320725098943946688, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324557311955350181, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Order
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324736407195284164, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373359129011182341, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421372582715221192, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482433516841900310, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499543102675738880, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564421582532030677, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570466814579923420, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742743248222195239, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Order
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751695930872480438, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795021480560242468, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797824409808243157, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798020826352933368, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851206969241646758, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865815463015521529, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937144939830113678, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 1938840323}
+    - target: {fileID: 4937144939830113678, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971071258637862075, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089457222485092134, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5099934592723184771, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6501,15 +7477,65 @@ PrefabInstance:
       propertyPath: fadeDuration
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5099934592723184771, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: forceBackend
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5255751690600413882, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1217172213}
+    - target: {fileID: 5417544404715288660, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 226836213}
+    - target: {fileID: 5417544404715288660, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 5419608031161218984, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5467745899267724851, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 5477083131631976978, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487202853924696075, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496941036091993152, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1534463929}
+    - target: {fileID: 5542391425562331605, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603530730730488446, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684613935208022740, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5823215498506380455, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6530,6 +7556,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5871356466417368406, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892812756323364157, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1878654152}
+    - target: {fileID: 5894046759774161718, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894187946260865914, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907721835601585008, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925560464105842134, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926343491856007084, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973644185039634781, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992937730558043242, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002738584124971096, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6167059142270273569, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6541,6 +7617,16 @@ PrefabInstance:
       propertyPath: 'locations.Array.data[0]'
       value: 
       objectReference: {fileID: 1428819069}
+    - target: {fileID: 6190784971846270831, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203307294177811527, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6226516368628401471, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -6561,15 +7647,40 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6235741133340209285, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6292596299046477873, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6507253273713423205, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6530612067995369622, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530864000279424108, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543643141647441311, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595077394076726897, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6597684749444483521, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6581,15 +7692,100 @@ PrefabInstance:
       propertyPath: vrCamera
       value: 
       objectReference: {fileID: 1295506356}
+    - target: {fileID: 6644573111212149999, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657028093274804136, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688470820041719056, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735505713815848965, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6901636468733090275, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910442504956276082, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7034950268793309789, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: vrCamera
       value: 
       objectReference: {fileID: 1295506356}
+    - target: {fileID: 7042196251421641460, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 7073523952998078076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Name
       value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128291076188099705, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184212780413496135, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196775485781460911, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7222128883063586771, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257542350438358603, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409583221693933623, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415471618050474644, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430972785105632363, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 1056830739}
+    - target: {fileID: 7430972785105632363, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461334650853138718, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7512202810340320320, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6631,10 +7827,70 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7653978157506301440, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668966291029209945, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7710705949131925355, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718955092255201855, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773200292608859285, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7804766691401020996, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823590162968380701, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834909959884967883, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852831554492269301, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894244855925491648, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923030475816430607, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 7979110396592740934, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998618712913990246, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8088080542272177525, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -6651,6 +7907,26 @@ PrefabInstance:
       propertyPath: 'rightButtons.Array.data[1]'
       value: 
       objectReference: {fileID: 1058848306}
+    - target: {fileID: 8255232168582850649, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292183916568989929, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310011479643061238, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359325000000173713, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8456702049414236108, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: locations.Array.size
@@ -6661,10 +7937,85 @@ PrefabInstance:
       propertyPath: 'locations.Array.data[0]'
       value: 
       objectReference: {fileID: 1428819069}
+    - target: {fileID: 8475219752621643645, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493830080901829199, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532234728482629313, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597159208364936002, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8613722506710802276, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 77151561}
+    - target: {fileID: 8642320372609374345, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8687470873224586804, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832022704321655918, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839501867070860330, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8976826217598770649, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012419164832292071, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032058288311797954, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Order
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046063924155915049, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167984815485232745, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168302817023805975, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177215932715386590, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -6853,6 +8204,43 @@ Transform:
   - {fileID: 772192144}
   m_Father: {fileID: 1495725474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &226836213
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 100
+  m_Height: 100
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &229688073
 GameObject:
   m_ObjectHideFlags: 0
@@ -6865,7 +8253,9 @@ GameObject:
   - component: {fileID: 229688076}
   - component: {fileID: 229688074}
   - component: {fileID: 229688075}
-  m_Layer: 8
+  - component: {fileID: 229688079}
+  - component: {fileID: 229688078}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6943,6 +8333,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &229688078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229688073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &229688079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229688073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
+--- !u!84 &230139223
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 714
+  m_Height: 523
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &231667509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6955,7 +8406,9 @@ GameObject:
   - component: {fileID: 231667513}
   - component: {fileID: 231667512}
   - component: {fileID: 231667511}
-  m_Layer: 8
+  - component: {fileID: 231667515}
+  - component: {fileID: 231667514}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7103,6 +8556,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231667509}
   m_CullTransparentMesh: 1
+--- !u!114 &231667514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231667509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &231667515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231667509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &255039679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7114,7 +8591,9 @@ GameObject:
   - component: {fileID: 255039680}
   - component: {fileID: 255039682}
   - component: {fileID: 255039681}
-  m_Layer: 8
+  - component: {fileID: 255039684}
+  - component: {fileID: 255039683}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7178,6 +8657,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255039679}
   m_CullTransparentMesh: 0
+--- !u!114 &255039683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255039679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &255039684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255039679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &262995485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,7 +8690,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262995486}
-  m_Layer: 8
+  - component: {fileID: 262995488}
+  - component: {fileID: 262995487}
+  m_Layer: 16
   m_Name: FirstButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7213,6 +8718,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -108.99996}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &262995487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262995485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &262995488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262995485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &270639044
 GameObject:
   m_ObjectHideFlags: 0
@@ -7361,7 +8890,9 @@ GameObject:
   - component: {fileID: 276882854}
   - component: {fileID: 276882853}
   - component: {fileID: 276882852}
-  m_Layer: 8
+  - component: {fileID: 276882856}
+  - component: {fileID: 276882855}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7509,6 +9040,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276882850}
   m_CullTransparentMesh: 1
+--- !u!114 &276882855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276882850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &276882856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276882850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &296372136
 GameObject:
   m_ObjectHideFlags: 0
@@ -7520,7 +9075,9 @@ GameObject:
   - component: {fileID: 296372137}
   - component: {fileID: 296372139}
   - component: {fileID: 296372138}
-  m_Layer: 8
+  - component: {fileID: 296372141}
+  - component: {fileID: 296372140}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7584,6 +9141,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296372136}
   m_CullTransparentMesh: 0
+--- !u!114 &296372140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296372136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &296372141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296372136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &307231084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,7 +9180,7 @@ GameObject:
   - component: {fileID: 307231088}
   - component: {fileID: 307231087}
   - component: {fileID: 307231086}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: MANUAL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8659,7 +10240,7 @@ GameObject:
   - component: {fileID: 318119153}
   - component: {fileID: 318119152}
   - component: {fileID: 318119151}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8821,7 +10402,9 @@ GameObject:
   - component: {fileID: 322022937}
   - component: {fileID: 322022936}
   - component: {fileID: 322022935}
-  m_Layer: 8
+  - component: {fileID: 322022939}
+  - component: {fileID: 322022938}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8971,6 +10554,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322022933}
   m_CullTransparentMesh: 1
+--- !u!114 &322022938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322022933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &322022939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322022933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &419747977
 GameObject:
   m_ObjectHideFlags: 0
@@ -8983,7 +10590,9 @@ GameObject:
   - component: {fileID: 419747981}
   - component: {fileID: 419747980}
   - component: {fileID: 419747979}
-  m_Layer: 8
+  - component: {fileID: 419747983}
+  - component: {fileID: 419747982}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9061,6 +10670,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419747977}
   m_CullTransparentMesh: 1
+--- !u!114 &419747982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419747977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &419747983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419747977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &420335318
 GameObject:
   m_ObjectHideFlags: 0
@@ -9459,7 +11092,9 @@ GameObject:
   - component: {fileID: 500221434}
   - component: {fileID: 500221433}
   - component: {fileID: 500221432}
-  m_Layer: 5
+  - component: {fileID: 500221438}
+  - component: {fileID: 500221437}
+  m_Layer: 16
   m_Name: ControlsB (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9608,6 +11243,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500221430}
   m_CullTransparentMesh: 0
+--- !u!114 &500221437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500221430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &500221438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500221430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &531597091 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8597159208364936002, guid: 7174a54e1a1d7db4eab44ca155ee8997,
@@ -9625,7 +11284,9 @@ GameObject:
   - component: {fileID: 547216515}
   - component: {fileID: 547216517}
   - component: {fileID: 547216516}
-  m_Layer: 8
+  - component: {fileID: 547216519}
+  - component: {fileID: 547216518}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9689,6 +11350,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547216514}
   m_CullTransparentMesh: 0
+--- !u!114 &547216518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547216514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &547216519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547216514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &550552347
 GameObject:
   m_ObjectHideFlags: 0
@@ -9700,7 +11385,9 @@ GameObject:
   - component: {fileID: 550552348}
   - component: {fileID: 550552350}
   - component: {fileID: 550552349}
-  m_Layer: 8
+  - component: {fileID: 550552352}
+  - component: {fileID: 550552351}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9764,6 +11451,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550552347}
   m_CullTransparentMesh: 0
+--- !u!114 &550552351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550552347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &550552352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550552347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &554282014
 GameObject:
   m_ObjectHideFlags: 0
@@ -9775,7 +11486,9 @@ GameObject:
   - component: {fileID: 554282017}
   - component: {fileID: 554282016}
   - component: {fileID: 554282015}
-  m_Layer: 8
+  - component: {fileID: 554282019}
+  - component: {fileID: 554282018}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9900,6 +11613,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.9911194}
   m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &554282018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554282014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &554282019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554282014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &584235637
 GameObject:
   m_ObjectHideFlags: 0
@@ -9909,7 +11646,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 584235638}
-  m_Layer: 8
+  - component: {fileID: 584235640}
+  - component: {fileID: 584235639}
+  m_Layer: 16
   m_Name: ListSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9938,6 +11677,30 @@ RectTransform:
   m_AnchoredPosition: {x: -7.8900003, y: 2.0148163}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &584235639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584235637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &584235640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584235637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &599210329
 GameObject:
   m_ObjectHideFlags: 0
@@ -9950,7 +11713,9 @@ GameObject:
   - component: {fileID: 599210333}
   - component: {fileID: 599210332}
   - component: {fileID: 599210331}
-  m_Layer: 8
+  - component: {fileID: 599210335}
+  - component: {fileID: 599210334}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10028,6 +11793,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599210329}
   m_CullTransparentMesh: 1
+--- !u!114 &599210334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599210329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &599210335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599210329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &608307995
 GameObject:
   m_ObjectHideFlags: 0
@@ -10040,7 +11829,9 @@ GameObject:
   - component: {fileID: 608307999}
   - component: {fileID: 608307998}
   - component: {fileID: 608307997}
-  m_Layer: 8
+  - component: {fileID: 608308001}
+  - component: {fileID: 608308000}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10188,6 +11979,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608307995}
   m_CullTransparentMesh: 1
+--- !u!114 &608308000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608307995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &608308001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608307995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &635723357
 GameObject:
   m_ObjectHideFlags: 0
@@ -10200,7 +12015,9 @@ GameObject:
   - component: {fileID: 635723361}
   - component: {fileID: 635723360}
   - component: {fileID: 635723359}
-  m_Layer: 8
+  - component: {fileID: 635723363}
+  - component: {fileID: 635723362}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10278,6 +12095,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635723357}
   m_CullTransparentMesh: 1
+--- !u!114 &635723362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635723357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &635723363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635723357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &647300583
 GameObject:
   m_ObjectHideFlags: 0
@@ -10365,7 +12206,9 @@ GameObject:
   - component: {fileID: 651739649}
   - component: {fileID: 651739647}
   - component: {fileID: 651739648}
-  m_Layer: 8
+  - component: {fileID: 651739652}
+  - component: {fileID: 651739651}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10443,6 +12286,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &651739651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651739646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &651739652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651739646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &668367341
 GameObject:
   m_ObjectHideFlags: 0
@@ -10457,7 +12324,9 @@ GameObject:
   - component: {fileID: 668367345}
   - component: {fileID: 668367344}
   - component: {fileID: 668367343}
-  m_Layer: 5
+  - component: {fileID: 668367349}
+  - component: {fileID: 668367348}
+  m_Layer: 16
   m_Name: ControlsB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10606,6 +12475,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668367341}
   m_CullTransparentMesh: 0
+--- !u!114 &668367348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668367341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &668367349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668367341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &668932244
 GameObject:
   m_ObjectHideFlags: 0
@@ -10621,7 +12514,9 @@ GameObject:
   - component: {fileID: 668932249}
   - component: {fileID: 668932248}
   - component: {fileID: 668932247}
-  m_Layer: 5
+  - component: {fileID: 668932253}
+  - component: {fileID: 668932252}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10783,6 +12678,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668932244}
   m_CullTransparentMesh: 0
+--- !u!114 &668932252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668932244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &668932253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668932244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &671078385
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,7 +12717,9 @@ GameObject:
   - component: {fileID: 671078390}
   - component: {fileID: 671078389}
   - component: {fileID: 671078388}
-  m_Layer: 5
+  - component: {fileID: 671078394}
+  - component: {fileID: 671078393}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10960,6 +12881,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671078385}
   m_CullTransparentMesh: 0
+--- !u!114 &671078393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671078385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &671078394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671078385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &675233955
 GameObject:
   m_ObjectHideFlags: 0
@@ -12107,7 +14052,9 @@ GameObject:
   - component: {fileID: 707962246}
   - component: {fileID: 707962245}
   - component: {fileID: 707962244}
-  m_Layer: 8
+  - component: {fileID: 707962248}
+  - component: {fileID: 707962247}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12255,6 +14202,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707962242}
   m_CullTransparentMesh: 1
+--- !u!114 &707962247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707962242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &707962248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707962242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &763517813
 GameObject:
   m_ObjectHideFlags: 0
@@ -12270,7 +14241,9 @@ GameObject:
   - component: {fileID: 763517818}
   - component: {fileID: 763517817}
   - component: {fileID: 763517816}
-  m_Layer: 5
+  - component: {fileID: 763517822}
+  - component: {fileID: 763517821}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12432,6 +14405,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763517813}
   m_CullTransparentMesh: 0
+--- !u!114 &763517821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763517813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &763517822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763517813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &765435447
 GameObject:
   m_ObjectHideFlags: 0
@@ -12447,7 +14444,9 @@ GameObject:
   - component: {fileID: 765435452}
   - component: {fileID: 765435451}
   - component: {fileID: 765435450}
-  m_Layer: 5
+  - component: {fileID: 765435456}
+  - component: {fileID: 765435455}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12609,6 +14608,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765435447}
   m_CullTransparentMesh: 0
+--- !u!114 &765435455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765435447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &765435456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765435447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &766357856
 GameObject:
   m_ObjectHideFlags: 0
@@ -12624,7 +14647,9 @@ GameObject:
   - component: {fileID: 766357861}
   - component: {fileID: 766357860}
   - component: {fileID: 766357859}
-  m_Layer: 5
+  - component: {fileID: 766357865}
+  - component: {fileID: 766357864}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12786,6 +14811,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766357856}
   m_CullTransparentMesh: 0
+--- !u!114 &766357864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766357856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &766357865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766357856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &770312519
 GameObject:
   m_ObjectHideFlags: 0
@@ -12798,7 +14847,9 @@ GameObject:
   - component: {fileID: 770312523}
   - component: {fileID: 770312522}
   - component: {fileID: 770312521}
-  m_Layer: 8
+  - component: {fileID: 770312525}
+  - component: {fileID: 770312524}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12946,6 +14997,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770312519}
   m_CullTransparentMesh: 1
+--- !u!114 &770312524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770312519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &770312525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770312519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &770594790
 GameObject:
   m_ObjectHideFlags: 0
@@ -12960,7 +15035,9 @@ GameObject:
   - component: {fileID: 770594794}
   - component: {fileID: 770594793}
   - component: {fileID: 770594792}
-  m_Layer: 5
+  - component: {fileID: 770594798}
+  - component: {fileID: 770594797}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13133,6 +15210,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770594790}
   m_CullTransparentMesh: 0
+--- !u!114 &770594797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770594790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &770594798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770594790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &772192143
 GameObject:
   m_ObjectHideFlags: 0
@@ -13272,7 +15373,9 @@ GameObject:
   - component: {fileID: 785180923}
   - component: {fileID: 785180922}
   - component: {fileID: 785180921}
-  m_Layer: 8
+  - component: {fileID: 785180925}
+  - component: {fileID: 785180924}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13420,6 +15523,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785180919}
   m_CullTransparentMesh: 1
+--- !u!114 &785180924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785180919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &785180925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785180919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &838106597
 GameObject:
   m_ObjectHideFlags: 0
@@ -13748,7 +15875,9 @@ GameObject:
   - component: {fileID: 844335804}
   - component: {fileID: 844335802}
   - component: {fileID: 844335803}
-  m_Layer: 8
+  - component: {fileID: 844335807}
+  - component: {fileID: 844335806}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13826,6 +15955,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &844335806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844335801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &844335807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844335801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &846080266
 GameObject:
   m_ObjectHideFlags: 0
@@ -13841,7 +15994,7 @@ GameObject:
   - component: {fileID: 846080270}
   - component: {fileID: 846080269}
   - component: {fileID: 846080268}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Backward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14007,7 +16160,7 @@ GameObject:
   - component: {fileID: 858659014}
   - component: {fileID: 858659013}
   - component: {fileID: 858659012}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14197,7 +16350,9 @@ GameObject:
   - component: {fileID: 872741289}
   - component: {fileID: 872741291}
   - component: {fileID: 872741290}
-  m_Layer: 8
+  - component: {fileID: 872741293}
+  - component: {fileID: 872741292}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14261,6 +16416,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872741288}
   m_CullTransparentMesh: 0
+--- !u!114 &872741292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872741288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &872741293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872741288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &931311418
 GameObject:
   m_ObjectHideFlags: 0
@@ -14276,7 +16455,9 @@ GameObject:
   - component: {fileID: 931311423}
   - component: {fileID: 931311422}
   - component: {fileID: 931311421}
-  m_Layer: 5
+  - component: {fileID: 931311427}
+  - component: {fileID: 931311426}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14438,6 +16619,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931311418}
   m_CullTransparentMesh: 0
+--- !u!114 &931311426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931311418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &931311427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931311418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &933731120
 GameObject:
   m_ObjectHideFlags: 0
@@ -14453,7 +16658,7 @@ GameObject:
   - component: {fileID: 933731124}
   - component: {fileID: 933731123}
   - component: {fileID: 933731122}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14614,7 +16819,9 @@ GameObject:
   - component: {fileID: 936713817}
   - component: {fileID: 936713819}
   - component: {fileID: 936713818}
-  m_Layer: 8
+  - component: {fileID: 936713821}
+  - component: {fileID: 936713820}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14678,6 +16885,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936713816}
   m_CullTransparentMesh: 0
+--- !u!114 &936713820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936713816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &936713821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936713816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &962640074
 GameObject:
   m_ObjectHideFlags: 0
@@ -14690,7 +16921,9 @@ GameObject:
   - component: {fileID: 962640078}
   - component: {fileID: 962640077}
   - component: {fileID: 962640076}
-  m_Layer: 8
+  - component: {fileID: 962640080}
+  - component: {fileID: 962640079}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14768,6 +17001,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962640074}
   m_CullTransparentMesh: 1
+--- !u!114 &962640079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962640074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &962640080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962640074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &965862109
 GameObject:
   m_ObjectHideFlags: 0
@@ -15144,7 +17401,6 @@ GameObject:
   - component: {fileID: 1020456345}
   - component: {fileID: 1020456344}
   - component: {fileID: 1020456343}
-  - component: {fileID: 1020456342}
   - component: {fileID: 1020456346}
   m_Layer: 5
   m_Name: BUTTON
@@ -15174,18 +17430,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.83}
   m_SizeDelta: {x: 114.7, y: 30.6}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1020456342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020456339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce2d654b3fd8e4548b8a708ce60f3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1020456343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15315,6 +17559,43 @@ MonoBehaviour:
   - title: MISSION ACCOMPLIE !
     shortStatement: CREDITS & QUITTER
     buttonSet: {fileID: 0}
+--- !u!84 &1056830739
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 100
+  m_Height: 100
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1057215765
 GameObject:
   m_ObjectHideFlags: 0
@@ -15326,7 +17607,9 @@ GameObject:
   - component: {fileID: 1057215766}
   - component: {fileID: 1057215768}
   - component: {fileID: 1057215767}
-  m_Layer: 8
+  - component: {fileID: 1057215770}
+  - component: {fileID: 1057215769}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15390,6 +17673,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057215765}
   m_CullTransparentMesh: 0
+--- !u!114 &1057215769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057215765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1057215770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057215765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1058848303
 GameObject:
   m_ObjectHideFlags: 0
@@ -15402,7 +17709,6 @@ GameObject:
   - component: {fileID: 1058848308}
   - component: {fileID: 1058848307}
   - component: {fileID: 1058848306}
-  - component: {fileID: 1058848305}
   - component: {fileID: 1058848309}
   m_Layer: 5
   m_Name: BUTTON
@@ -15433,18 +17739,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.83}
   m_SizeDelta: {x: 114.7, y: 30.6}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1058848305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058848303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce2d654b3fd8e4548b8a708ce60f3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1058848306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15690,7 +17984,9 @@ GameObject:
   - component: {fileID: 1076304298}
   - component: {fileID: 1076304297}
   - component: {fileID: 1076304296}
-  m_Layer: 8
+  - component: {fileID: 1076304300}
+  - component: {fileID: 1076304299}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15768,6 +18064,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076304294}
   m_CullTransparentMesh: 1
+--- !u!114 &1076304299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076304294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1076304300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076304294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1083110678
 GameObject:
   m_ObjectHideFlags: 0
@@ -16039,7 +18359,9 @@ GameObject:
   - component: {fileID: 1086091421}
   - component: {fileID: 1086091420}
   - component: {fileID: 1086091419}
-  m_Layer: 5
+  - component: {fileID: 1086091425}
+  - component: {fileID: 1086091424}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16201,6 +18523,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086091416}
   m_CullTransparentMesh: 0
+--- !u!114 &1086091424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086091416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1086091425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086091416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1093027594
 GameObject:
   m_ObjectHideFlags: 0
@@ -16213,7 +18559,9 @@ GameObject:
   - component: {fileID: 1093027598}
   - component: {fileID: 1093027597}
   - component: {fileID: 1093027596}
-  m_Layer: 8
+  - component: {fileID: 1093027600}
+  - component: {fileID: 1093027599}
+  m_Layer: 16
   m_Name: ControlsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16361,6 +18709,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093027594}
   m_CullTransparentMesh: 1
+--- !u!114 &1093027599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093027594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1093027600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093027594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1093794043
 GameObject:
   m_ObjectHideFlags: 0
@@ -16713,7 +19085,9 @@ GameObject:
   - component: {fileID: 1105754899}
   - component: {fileID: 1105754898}
   - component: {fileID: 1105754897}
-  m_Layer: 5
+  - component: {fileID: 1105754903}
+  - component: {fileID: 1105754902}
+  m_Layer: 16
   m_Name: ControlsB (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16862,6 +19236,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105754895}
   m_CullTransparentMesh: 0
+--- !u!114 &1105754902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105754895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1105754903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105754895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1107749583
 GameObject:
   m_ObjectHideFlags: 0
@@ -16873,7 +19271,9 @@ GameObject:
   - component: {fileID: 1107749584}
   - component: {fileID: 1107749586}
   - component: {fileID: 1107749585}
-  m_Layer: 8
+  - component: {fileID: 1107749588}
+  - component: {fileID: 1107749587}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16937,6 +19337,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107749583}
   m_CullTransparentMesh: 0
+--- !u!114 &1107749587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107749583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1107749588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107749583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1143662046
 GameObject:
   m_ObjectHideFlags: 0
@@ -16952,7 +19376,9 @@ GameObject:
   - component: {fileID: 1143662051}
   - component: {fileID: 1143662050}
   - component: {fileID: 1143662049}
-  m_Layer: 5
+  - component: {fileID: 1143662055}
+  - component: {fileID: 1143662054}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17114,6 +19540,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143662046}
   m_CullTransparentMesh: 0
+--- !u!114 &1143662054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143662046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1143662055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143662046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1148328216
 GameObject:
   m_ObjectHideFlags: 0
@@ -17129,7 +19579,7 @@ GameObject:
   - component: {fileID: 1148328220}
   - component: {fileID: 1148328219}
   - component: {fileID: 1148328218}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17291,7 +19741,9 @@ GameObject:
   - component: {fileID: 1153638724}
   - component: {fileID: 1153638723}
   - component: {fileID: 1153638722}
-  m_Layer: 8
+  - component: {fileID: 1153638726}
+  - component: {fileID: 1153638725}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17369,6 +19821,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153638720}
   m_CullTransparentMesh: 1
+--- !u!114 &1153638725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153638720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1153638726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153638720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1165718422
 GameObject:
   m_ObjectHideFlags: 0
@@ -17380,7 +19856,9 @@ GameObject:
   - component: {fileID: 1165718423}
   - component: {fileID: 1165718425}
   - component: {fileID: 1165718424}
-  m_Layer: 8
+  - component: {fileID: 1165718427}
+  - component: {fileID: 1165718426}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17444,6 +19922,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165718422}
   m_CullTransparentMesh: 0
+--- !u!114 &1165718426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165718422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1165718427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165718422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1173431158
 GameObject:
   m_ObjectHideFlags: 0
@@ -17959,7 +20461,9 @@ GameObject:
   - component: {fileID: 1200027178}
   - component: {fileID: 1200027177}
   - component: {fileID: 1200027176}
-  m_Layer: 8
+  - component: {fileID: 1200027180}
+  - component: {fileID: 1200027179}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18107,6 +20611,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200027174}
   m_CullTransparentMesh: 1
+--- !u!114 &1200027179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200027174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1200027180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200027174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1208741821
 GameObject:
   m_ObjectHideFlags: 0
@@ -18119,7 +20647,9 @@ GameObject:
   - component: {fileID: 1208741825}
   - component: {fileID: 1208741824}
   - component: {fileID: 1208741823}
-  m_Layer: 8
+  - component: {fileID: 1208741827}
+  - component: {fileID: 1208741826}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18267,6 +20797,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208741821}
   m_CullTransparentMesh: 1
+--- !u!114 &1208741826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208741821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1208741827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208741821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1209574473
 GameObject:
   m_ObjectHideFlags: 0
@@ -18281,7 +20835,9 @@ GameObject:
   - component: {fileID: 1209574477}
   - component: {fileID: 1209574476}
   - component: {fileID: 1209574475}
-  m_Layer: 5
+  - component: {fileID: 1209574481}
+  - component: {fileID: 1209574480}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18454,6 +21010,208 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209574473}
   m_CullTransparentMesh: 0
+--- !u!114 &1209574480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209574473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1209574481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209574473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
+--- !u!43 &1217172213
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Composition Layer Plane
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020003000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf000000bf0000000000000000000000000000803f0000803f00000000000000bf0000003f0000000000000000000000000000803f0000803f0000803f0000003f0000003f0000000000000000000000000000803f000000000000803f0000003f000000bf0000000000000000000000000000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1 &1257902873
 GameObject:
   m_ObjectHideFlags: 0
@@ -18466,7 +21224,9 @@ GameObject:
   - component: {fileID: 1257902876}
   - component: {fileID: 1257902874}
   - component: {fileID: 1257902875}
-  m_Layer: 8
+  - component: {fileID: 1257902879}
+  - component: {fileID: 1257902878}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18544,6 +21304,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1257902878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257902873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1257902879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257902873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1262277163
 GameObject:
   m_ObjectHideFlags: 0
@@ -18556,7 +21340,9 @@ GameObject:
   - component: {fileID: 1262277167}
   - component: {fileID: 1262277166}
   - component: {fileID: 1262277165}
-  m_Layer: 8
+  - component: {fileID: 1262277169}
+  - component: {fileID: 1262277168}
+  m_Layer: 16
   m_Name: SettingsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18704,6 +21490,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262277163}
   m_CullTransparentMesh: 1
+--- !u!114 &1262277168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262277163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1262277169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262277163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1292441976
 GameObject:
   m_ObjectHideFlags: 0
@@ -18716,7 +21526,9 @@ GameObject:
   - component: {fileID: 1292441979}
   - component: {fileID: 1292441977}
   - component: {fileID: 1292441978}
-  m_Layer: 8
+  - component: {fileID: 1292441982}
+  - component: {fileID: 1292441981}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18794,6 +21606,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1292441981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292441976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1292441982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292441976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1292949153
 GameObject:
   m_ObjectHideFlags: 0
@@ -18805,7 +21641,9 @@ GameObject:
   - component: {fileID: 1292949154}
   - component: {fileID: 1292949156}
   - component: {fileID: 1292949155}
-  m_Layer: 8
+  - component: {fileID: 1292949158}
+  - component: {fileID: 1292949157}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18869,6 +21707,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292949153}
   m_CullTransparentMesh: 0
+--- !u!114 &1292949157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292949153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1292949158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292949153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1294496093
 GameObject:
   m_ObjectHideFlags: 0
@@ -18880,7 +21742,9 @@ GameObject:
   - component: {fileID: 1294496094}
   - component: {fileID: 1294496096}
   - component: {fileID: 1294496095}
-  m_Layer: 8
+  - component: {fileID: 1294496098}
+  - component: {fileID: 1294496097}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18944,6 +21808,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294496093}
   m_CullTransparentMesh: 0
+--- !u!114 &1294496097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294496093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1294496098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294496093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!4 &1295506356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4489092544293934595, guid: 7174a54e1a1d7db4eab44ca155ee8997,
@@ -19105,7 +21993,9 @@ GameObject:
   - component: {fileID: 1324393305}
   - component: {fileID: 1324393304}
   - component: {fileID: 1324393303}
-  m_Layer: 5
+  - component: {fileID: 1324393309}
+  - component: {fileID: 1324393308}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19267,6 +22157,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324393300}
   m_CullTransparentMesh: 0
+--- !u!114 &1324393308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324393300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1324393309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324393300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1339558985
 GameObject:
   m_ObjectHideFlags: 0
@@ -19278,7 +22192,9 @@ GameObject:
   - component: {fileID: 1339558986}
   - component: {fileID: 1339558988}
   - component: {fileID: 1339558987}
-  m_Layer: 8
+  - component: {fileID: 1339558990}
+  - component: {fileID: 1339558989}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19342,6 +22258,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339558985}
   m_CullTransparentMesh: 0
+--- !u!114 &1339558989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339558985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1339558990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339558985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1360031118
 GameObject:
   m_ObjectHideFlags: 0
@@ -19353,7 +22293,9 @@ GameObject:
   - component: {fileID: 1360031119}
   - component: {fileID: 1360031121}
   - component: {fileID: 1360031120}
-  m_Layer: 8
+  - component: {fileID: 1360031123}
+  - component: {fileID: 1360031122}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19417,6 +22359,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360031118}
   m_CullTransparentMesh: 0
+--- !u!114 &1360031122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360031118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1360031123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360031118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1360184205
 GameObject:
   m_ObjectHideFlags: 0
@@ -19426,7 +22392,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360184206}
-  m_Layer: 8
+  - component: {fileID: 1360184208}
+  - component: {fileID: 1360184207}
+  m_Layer: 16
   m_Name: ViewControlsSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19457,6 +22425,30 @@ RectTransform:
   m_AnchoredPosition: {x: -7.8900003, y: 2.0551496}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1360184207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360184205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1360184208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360184205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1365926578
 GameObject:
   m_ObjectHideFlags: 0
@@ -19467,7 +22459,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1365926580}
   - component: {fileID: 1365926579}
-  m_Layer: 8
+  - component: {fileID: 1365926582}
+  - component: {fileID: 1365926581}
+  m_Layer: 16
   m_Name: ManualAdjust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19829,6 +22823,30 @@ RectTransform:
   m_AnchoredPosition: {x: -7.8900003, y: 2.0148163}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1365926581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365926578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1365926582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365926578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1372474800
 GameObject:
   m_ObjectHideFlags: 0
@@ -20483,7 +23501,9 @@ GameObject:
   - component: {fileID: 1435962643}
   - component: {fileID: 1435962645}
   - component: {fileID: 1435962644}
-  m_Layer: 8
+  - component: {fileID: 1435962647}
+  - component: {fileID: 1435962646}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20547,6 +23567,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435962642}
   m_CullTransparentMesh: 0
+--- !u!114 &1435962646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435962642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1435962647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435962642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1436333622
 GameObject:
   m_ObjectHideFlags: 0
@@ -20562,7 +23606,9 @@ GameObject:
   - component: {fileID: 1436333627}
   - component: {fileID: 1436333626}
   - component: {fileID: 1436333625}
-  m_Layer: 5
+  - component: {fileID: 1436333631}
+  - component: {fileID: 1436333630}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20724,6 +23770,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436333622}
   m_CullTransparentMesh: 0
+--- !u!114 &1436333630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436333622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1436333631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436333622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1495725473
 GameObject:
   m_ObjectHideFlags: 0
@@ -21108,7 +24178,9 @@ GameObject:
   - component: {fileID: 1513038702}
   - component: {fileID: 1513038701}
   - component: {fileID: 1513038700}
-  m_Layer: 5
+  - component: {fileID: 1513038706}
+  - component: {fileID: 1513038705}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21365,6 +24437,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513038698}
   m_CullTransparentMesh: 0
+--- !u!114 &1513038705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513038698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1513038706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513038698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1520008067
 GameObject:
   m_ObjectHideFlags: 0
@@ -21377,7 +24473,9 @@ GameObject:
   - component: {fileID: 1520008071}
   - component: {fileID: 1520008070}
   - component: {fileID: 1520008069}
-  m_Layer: 8
+  - component: {fileID: 1520008073}
+  - component: {fileID: 1520008072}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21455,6 +24553,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520008067}
   m_CullTransparentMesh: 1
+--- !u!114 &1520008072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520008067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1520008073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520008067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1534098359
 GameObject:
   m_ObjectHideFlags: 0
@@ -21466,7 +24588,9 @@ GameObject:
   - component: {fileID: 1534098360}
   - component: {fileID: 1534098362}
   - component: {fileID: 1534098361}
-  m_Layer: 8
+  - component: {fileID: 1534098364}
+  - component: {fileID: 1534098363}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21530,6 +24654,208 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534098359}
   m_CullTransparentMesh: 0
+--- !u!114 &1534098363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534098359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1534098364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534098359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
+--- !u!43 &1534463929
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Composition Layer Plane
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020003000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf000000bf0000000000000000000000000000803f0000803f00000000000000bf0000003f0000000000000000000000000000803f0000803f0000803f0000003f0000003f0000000000000000000000000000803f000000000000803f0000003f000000bf0000000000000000000000000000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1 &1551421811
 GameObject:
   m_ObjectHideFlags: 0
@@ -21542,7 +24868,9 @@ GameObject:
   - component: {fileID: 1551421815}
   - component: {fileID: 1551421814}
   - component: {fileID: 1551421813}
-  m_Layer: 8
+  - component: {fileID: 1551421817}
+  - component: {fileID: 1551421816}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21695,6 +25023,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551421811}
   m_CullTransparentMesh: 1
+--- !u!114 &1551421816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551421811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1551421817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551421811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1589616227
 GameObject:
   m_ObjectHideFlags: 0
@@ -21706,7 +25058,9 @@ GameObject:
   - component: {fileID: 1589616228}
   - component: {fileID: 1589616230}
   - component: {fileID: 1589616229}
-  m_Layer: 8
+  - component: {fileID: 1589616232}
+  - component: {fileID: 1589616231}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21770,6 +25124,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589616227}
   m_CullTransparentMesh: 0
+--- !u!114 &1589616231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589616227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1589616232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589616227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1596433243
 GameObject:
   m_ObjectHideFlags: 0
@@ -21784,7 +25162,9 @@ GameObject:
   - component: {fileID: 1596433247}
   - component: {fileID: 1596433246}
   - component: {fileID: 1596433245}
-  m_Layer: 5
+  - component: {fileID: 1596433251}
+  - component: {fileID: 1596433250}
+  m_Layer: 16
   m_Name: ControlsB (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21933,6 +25313,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596433243}
   m_CullTransparentMesh: 0
+--- !u!114 &1596433250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596433243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1596433251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596433243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1602260625
 GameObject:
   m_ObjectHideFlags: 0
@@ -21948,7 +25352,7 @@ GameObject:
   - component: {fileID: 1602260629}
   - component: {fileID: 1602260628}
   - component: {fileID: 1602260627}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: AUTO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22110,7 +25514,9 @@ GameObject:
   - component: {fileID: 1605841957}
   - component: {fileID: 1605841956}
   - component: {fileID: 1605841955}
-  m_Layer: 8
+  - component: {fileID: 1605841959}
+  - component: {fileID: 1605841958}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22258,6 +25664,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605841953}
   m_CullTransparentMesh: 1
+--- !u!114 &1605841958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605841953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1605841959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605841953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1613698521
 GameObject:
   m_ObjectHideFlags: 0
@@ -28026,7 +31456,7 @@ GameObject:
   - component: {fileID: 1675468918}
   - component: {fileID: 1675468917}
   - component: {fileID: 1675468916}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28653,7 +32083,9 @@ GameObject:
   - component: {fileID: 1735010684}
   - component: {fileID: 1735010683}
   - component: {fileID: 1735010682}
-  m_Layer: 8
+  - component: {fileID: 1735010686}
+  - component: {fileID: 1735010685}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28801,6 +32233,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735010680}
   m_CullTransparentMesh: 1
+--- !u!114 &1735010685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735010680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1735010686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735010680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1762219314
 GameObject:
   m_ObjectHideFlags: 0
@@ -28813,7 +32269,9 @@ GameObject:
   - component: {fileID: 1762219318}
   - component: {fileID: 1762219317}
   - component: {fileID: 1762219316}
-  m_Layer: 8
+  - component: {fileID: 1762219320}
+  - component: {fileID: 1762219319}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28961,6 +32419,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762219314}
   m_CullTransparentMesh: 1
+--- !u!114 &1762219319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762219314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1762219320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762219314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1763138338
 GameObject:
   m_ObjectHideFlags: 0
@@ -28975,7 +32457,9 @@ GameObject:
   - component: {fileID: 1763138342}
   - component: {fileID: 1763138341}
   - component: {fileID: 1763138340}
-  m_Layer: 5
+  - component: {fileID: 1763138346}
+  - component: {fileID: 1763138345}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29148,6 +32632,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763138338}
   m_CullTransparentMesh: 0
+--- !u!114 &1763138345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763138338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1763138346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763138338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1781242141
 GameObject:
   m_ObjectHideFlags: 0
@@ -29160,7 +32668,9 @@ GameObject:
   - component: {fileID: 1781242144}
   - component: {fileID: 1781242142}
   - component: {fileID: 1781242143}
-  m_Layer: 8
+  - component: {fileID: 1781242147}
+  - component: {fileID: 1781242146}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29238,6 +32748,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1781242146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781242141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1781242147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781242141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1782700911
 GameObject:
   m_ObjectHideFlags: 0
@@ -30172,7 +33706,7 @@ GameObject:
   - component: {fileID: 1796987073}
   - component: {fileID: 1796987072}
   - component: {fileID: 1796987071}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: ViewControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30308,7 +33842,9 @@ GameObject:
   - component: {fileID: 1824758269}
   - component: {fileID: 1824758268}
   - component: {fileID: 1824758267}
-  m_Layer: 8
+  - component: {fileID: 1824758271}
+  - component: {fileID: 1824758270}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30456,6 +33992,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824758265}
   m_CullTransparentMesh: 1
+--- !u!114 &1824758270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824758265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1824758271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824758265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1852121457
 GameObject:
   m_ObjectHideFlags: 0
@@ -30471,7 +34031,7 @@ GameObject:
   - component: {fileID: 1852121461}
   - component: {fileID: 1852121460}
   - component: {fileID: 1852121459}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: RotL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30633,7 +34193,9 @@ GameObject:
   - component: {fileID: 1853500580}
   - component: {fileID: 1853500579}
   - component: {fileID: 1853500578}
-  m_Layer: 8
+  - component: {fileID: 1853500582}
+  - component: {fileID: 1853500581}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30711,6 +34273,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853500576}
   m_CullTransparentMesh: 1
+--- !u!114 &1853500581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853500576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1853500582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853500576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1871175807
 GameObject:
   m_ObjectHideFlags: 0
@@ -30914,6 +34500,184 @@ MonoBehaviour:
   onDisable:
     m_PersistentCalls:
       m_Calls: []
+--- !u!43 &1878654152
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Composition Layer Plane
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020003000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf009fbbbe0000000000000000000000000000803f0000803f00000000000000bf009fbb3e0000000000000000000000000000803f0000803f0000803f0000003f009fbb3e0000000000000000000000000000803f000000000000803f0000003f009fbbbe0000000000000000000000000000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1 &1881251788
 GameObject:
   m_ObjectHideFlags: 0
@@ -30929,7 +34693,7 @@ GameObject:
   - component: {fileID: 1881251792}
   - component: {fileID: 1881251791}
   - component: {fileID: 1881251790}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: RotR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31091,7 +34855,9 @@ GameObject:
   - component: {fileID: 1901015353}
   - component: {fileID: 1901015352}
   - component: {fileID: 1901015351}
-  m_Layer: 8
+  - component: {fileID: 1901015355}
+  - component: {fileID: 1901015354}
+  m_Layer: 16
   m_Name: SettingsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31239,6 +35005,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901015349}
   m_CullTransparentMesh: 1
+--- !u!114 &1901015354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901015349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1901015355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901015349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1915812715
 GameObject:
   m_ObjectHideFlags: 0
@@ -31251,7 +35041,9 @@ GameObject:
   - component: {fileID: 1915812719}
   - component: {fileID: 1915812718}
   - component: {fileID: 1915812717}
-  m_Layer: 8
+  - component: {fileID: 1915812721}
+  - component: {fileID: 1915812720}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31399,6 +35191,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915812715}
   m_CullTransparentMesh: 1
+--- !u!114 &1915812720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915812715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1915812721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915812715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1916445675
 GameObject:
   m_ObjectHideFlags: 0
@@ -31414,7 +35230,7 @@ GameObject:
   - component: {fileID: 1916445679}
   - component: {fileID: 1916445678}
   - component: {fileID: 1916445677}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: RotUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31576,6 +35392,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b563d2b5a3f0a745856cacccfedba67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!84 &1938840323
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 100
+  m_Height: 100
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1960809148
 GameObject:
   m_ObjectHideFlags: 0
@@ -31732,7 +35585,9 @@ GameObject:
   - component: {fileID: 1961359036}
   - component: {fileID: 1961359034}
   - component: {fileID: 1961359035}
-  m_Layer: 8
+  - component: {fileID: 1961359039}
+  - component: {fileID: 1961359038}
+  m_Layer: 16
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31810,6 +35665,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1961359038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961359033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1961359039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961359033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1965152130
 GameObject:
   m_ObjectHideFlags: 0
@@ -31822,7 +35701,9 @@ GameObject:
   - component: {fileID: 1965152134}
   - component: {fileID: 1965152133}
   - component: {fileID: 1965152132}
-  m_Layer: 8
+  - component: {fileID: 1965152136}
+  - component: {fileID: 1965152135}
+  m_Layer: 16
   m_Name: RealignTextNextNext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31970,6 +35851,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965152130}
   m_CullTransparentMesh: 1
+--- !u!114 &1965152135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965152130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1965152136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965152130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &1967088252
 GameObject:
   m_ObjectHideFlags: 0
@@ -32120,7 +36025,9 @@ GameObject:
   - component: {fileID: 1967976243}
   - component: {fileID: 1967976242}
   - component: {fileID: 1967976241}
-  m_Layer: 5
+  - component: {fileID: 1967976247}
+  - component: {fileID: 1967976246}
+  m_Layer: 16
   m_Name: TextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32305,6 +36212,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967976239}
   m_CullTransparentMesh: 0
+--- !u!114 &1967976246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967976239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &1967976247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967976239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &2072900322
 GameObject:
   m_ObjectHideFlags: 0
@@ -32314,7 +36245,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072900323}
-  m_Layer: 8
+  - component: {fileID: 2072900325}
+  - component: {fileID: 2072900324}
+  m_Layer: 16
   m_Name: AdjustPositionSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32343,6 +36276,30 @@ RectTransform:
   m_AnchoredPosition: {x: -7.8900003, y: 2.0148163}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2072900324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072900322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &2072900325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072900322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &2102064610
 GameObject:
   m_ObjectHideFlags: 0
@@ -32358,7 +36315,7 @@ GameObject:
   - component: {fileID: 2102064614}
   - component: {fileID: 2102064613}
   - component: {fileID: 2102064612}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32519,7 +36476,9 @@ GameObject:
   - component: {fileID: 2116280061}
   - component: {fileID: 2116280063}
   - component: {fileID: 2116280062}
-  m_Layer: 8
+  - component: {fileID: 2116280065}
+  - component: {fileID: 2116280064}
+  m_Layer: 16
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32583,6 +36542,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116280060}
   m_CullTransparentMesh: 0
+--- !u!114 &2116280064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116280060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &2116280065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116280060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1 &2140434373
 GameObject:
   m_ObjectHideFlags: 0
@@ -32595,7 +36578,9 @@ GameObject:
   - component: {fileID: 2140434377}
   - component: {fileID: 2140434376}
   - component: {fileID: 2140434375}
-  m_Layer: 8
+  - component: {fileID: 2140434379}
+  - component: {fileID: 2140434378}
+  m_Layer: 16
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32743,6 +36728,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140434373}
   m_CullTransparentMesh: 1
+--- !u!114 &2140434378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140434373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c41ea912306f44b5cbdf201b102aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIFocus
+--- !u!114 &2140434379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140434373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -51,9 +51,12 @@ public class FadeScreen : MonoBehaviour
             if (compLayer != null && texExt != null)
             {
                 Debug.Log("[FadeScreen] Creating default 1x1 black texture.");
-                var tex = new Texture2D(1, 1, TextureFormat.RGBA32, false);
-                tex.SetPixel(0, 0, Color.black);
-                tex.Apply();
+                int texSize = 256;
+                var tex = new Texture2D(texSize, texSize, TextureFormat.RGBA32, false);
+                Color[] fill = new Color[texSize * texSize];
+                for (int i = 0; i < fill.Length; i++) fill[i] = Color.black;
+                tex.SetPixels(fill);
+                tex.Apply(false, true);
 
                 texExt.sourceTexture = TexturesExtension.SourceTextureEnum.LocalTexture;
                 texExt.LeftTexture = tex;
@@ -176,7 +179,8 @@ public class FadeScreen : MonoBehaviour
         {
             compLayer.enabled = false;
             compositionLayerGO?.SetActive(false);
-            ActivateRendererIfPresent();
+            if (!usingCompositionLayer)
+                ActivateRendererIfPresent();
         }
 
         fadeRoutine = null;
@@ -206,9 +210,37 @@ public class FadeScreen : MonoBehaviour
     {
         if (colorScaleBias == null) return;
 
-        var currentScale = colorScaleBias.Scale;
+        var currentScale = colorScaleBias.Bias;
         currentScale.w = alpha; // only adjust alpha channel
-        colorScaleBias.Scale = currentScale;
+        colorScaleBias.Bias = currentScale;
+
+        // Manage visibility of Default layer only
+        /*
+        var cam = Camera.main;
+        if (cam != null)
+        {
+            int defaultLayerMask = 1 << LayerMask.NameToLayer("Default");
+            int UI_LayerMask = 1 << LayerMask.NameToLayer("UI");
+
+            // When fade is near black, hide Default layer
+            
+            if (alpha >= 0.99f)
+            {
+                if (savedMask == null)
+                    savedMask = cam.cullingMask; // store current mask once
+
+                cam.cullingMask &= ~defaultLayerMask; // disable Default layer
+                cam.depth = -1;
+            }
+            // When fade is transparent again, restore
+            else if (alpha <= 0.01f && savedMask.HasValue)
+            {
+                cam.depth = 0;
+                cam.cullingMask = savedMask.Value;
+                savedMask = null;
+            }
+        }
+        */
     }
 
     private bool ShouldUseCompositionLayer()

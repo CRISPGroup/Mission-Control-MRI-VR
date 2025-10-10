@@ -69,7 +69,7 @@ PlayerSettings:
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
-  use32BitDisplayBuffer: 0
+  use32BitDisplayBuffer: 1
   preserveFramebufferAlpha: 0
   disableDepthAndStencilBuffers: 0
   androidStartInFullscreen: 1
@@ -149,6 +149,9 @@ PlayerSettings:
   bundleVersion: 0.5.3
   preloadedAssets:
   - {fileID: 11400000, guid: 757fbfcc4a352444b89575b807e5cade, type: 2}
+  - {fileID: 11400000, guid: f2fab3d230256e1488b0b2b76fa23ee1, type: 2}
+  - {fileID: 5298286727110907021, guid: 121ded316584469499aab6732a8d882b, type: 2}
+  - {fileID: -2327842819697749860, guid: c10dd29262d7ae249a89f4f9481415fd, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
