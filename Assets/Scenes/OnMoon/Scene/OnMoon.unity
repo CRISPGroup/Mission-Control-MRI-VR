@@ -6386,6 +6386,11 @@ PrefabInstance:
       propertyPath: 'locations.Array.data[0]'
       value: 
       objectReference: {fileID: 1428819069}
+    - target: {fileID: 2178283820092293796, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: locations.Array.data[0].locationPoint
+      value: 
+      objectReference: {fileID: 1428819069}
     - target: {fileID: 2344308098648563801, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_LocalPosition.x

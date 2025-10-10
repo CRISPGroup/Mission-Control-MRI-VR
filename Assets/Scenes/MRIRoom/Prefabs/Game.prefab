@@ -10490,6 +10490,95 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 4
+--- !u!1 &1524371258232825021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7289491535586989994}
+  - component: {fileID: 18752617698496971}
+  - component: {fileID: 5655918358078354093}
+  m_Layer: 0
+  m_Name: Preloader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7289491535586989994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524371258232825021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalScale: {x: 0.00001, y: 0.00001, z: 0.00001}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4489092544293934595}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &18752617698496971
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524371258232825021}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5655918358078354093
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524371258232825021}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5724f90477d53494980ec4d37d29d809, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1555816564739629968
 GameObject:
   m_ObjectHideFlags: 0
@@ -27338,7 +27427,7 @@ GameObject:
   - component: {fileID: 2300314449240830952}
   - component: {fileID: 3535593732472128860}
   - component: {fileID: 8088080542272177525}
-  - component: {fileID: 8684805406206228550}
+  - component: {fileID: 1955829738755242357}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -27375,14 +27464,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 5099934592723184771}
   locations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
+  - locationPoint: {fileID: 0}
+    objectsToEnable: []
+    objectsToDisable: []
   head: {fileID: 4489092544293934595}
   origin: {fileID: 7423846738456028642}
   locationTransitionDuration: 2
@@ -27841,7 +27946,7 @@ MonoBehaviour:
   leftButtons: []
   rightButtons: []
   head: {fileID: 4489092544293934595}
---- !u!114 &8684805406206228550
+--- !u!114 &1955829738755242357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27850,11 +27955,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4918486495993142753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a8973b59ad74d4b88dd0ac9cf864f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 54b940c38f7ca144f9e962043a589b1d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MaterialPrewarm
-  materialsToPrewarm: []
-  materialsPerFrame: 2
+  m_EditorClassIdentifier: Assembly-CSharp::ScenePrewarmer
+  parentRoot: {fileID: 0}
+  quadPreloader: {fileID: 1524371258232825021}
+  quadSize: 0.00001
+  verbose: 0
 --- !u!1 &4971071258637862075
 GameObject:
   m_ObjectHideFlags: 0
@@ -36141,30 +36248,6 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5099934592723184771}
-        m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
-        m_MethodName: SetFadeRation
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 2
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5099934592723184771}
-        m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
-        m_MethodName: PerformFade
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.9
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -45071,6 +45154,7 @@ Transform:
   - {fileID: 1644997119666270227}
   - {fileID: 5481640190382143623}
   - {fileID: 2451607146020734485}
+  - {fileID: 7289491535586989994}
   m_Father: {fileID: 236625317582105298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &3921592448896353185
