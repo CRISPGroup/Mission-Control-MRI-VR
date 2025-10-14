@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.XR.CompositionLayers;
 using Unity.XR.CompositionLayers.Extensions;
 using UnityEngine;
+using UnityEngine.UI;
 
 [DisallowMultipleComponent]
 public class FadeScreen : MonoBehaviour
@@ -36,6 +37,7 @@ public class FadeScreen : MonoBehaviour
     private Coroutine fadeRoutine;
     private float cachedAlpha = 0f;
     private bool usingCompositionLayer = false;
+    private bool layersHidden = false;
 
     private void Awake()
     {
@@ -93,13 +95,10 @@ public class FadeScreen : MonoBehaviour
         if (usingCompositionLayer)
         {
             if (compositionLayerGO == null || colorScaleBias == null) return;
-            if (!compositionLayerGO.activeInHierarchy) compositionLayerGO.SetActive(true);
-            compLayer.enabled = true;
             fadeRoutine = StartCoroutine(FadeCompositionRoutine(alphaIn, alphaOut));
         }
         else if (fallbackRenderer != null)
         {
-            fallbackRenderer.enabled = true;
             fadeRoutine = StartCoroutine(FadeRendererRoutine(alphaIn, alphaOut));
         }
         else
@@ -118,11 +117,7 @@ public class FadeScreen : MonoBehaviour
                 return;
             }
 
-            if (!compositionLayerGO.activeInHierarchy)
-                compositionLayerGO.SetActive(true);
-            compLayer.enabled = true;
-
-            float currentAlpha = colorScaleBias.Scale.w;
+            float currentAlpha = colorScaleBias.Bias.w;
             if (Mathf.Approximately(currentAlpha, targetAlpha)) return;
 
             if (fadeRoutine != null)
@@ -162,6 +157,14 @@ public class FadeScreen : MonoBehaviour
 
     private IEnumerator FadeCompositionRoutine(float startAlpha, float endAlpha)
     {
+        // TO SHOW MENUS ETC.
+        if (compositionLayerGO != null)
+            compositionLayerGO.SetActive(true);
+        if (compLayer != null)
+            compLayer.enabled = true;
+        if (fallbackRenderer != null)
+            fallbackRenderer.enabled = false;
+
         float timer = 0f;
         while (timer < fadeDuration)
         {
@@ -175,19 +178,31 @@ public class FadeScreen : MonoBehaviour
         ApplyAlphaScale(endAlpha);
         cachedAlpha = endAlpha;
 
-        if (Mathf.Approximately(endAlpha, 0f))
-        {
-            compLayer.enabled = false;
-            compositionLayerGO?.SetActive(false);
-            if (!usingCompositionLayer)
-                ActivateRendererIfPresent();
-        }
 
+        // TO SHOW MENUS ETC.
+        if (Mathf.Approximately(endAlpha, 1f))
+        {
+            if (compLayer != null)
+                compLayer.enabled = false;
+            if (compositionLayerGO != null)
+                compositionLayerGO.SetActive(false);
+            if (fallbackRenderer != null)
+            {
+                fallbackRenderer.gameObject.SetActive(true);
+                fallbackRenderer.enabled = true;
+                var mat = fallbackRenderer.material;
+                if (mat.HasProperty("_Color"))
+                    mat.color = new Color(0, 0, 0, 1);
+            }
+        }
         fadeRoutine = null;
     }
 
     private IEnumerator FadeRendererRoutine(float startAlpha, float endAlpha)
     {
+        if (!fallbackRenderer.enabled)
+            fallbackRenderer.enabled = true;
+
         float timer = 0f;
 
         Color baseColor = fallbackRenderer.material.color;
@@ -203,6 +218,9 @@ public class FadeScreen : MonoBehaviour
         fallbackRenderer.material.color = new Color(baseColor.r, baseColor.g, baseColor.b, endAlpha);
         cachedAlpha = endAlpha;
 
+        if (Mathf.Approximately(endAlpha, 0f))
+            fallbackRenderer.enabled = false;
+
         fadeRoutine = null;
     }
 
@@ -210,37 +228,9 @@ public class FadeScreen : MonoBehaviour
     {
         if (colorScaleBias == null) return;
 
-        var currentScale = colorScaleBias.Bias;
-        currentScale.w = alpha; // only adjust alpha channel
-        colorScaleBias.Bias = currentScale;
-
-        // Manage visibility of Default layer only
-        /*
-        var cam = Camera.main;
-        if (cam != null)
-        {
-            int defaultLayerMask = 1 << LayerMask.NameToLayer("Default");
-            int UI_LayerMask = 1 << LayerMask.NameToLayer("UI");
-
-            // When fade is near black, hide Default layer
-            
-            if (alpha >= 0.99f)
-            {
-                if (savedMask == null)
-                    savedMask = cam.cullingMask; // store current mask once
-
-                cam.cullingMask &= ~defaultLayerMask; // disable Default layer
-                cam.depth = -1;
-            }
-            // When fade is transparent again, restore
-            else if (alpha <= 0.01f && savedMask.HasValue)
-            {
-                cam.depth = 0;
-                cam.cullingMask = savedMask.Value;
-                savedMask = null;
-            }
-        }
-        */
+        var currentBias = colorScaleBias.Bias;
+        currentBias.w = alpha; // only adjust alpha channel
+        colorScaleBias.Bias = currentBias;
     }
 
     private bool ShouldUseCompositionLayer()

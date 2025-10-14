@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ScenePrewarmer : MonoBehaviour
@@ -16,6 +17,38 @@ public class ScenePrewarmer : MonoBehaviour
     public bool verbose = false;
 
     private List<GameObject> quads = new List<GameObject>();
+
+    private void Awake()
+    {
+        
+    }
+
+    public void PrewarmAllCanvases()
+    {
+        Canvas[] canvases = FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        foreach (var canvas in canvases)
+        {
+            bool wasActive = canvas.gameObject.activeSelf;
+
+            // Active temporairement pour forcer layout + mesh
+            canvas.gameObject.SetActive(true);
+            Canvas.ForceUpdateCanvases();
+
+            // Force aussi les TMP InputFields à générer leur mesh
+            var inputs = canvas.GetComponentsInChildren<TMP_InputField>(true);
+            foreach (var input in inputs)
+                input.ForceLabelUpdate();
+
+            // Restaure l'état d'origine
+            canvas.gameObject.SetActive(wasActive);
+
+            if (verbose)
+                Debug.Log($"[UIPrewarm] Prewarmed canvas: {canvas.name}");
+        }
+
+        Resources.UnloadUnusedAssets(); // optionnel : nettoie les GC temp
+    }
 
     private IEnumerator Start()
     {
@@ -68,7 +101,48 @@ public class ScenePrewarmer : MonoBehaviour
             yield return null; // Spread over multiple frames to avoid hitches
         }
 
+        Shader urpLit = Shader.Find("Universal Render Pipeline/Lit");
+        if (urpLit != null)
+        {
+            Material emissionMat = new Material(urpLit);
+            emissionMat.EnableKeyword("_EMISSION");
+            emissionMat.EnableKeyword("_METALLICSPECGLOSSMAP");
+            emissionMat.EnableKeyword("_NORMALMAP");
+            emissionMat.EnableKeyword("_OCCLUSIONMAP");
+            emissionMat.EnableKeyword("_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A");
+
+            Material transparentMat = new Material(urpLit);
+            transparentMat.EnableKeyword("_ALPHAPREMULTIPLY_ON");
+            transparentMat.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+            transparentMat.EnableKeyword("_SPECULARHIGHLIGHTS_OFF");
+            transparentMat.EnableKeyword("_ENVIRONMENTREFLECTIONS_OFF");
+            transparentMat.EnableKeyword("_METALLICSPECGLOSSMAP");
+            transparentMat.EnableKeyword("_NORMALMAP");
+            transparentMat.EnableKeyword("_OCCLUSIONMAP");
+
+            List<Material> manualMats = new List<Material> { emissionMat, transparentMat };
+
+            foreach (Material mat in manualMats)
+            {
+                GameObject clone = Instantiate(quadPreloader, cam.transform);
+                clone.transform.localPosition = quadPreloader.transform.localPosition;
+                clone.transform.localRotation = quadPreloader.transform.localRotation;
+                clone.transform.localScale = Vector3.one * quadSize;
+
+                Renderer mr = clone.GetComponent<Renderer>();
+                if (mr)
+                    mr.material = mat;
+
+                quads.Add(clone);
+                if (verbose)
+                    Debug.Log($"[ScenePrewarmer] Manually prewarmed {mat.shader.name} with keywords: {string.Join(", ", mat.shaderKeywords)}");
+                yield return null;
+            }
+        }
+
         Debug.Log("[ScenePrewarmer] Created " + quads.Count + " mini-quads for prewarming from " + parentRoot.name);
+
+        PrewarmAllCanvases();
 
         StartCoroutine(DestroyAfterDelay(0.5f));
     }

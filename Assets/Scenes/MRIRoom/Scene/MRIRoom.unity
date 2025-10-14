@@ -1471,18 +1471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 0}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 0
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &35298774
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,18 +4811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 3
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &64946511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8186,18 +8162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 16
-  lastLods:
-  - {fileID: 4651821043618740354, guid: 46d93e5b37215cf4588fabfe409c29a1, type: 3}
-  - {fileID: 4300000, guid: 8b7be8166e4da224bb3debdff5104d17, type: 2}
-  - {fileID: 4300000, guid: 32971ddd7f4bb19468bada641b429bae, type: 2}
-  - {fileID: 4300000, guid: 0b17511f25a3b90419a5f4ee2d750b2c, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &144923524
 GameObject:
   m_ObjectHideFlags: 0
@@ -9629,18 +9593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 7
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &166819589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9653,18 +9605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 6
-  lastLods:
-  - {fileID: 4300000, guid: fa43f57c93391b048b276c171329a507, type: 2}
-  - {fileID: 4300000, guid: d64f9968ae51c84478a8e3e0adbd2813, type: 2}
-  - {fileID: 4300000, guid: dc02d2149f53e284592ac3c173de781b, type: 2}
-  - {fileID: 4300000, guid: c3da236f87c93b6438e43738260dffd0, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &166819590
 Transform:
   m_ObjectHideFlags: 0
@@ -247415,18 +247355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 15
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &402870111
 GameObject:
   m_ObjectHideFlags: 0
@@ -248932,18 +248860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 17
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &454975224
 GameObject:
   m_ObjectHideFlags: 0
@@ -251071,69 +250987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetail
-  currentScannedMeshesList: []
-  modeOfMeshesScanning: 1
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 75
-  - 65
-  - 45
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 30
-  - 70
-  - 120
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 270
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 30
-  - 70
-  - 120
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 270
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!65 &489663943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -252822,18 +252675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetailMeshes
-  responsibleUlod: {fileID: 1823714291}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 0
-  lastLods:
-  - {fileID: 1976611435868293144, guid: 03b016a6e5833db4f9414b2d4356ef69, type: 3}
-  - {fileID: 4300000, guid: 1abac8b686a9bfb4998fa745fc97cebe, type: 2}
-  - {fileID: 4300000, guid: 4bfe2c171e60ddc48b0dd1c5524789be, type: 2}
-  - {fileID: 4300000, guid: ac2643efc1bcd6d4dbd26b4ed0bcc85d, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &506807068
 Transform:
   m_ObjectHideFlags: 0
@@ -253596,18 +253437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 13
-  lastLods:
-  - {fileID: 9008709775943781114, guid: 46d93e5b37215cf4588fabfe409c29a1, type: 3}
-  - {fileID: 4300000, guid: d49bfdf20ca1df646a88f3a3cf7bd124, type: 2}
-  - {fileID: 4300000, guid: 193f6de7026d3a448b89ab0a93b8cddb, type: 2}
-  - {fileID: 4300000, guid: c5b2d6e70b034e044a7f52f445f425e5, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &521354839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253620,18 +253449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 12
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &521354840
 Transform:
   m_ObjectHideFlags: 0
@@ -254992,18 +254809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 23
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &553044462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255016,18 +254821,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 18
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &553044463
 Transform:
   m_ObjectHideFlags: 0
@@ -256495,113 +256288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScannedMeshesList:
-  - originalGameObject: {fileID: 1879297583}
-    originalSkinnedMeshRenderer: {fileID: 0}
-    originalMeshFilter: {fileID: 1879297586}
-    originalMeshRenderer: {fileID: 1879297585}
-    allMeshLods:
-    - {fileID: 4300000, guid: 3047c7a3b55a79848a42877867105032, type: 2}
-    - {fileID: 4300000, guid: 1cf4728512be0d94e8490355ff52594f, type: 2}
-    - {fileID: 4300000, guid: b4b409e348177ec4096da9676bb2ee88, type: 2}
-    - {fileID: 4300000, guid: 83f0ca08119b7454c88ae21bf5be43f5, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    allMeshLodsPaths:
-    - Packages/com.crispgroup.vrassetspackage/MRIVRModelsCollection/porthole2/porthole2
-      (Simplifications)/Circle (Simplification 1).asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_1/LOD1_638932878155313121.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_2/LOD2_638932878155313121.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_3/LOD3_638932878155313121.asset
-    - 
-    - 
-    - 
-    - 
-    - 
-    canChangeMaterialsOnThisMeshLods: 0
-    allMeshLodsMaterials:
-    - materialArray:
-      - {fileID: 2100000, guid: 4cd02dc48682d5144a6e97b30823cd45, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 4cd02dc48682d5144a6e97b30823cd45, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 4cd02dc48682d5144a6e97b30823cd45, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 4cd02dc48682d5144a6e97b30823cd45, type: 2}
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    originalMeshLodsManager: {fileID: 1879297587}
-    beforeCullingData_lastMeshOfThis: {fileID: 4300000, guid: 83f0ca08119b7454c88ae21bf5be43f5,
-      type: 2}
-    beforeCullingData_isForcedToRenderizationOff: 0
-  modeOfMeshesScanning: 0
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 45
-  - 20
-  - 4
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 10
-  - 15
-  - 20
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 120
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 10
-  - 15
-  - 20
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 120
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!4 &596098392
 Transform:
   m_ObjectHideFlags: 0
@@ -259996,69 +259682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScannedMeshesList: []
-  modeOfMeshesScanning: 1
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 45
-  - 20
-  - 4
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 1
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 25
-  - 45
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 120
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 25
-  - 45
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  last_minDistanceOfViewForCull: 120
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!1 &688297561
 GameObject:
   m_ObjectHideFlags: 0
@@ -261853,18 +261476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 9
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &734950166
 Transform:
   m_ObjectHideFlags: 0
@@ -262171,18 +261782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 2
-  lastLods:
-  - {fileID: -304635494185139311, guid: dd9d1a9ccd63b1c4cb563791f8b7f54c, type: 3}
-  - {fileID: 4300000, guid: f3e3cd850ea64dc4ca6274b5b5dae032, type: 2}
-  - {fileID: 4300000, guid: cd63536878388834f89fd5a1fb9b195b, type: 2}
-  - {fileID: 4300000, guid: f7a37581a1077a640902e9c7597e8808, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &739406576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -264297,18 +263896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 1
-  lastLods:
-  - {fileID: -3838624359526578757, guid: 5ce37e20f5c456144826aa59cb1f662c, type: 3}
-  - {fileID: 4300000, guid: 368a7bc4bcf59384eacbec33fb92c645, type: 2}
-  - {fileID: 4300000, guid: e86ce8f0f3b08704cb2635fecead2d4a, type: 2}
-  - {fileID: 4300000, guid: 7bb93c6e6e320904585d87133388d813, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &796657106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -264845,69 +264432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetail
-  currentScannedMeshesList: []
-  modeOfMeshesScanning: 0
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 45
-  - 20
-  - 4
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 20
-  - 45
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 120
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 20
-  - 45
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 120
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!1 &822183252
 GameObject:
   m_ObjectHideFlags: 0
@@ -269441,27 +268965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41659897ac0c84f49977383a29dd0100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mergeMethodUsed: 0
-  undoMethod: 0
-  originalsGameObjectsWithMesh:
-  - gameObject: {fileID: 487105860029465114}
-    originalGoState: 1
-    meshRenderer: {fileID: 2138126859781629047}
-    originalMrState: 1
-  - gameObject: {fileID: 7630940497074164863}
-    originalGoState: 1
-    meshRenderer: {fileID: 2085638138710131312}
-    originalMrState: 1
-  - gameObject: {fileID: 3182167487909183123}
-    originalGoState: 1
-    meshRenderer: {fileID: 7471444811142816483}
-    originalMrState: 1
-  pathsAndTypesOfAssetsOfThisMerge:
-  - type: 1
-    path: Assets/Plugins/MT Assets/_AssetsData/Meshes/BootCoverComb (202582914128727).asset
-  thisIsPrefab: 0
-  exportToObjStartIndexOffSet: 0
-  hideWarningsForThisMerge: 0
 --- !u!1 &919945176
 GameObject:
   m_ObjectHideFlags: 0
@@ -271644,18 +271147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 22
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &970645724
 Transform:
   m_ObjectHideFlags: 0
@@ -283599,18 +283090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 14
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1219680155
 Transform:
   m_ObjectHideFlags: 0
@@ -285963,18 +285442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 10
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1280643802
 Transform:
   m_ObjectHideFlags: 0
@@ -289733,6 +289200,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353307597}
   m_Mesh: {fileID: -3109958061920680569, guid: e5cabe12b510e794b9b752f1a0195eed, type: 3}
+--- !u!84 &1353650032
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 714
+  m_Height: 523
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1355690583
 GameObject:
   m_ObjectHideFlags: 0
@@ -290254,69 +289758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScannedMeshesList: []
-  modeOfMeshesScanning: 0
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 45
-  - 20
-  - 4
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 10
-  - 13
-  - 15
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 30
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 10
-  - 13
-  - 15
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 30
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!114 &1367029568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293619,18 +293060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 20
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1434012581
 Transform:
   m_ObjectHideFlags: 0
@@ -294402,18 +293831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 0}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 1
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1449780672
 Transform:
   m_ObjectHideFlags: 0
@@ -295114,18 +294531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 21
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1458080029
 Transform:
   m_ObjectHideFlags: 0
@@ -300323,27 +299728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41659897ac0c84f49977383a29dd0100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mergeMethodUsed: 0
-  undoMethod: 0
-  originalsGameObjectsWithMesh:
-  - gameObject: {fileID: 738919799}
-    originalGoState: 1
-    meshRenderer: {fileID: 738919798}
-    originalMrState: 1
-  - gameObject: {fileID: 413260314}
-    originalGoState: 1
-    meshRenderer: {fileID: 413260313}
-    originalMrState: 1
-  - gameObject: {fileID: 6396996}
-    originalGoState: 1
-    meshRenderer: {fileID: 6396995}
-    originalMrState: 1
-  pathsAndTypesOfAssetsOfThisMerge:
-  - type: 1
-    path: Assets/Plugins/MT Assets/_AssetsData/Meshes/BootCoverComb (202582914013232).asset
-  thisIsPrefab: 0
-  exportToObjStartIndexOffSet: 0
-  hideWarningsForThisMerge: 0
 --- !u!1 &1569944726
 GameObject:
   m_ObjectHideFlags: 0
@@ -300392,69 +299776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScannedMeshesList: []
-  modeOfMeshesScanning: 0
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 45
-  - 20
-  - 4
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 18
-  - 20
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 30
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 18
-  - 20
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 30
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!1 &1570649942
 GameObject:
   m_ObjectHideFlags: 0
@@ -301812,6 +301133,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 869066233}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!224 &1593806288 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5436434481063227305, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+    type: 3}
+  m_PrefabInstance: {fileID: 8529713180162490406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1595678868
 GameObject:
   m_ObjectHideFlags: 0
@@ -304799,18 +304126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetailMeshes
-  responsibleUlod: {fileID: 2060366997}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 1
-  lastLods:
-  - {fileID: 733751305697248771, guid: 3a3359ebc9eb698428b8b15e96fb5378, type: 3}
-  - {fileID: 4300000, guid: 07a5cb12fdbceec44b2e0634be20a04d, type: 2}
-  - {fileID: 4300000, guid: 248d182e2d2e1664da7b764e20824eba, type: 2}
-  - {fileID: 4300000, guid: 14053ac004b02584b80b034cb714ce89, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1665197984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304823,18 +304138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetailMeshes
-  responsibleUlod: {fileID: 2060366997}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 0
-  lastLods:
-  - {fileID: -864259460963330315, guid: 3a3359ebc9eb698428b8b15e96fb5378, type: 3}
-  - {fileID: 4300000, guid: 784c10dc51efdcc4d98ffe58aa330d4f, type: 2}
-  - {fileID: 4300000, guid: 3f2d380b68e9fc04aa43e17d45a73a6c, type: 2}
-  - {fileID: 4300000, guid: 3f0f218ad5169054693d3aa710d5eee8, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1665197985
 Transform:
   m_ObjectHideFlags: 0
@@ -319491,112 +318794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetail
-  currentScannedMeshesList:
-  - originalGameObject: {fileID: 506807056}
-    originalSkinnedMeshRenderer: {fileID: 0}
-    originalMeshFilter: {fileID: 506807064}
-    originalMeshRenderer: {fileID: 506807060}
-    allMeshLods:
-    - {fileID: 1976611435868293144, guid: 03b016a6e5833db4f9414b2d4356ef69, type: 3}
-    - {fileID: 4300000, guid: 1abac8b686a9bfb4998fa745fc97cebe, type: 2}
-    - {fileID: 4300000, guid: 4bfe2c171e60ddc48b0dd1c5524789be, type: 2}
-    - {fileID: 4300000, guid: ac2643efc1bcd6d4dbd26b4ed0bcc85d, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    allMeshLodsPaths:
-    - Packages/com.crispgroup.vrassetspackage/MRIVRModelsCollection/HeadCoils/HeadCoil.fbx
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_1/LOD1_638932878127504290.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_2/LOD2_638932878127504290.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_3/LOD3_638932878127504290.asset
-    - 
-    - 
-    - 
-    - 
-    - 
-    canChangeMaterialsOnThisMeshLods: 0
-    allMeshLodsMaterials:
-    - materialArray:
-      - {fileID: 2100000, guid: a9580bd54bc6fcd4a8ce921a128c4a4d, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: a9580bd54bc6fcd4a8ce921a128c4a4d, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: a9580bd54bc6fcd4a8ce921a128c4a4d, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: a9580bd54bc6fcd4a8ce921a128c4a4d, type: 2}
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    originalMeshLodsManager: {fileID: 506807067}
-    beforeCullingData_lastMeshOfThis: {fileID: 4300000, guid: ac2643efc1bcd6d4dbd26b4ed0bcc85d,
-      type: 2}
-    beforeCullingData_isForcedToRenderizationOff: 0
-  modeOfMeshesScanning: 0
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 75
-  - 65
-  - 45
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 10
-  - 15
-  - 20
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 120
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 10
-  - 15
-  - 20
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 120
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!1 &1824533598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3475898125410900689, guid: 7174a54e1a1d7db4eab44ca155ee8997,
@@ -321077,6 +320274,184 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21148b11685c6d8428a9575f3ace46a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.CompositionLayers.UIInteraction::Unity.XR.CompositionLayers.UIInteraction.UIHandle
+--- !u!43 &1857718514
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Composition Layer Plane
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020003000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf009fbbbe0000000000000000000000000000803f0000803f00000000000000bf009fbb3e0000000000000000000000000000803f0000803f0000803f0000003f009fbb3e0000000000000000000000000000803f000000000000803f0000003f009fbbbe0000000000000000000000000000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!114 &1858497730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321089,18 +320464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 11
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1858497731
 Transform:
   m_ObjectHideFlags: 0
@@ -322556,18 +321919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::MTAssets.UltimateLODSystem.UltimateLevelOfDetailMeshes
-  responsibleUlod: {fileID: 591306644}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 0
-  lastLods:
-  - {fileID: 4300000, guid: 3047c7a3b55a79848a42877867105032, type: 2}
-  - {fileID: 4300000, guid: 1cf4728512be0d94e8490355ff52594f, type: 2}
-  - {fileID: 4300000, guid: b4b409e348177ec4096da9676bb2ee88, type: 2}
-  - {fileID: 4300000, guid: 83f0ca08119b7454c88ae21bf5be43f5, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1879608472
 Transform:
   m_ObjectHideFlags: 0
@@ -323004,18 +322355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 4
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &1889148968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -323673,6 +323012,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911080712}
   m_Mesh: {fileID: -3109958061920680569, guid: e5cabe12b510e794b9b752f1a0195eed, type: 3}
+--- !u!1 &1914859463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914859465}
+  - component: {fileID: 1914859464}
+  - component: {fileID: 1914859466}
+  m_Layer: 0
+  m_Name: Default Scene Layer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1914859464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914859463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adf0bb75a444c61bde2e7841591bf41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers::Unity.XR.CompositionLayers.CompositionLayer
+  m_UICanvas: {fileID: 0}
+  m_UIMirrorComponent: {fileID: 0}
+  m_LayerOutline: {fileID: 1914859466}
+  m_Order: 2
+  m_LayerData:
+    rid: 5680417149422665921
+  m_PlatformLayerDataKeys: []
+  m_PlatformLayerDataTexts: []
+  m_PlatformLayerDataBinary: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 5680417149422665921
+      type: {class: DefaultLayerData, ns: Unity.XR.CompositionLayers.Layers, asm: Unity.XR.CompositionLayers}
+      data:
+        m_BlendType: 0
+--- !u!4 &1914859465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914859463}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1914859466
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914859463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c239b33ee5aee77488aadc51463c91de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CompositionLayers::Unity.XR.CompositionLayers.CompositionOutline
 --- !u!4 &1914892064
 Transform:
   m_ObjectHideFlags: 0
@@ -326352,18 +325764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 19
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1961196242
 Transform:
   m_ObjectHideFlags: 0
@@ -326673,18 +326073,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a344429936c44486b3ad2f611c409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responsibleUlod: {fileID: 1365117058}
-  idOfOriginalMeshItemOfThisInResponsibleUlod: 8
-  lastLods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1964933106
 Transform:
   m_ObjectHideFlags: 0
@@ -330587,6 +329975,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357930617}
   m_Mesh: {fileID: -3109958061920680569, guid: e5cabe12b510e794b9b752f1a0195eed, type: 3}
+--- !u!84 &2046309178
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 714
+  m_Height: 523
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &2046596630
 GameObject:
   m_ObjectHideFlags: 0
@@ -331314,159 +330739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScannedMeshesList:
-  - originalGameObject: {fileID: 31219795}
-    originalSkinnedMeshRenderer: {fileID: 0}
-    originalMeshFilter: {fileID: 1665197976}
-    originalMeshRenderer: {fileID: 1665197975}
-    allMeshLods:
-    - {fileID: -864259460963330315, guid: 3a3359ebc9eb698428b8b15e96fb5378, type: 3}
-    - {fileID: 4300000, guid: 784c10dc51efdcc4d98ffe58aa330d4f, type: 2}
-    - {fileID: 4300000, guid: 3f2d380b68e9fc04aa43e17d45a73a6c, type: 2}
-    - {fileID: 4300000, guid: 3f0f218ad5169054693d3aa710d5eee8, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    allMeshLodsPaths:
-    - Packages/com.crispgroup.vrassetspackage/MRIVRModelsCollection/counter2/counter2.fbx
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_1/LOD1_638932878091493018.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_2/LOD2_638932878091493018.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_3/LOD3_638932878091493018.asset
-    - 
-    - 
-    - 
-    - 
-    - 
-    canChangeMaterialsOnThisMeshLods: 0
-    allMeshLodsMaterials:
-    - materialArray:
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-      - {fileID: 2100000, guid: 583c8007e3fc0df4298a8a60679d1df7, type: 2}
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    originalMeshLodsManager: {fileID: 1665197984}
-    beforeCullingData_lastMeshOfThis: {fileID: 4300000, guid: 3f0f218ad5169054693d3aa710d5eee8,
-      type: 2}
-    beforeCullingData_isForcedToRenderizationOff: 0
-  - originalGameObject: {fileID: 1449569463}
-    originalSkinnedMeshRenderer: {fileID: 0}
-    originalMeshFilter: {fileID: 1665197978}
-    originalMeshRenderer: {fileID: 1665197977}
-    allMeshLods:
-    - {fileID: 733751305697248771, guid: 3a3359ebc9eb698428b8b15e96fb5378, type: 3}
-    - {fileID: 4300000, guid: 07a5cb12fdbceec44b2e0634be20a04d, type: 2}
-    - {fileID: 4300000, guid: 248d182e2d2e1664da7b764e20824eba, type: 2}
-    - {fileID: 4300000, guid: 14053ac004b02584b80b034cb714ce89, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    allMeshLodsPaths:
-    - Packages/com.crispgroup.vrassetspackage/MRIVRModelsCollection/counter2/counter2.fbx
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_1/LOD1_638932878094385324.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_2/LOD2_638932878094385324.asset
-    - Assets/Plugins/MT Assets/_AssetsData/Meshes/LODs_3/LOD3_638932878094385324.asset
-    - 
-    - 
-    - 
-    - 
-    - 
-    canChangeMaterialsOnThisMeshLods: 0
-    allMeshLodsMaterials:
-    - materialArray:
-      - {fileID: 2100000, guid: 844064c7e6094174a8b3aa7380cbfc59, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 844064c7e6094174a8b3aa7380cbfc59, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 844064c7e6094174a8b3aa7380cbfc59, type: 2}
-    - materialArray:
-      - {fileID: 2100000, guid: 844064c7e6094174a8b3aa7380cbfc59, type: 2}
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    - materialArray: []
-    originalMeshLodsManager: {fileID: 1665197983}
-    beforeCullingData_lastMeshOfThis: {fileID: 4300000, guid: 14053ac004b02584b80b034cb714ce89,
-      type: 2}
-    beforeCullingData_isForcedToRenderizationOff: 0
-  modeOfMeshesScanning: 0
-  scanInactiveGameObjects: 0
-  gameObjectsToIgnore: []
-  levelsOfDetailToGenerate: 3
-  percentOfVerticesForEachLod:
-  - 100
-  - 45
-  - 20
-  - 4
-  - 35
-  - 25
-  - 15
-  - 10
-  - 5
-  saveGeneratedLodsInAssets: 1
-  skinnedAnimsCompatibilityMode: 1
-  preventArtifacts: 1
-  optimizeResultingMeshes: 0
-  enableLightmapsSupport: 0
-  enableMaterialsChanges: 0
-  forceOfSimplification: 0
-  cullingMode: 1
-  _customPivotToSimulateLods: {fileID: 0}
-  cameraDetectionMode: 1
-  useCacheForMainCameraInDetection: 1
-  customCameraForSimulationOfLods: {fileID: 1304278210341640943}
-  minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 20
-  - 30
-  - 150
-  - 180
-  - 200
-  - 220
-  - 250
-  minDistanceOfViewForCull: 120
-  onDoneScan:
-    m_PersistentCalls:
-      m_Calls: []
-  onUndoScan:
-    m_PersistentCalls:
-      m_Calls: []
-  forceChangeLodsOfSkinnedInEditor: 0
-  drawGizmoOnThisPivot: 0
-  colorOfGizmo: {r: 0, g: 0, b: 1, a: 1}
-  sizeOfGizmo: 0.2
-  forceShowHiddenSettings: 0
-  showScanEventsOptions: 0
-  last_minDistanceOfViewForEachLod:
-  - 0
-  - 15
-  - 20
-  - 30
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  last_minDistanceOfViewForCull: 120
-  setupRunned: 1
-  isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
 --- !u!4 &2060659339
 Transform:
   m_ObjectHideFlags: 0
@@ -338408,7 +337680,7 @@ PrefabInstance:
     - target: {fileID: 235408721716264810, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Order
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 235408721716264810, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -338603,6 +337875,16 @@ PrefabInstance:
     - target: {fileID: 413664710201894795, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452655094519778083, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452655094519778083, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 536939595694361136, guid: 7174a54e1a1d7db4eab44ca155ee8997,
@@ -338849,6 +338131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035411098803244653, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1039717347010037465, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -339580,6 +338867,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747140271040277213, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 1353650032}
+    - target: {fileID: 1747140271040277213, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4096
       objectReference: {fileID: 0}
     - target: {fileID: 1782943682137268393, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -341071,6 +340368,11 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 16384
       objectReference: {fileID: 0}
+    - target: {fileID: 2599404554034818855, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1857718514}
     - target: {fileID: 2603013257260654712, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Layer
@@ -341947,7 +341249,7 @@ PrefabInstance:
     - target: {fileID: 4324557311955350181, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Order
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4324736407195284164, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -342068,6 +341370,91 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Order
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_LayerData
+      value: 5680417149422665876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: 'managedReferences[-2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: 'managedReferences[5680417149422665864]'
+      value: Unity.XR.CompositionLayers Unity.XR.CompositionLayers.Layers.QuadLayerData
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: 'managedReferences[5680417149422665872]'
+      value: Unity.XR.CompositionLayers Unity.XR.CompositionLayers.Layers.QuadLayerData
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: 'managedReferences[5680417149422665876]'
+      value: Unity.XR.CompositionLayers Unity.XR.CompositionLayers.Layers.QuadLayerData
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665864].m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665864].m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665872].m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665872].m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665876].m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665876].m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665864].m_BlendType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665872].m_BlendType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665876].m_BlendType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665864].m_ApplyTransformScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665872].m_ApplyTransformScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743111054806878076, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: managedReferences[5680417149422665876].m_ApplyTransformScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4751695930872480438, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -342726,6 +342113,11 @@ PrefabInstance:
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 168644453}
+    - target: {fileID: 5334319183296072755, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: canvasTransform
+      value: 
+      objectReference: {fileID: 1593806288}
     - target: {fileID: 5339028827405907613, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Layer
@@ -342749,7 +342141,7 @@ PrefabInstance:
     - target: {fileID: 5419608031161218984, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5431564295074412127, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -342760,6 +342152,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436434481063227305, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436434481063227305, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5455061999359926942, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -343437,6 +342839,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6271581204100631254, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: HeightScale
+      value: 0.7328949
+      objectReference: {fileID: 0}
     - target: {fileID: 6280974077525982186, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -343698,6 +343105,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1304278210341640942}
     - target: {fileID: 6629916221594823012, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637616123205957470, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Layer
       value: 9
@@ -345975,6 +345387,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8180901658988633929, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8255232168582850649, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Layer
@@ -346540,6 +345957,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8729773241882599924, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_LeftTexture
+      value: 
+      objectReference: {fileID: 2046309178}
+    - target: {fileID: 8729773241882599924, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_RightTexture
+      value: 
+      objectReference: {fileID: 2046309178}
+    - target: {fileID: 8729773241882599924, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_LeftEyeDestinationRect.y
+      value: 0.13355255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729773241882599924, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: m_LeftEyeDestinationRect.height
+      value: 0.7328949
+      objectReference: {fileID: 0}
     - target: {fileID: 8746963870181775101, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Layer
@@ -346578,7 +346015,7 @@ PrefabInstance:
     - target: {fileID: 9032058288311797954, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
       propertyPath: m_Order
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9046063924155915049, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}
@@ -350148,3 +349585,4 @@ SceneRoots:
   - {fileID: 402870114}
   - {fileID: 424871751}
   - {fileID: 8529713180162490406}
+  - {fileID: 1914859465}
