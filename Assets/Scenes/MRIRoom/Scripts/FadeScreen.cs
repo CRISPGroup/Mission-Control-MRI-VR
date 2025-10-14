@@ -157,13 +157,14 @@ public class FadeScreen : MonoBehaviour
 
     private IEnumerator FadeCompositionRoutine(float startAlpha, float endAlpha)
     {
-        // TO SHOW MENUS ETC.
+        /* TO SHOW MENUS ETC.
         if (compositionLayerGO != null)
             compositionLayerGO.SetActive(true);
         if (compLayer != null)
             compLayer.enabled = true;
         if (fallbackRenderer != null)
             fallbackRenderer.enabled = false;
+        */
 
         float timer = 0f;
         while (timer < fadeDuration)
@@ -179,7 +180,7 @@ public class FadeScreen : MonoBehaviour
         cachedAlpha = endAlpha;
 
 
-        // TO SHOW MENUS ETC.
+        /* TO SHOW MENUS ETC.
         if (Mathf.Approximately(endAlpha, 1f))
         {
             if (compLayer != null)
@@ -194,7 +195,7 @@ public class FadeScreen : MonoBehaviour
                 if (mat.HasProperty("_Color"))
                     mat.color = new Color(0, 0, 0, 1);
             }
-        }
+        }*/
         fadeRoutine = null;
     }
 
