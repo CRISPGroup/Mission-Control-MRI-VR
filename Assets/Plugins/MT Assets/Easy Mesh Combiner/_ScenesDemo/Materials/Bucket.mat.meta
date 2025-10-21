@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 667d1ac3d59372242b7e969e108bc398
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/_ScenesDemo/Materials/Bucket.mat
+  uploadId: 704311

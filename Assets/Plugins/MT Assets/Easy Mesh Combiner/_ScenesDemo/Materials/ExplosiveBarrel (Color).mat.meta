@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0fc189a2b752a60479ea460c9ebf1e36
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/_ScenesDemo/Materials/ExplosiveBarrel
+    (Color).mat
+  uploadId: 704311

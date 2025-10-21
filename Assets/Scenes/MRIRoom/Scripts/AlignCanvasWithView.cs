@@ -20,7 +20,7 @@ public class AlignCanvasWithView : MonoBehaviour
 
         canvasTransform.position = Vector3.Lerp(canvasTransform.position, targetPosition, Time.unscaledDeltaTime * smoothSpeed);
 
-        Quaternion targetRotation = vrCamera.rotation;
-        canvasTransform.rotation = Quaternion.Slerp(canvasTransform.rotation, targetRotation, Time.unscaledDeltaTime * smoothSpeed);
+        Quaternion flatRotation = Quaternion.Euler(0f, vrCamera.eulerAngles.y, 0f);
+        canvasTransform.rotation = Quaternion.Slerp(canvasTransform.rotation, flatRotation, Time.unscaledDeltaTime * smoothSpeed);
     }
 }

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1e7382ac35b2fcb4ca1cfa4e81cd9b33
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/Libraries/MTAssets Mathematics/MTAssetsMathematics.cs
+  uploadId: 704311
