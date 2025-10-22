@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class CanvasActivator : MonoBehaviour
@@ -7,14 +6,19 @@ public class CanvasActivator : MonoBehaviour
     [System.Serializable]
     public class IgnoredCanvas
     {
-        public Canvas canvas; // Canvas à ignorer
-        public bool ignoreChildren; // Si true, ignore tous les canvases enfants
+        public Canvas canvas;
+        public bool ignoreChildren;
     }
 
-    [SerializeField] private List<IgnoredCanvas> ignoredCanvases = new List<IgnoredCanvas>(); // Liste des canvases ignorés
-    private List<Canvas> allCanvases = new List<Canvas>(); // Liste des canvases trouvés
-    private HashSet<Canvas> temporarilyExcluded = new HashSet<Canvas>();
+    [SerializeField] private List<IgnoredCanvas> ignoredCanvases = new();
+    private List<Canvas> allCanvases = new();
+    private Dictionary<Canvas, bool> savedCanvasStates = new();
 
+    // -------------------- FIND --------------------
+
+    /// <summary>
+    /// Trouve tous les canvases actifs dans la scène (enabled + actifs dans la hiérarchie)
+    /// </summary>
     public void FindAllActiveCanvases()
     {
         Canvas[] canvases = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
@@ -22,80 +26,76 @@ public class CanvasActivator : MonoBehaviour
 
         foreach (Canvas canvas in canvases)
         {
+            // On ne garde que les canvases *actuellement actifs et visibles*
             if (canvas != null && canvas.enabled && canvas.gameObject.activeInHierarchy && !ShouldIgnoreCanvas(canvas))
             {
                 allCanvases.Add(canvas);
             }
         }
+
+        Debug.Log($"[CanvasActivator] Found {allCanvases.Count} active canvases.");
     }
 
-    /// <summary>
-    /// Vérifie si un canvas ou ses enfants doivent être ignorés.
-    /// </summary>
     private bool ShouldIgnoreCanvas(Canvas canvas)
     {
         foreach (var ignored in ignoredCanvases)
         {
             if (canvas == ignored.canvas)
-            {
-                return true; // Ignorer ce canvas
-            }
-
+                return true;
             if (ignored.ignoreChildren && IsChildOf(canvas.transform, ignored.canvas.transform))
-            {
-                return true; // Ignorer les enfants de ce canvas
-            }
+                return true;
         }
         return false;
     }
 
-    /// <summary>
-    /// Vérifie si un Transform est enfant d'un autre Transform.
-    /// </summary>
     private bool IsChildOf(Transform child, Transform parent)
     {
         while (child != null)
         {
             if (child == parent)
-            {
                 return true;
-            }
             child = child.parent;
         }
         return false;
     }
 
+    // -------------------- DISABLE / RESTORE --------------------
+
     /// <summary>
-    /// Désactive tous les canvases sauf ceux à ignorer.
+    /// Désactive seulement les canvases actuellement actifs, tout en sauvegardant leur état.
     /// </summary>
     public void DisableAllCanvasesExceptIgnored()
     {
+        savedCanvasStates.Clear();
+
         foreach (Canvas canvas in allCanvases)
         {
-            canvas.enabled = false;
+            if (canvas == null) continue;
+
+            savedCanvasStates[canvas] = canvas.enabled; // sauvegarde état
+            if (canvas.enabled)
+                canvas.enabled = false;
         }
-    }
-    public void ExcludeCanvasTemporarily(Canvas canvas)
-    {
-        if (canvas != null)
-            temporarilyExcluded.Add(canvas);
-    }
-    public void ClearTemporaryExclusions()
-    {
-        temporarilyExcluded.Clear();
+
+        Debug.Log($"[CanvasActivator] Disabled {savedCanvasStates.Count} canvases (states saved).");
     }
 
     /// <summary>
-    /// Active tous les canvases trouvés.
+    /// Réactive uniquement les canvases qui étaient actifs avant désactivation.
     /// </summary>
-    public void EnableAllCanvases()
+    public void RestoreCanvasStates()
     {
-        foreach (Canvas canvas in allCanvases)
+        foreach (var pair in savedCanvasStates)
         {
-            if (canvas != null && !temporarilyExcluded.Contains(canvas))
-            {
+            Canvas canvas = pair.Key;
+            bool wasEnabled = pair.Value;
+
+            if (canvas != null && wasEnabled)
                 canvas.enabled = true;
-            }
         }
+
+        Debug.Log("[CanvasActivator] Restored previous canvas states.");
     }
+
+
 }

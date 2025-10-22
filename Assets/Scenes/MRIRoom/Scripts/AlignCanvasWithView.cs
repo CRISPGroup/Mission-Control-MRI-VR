@@ -1,26 +1,63 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AlignCanvasWithView : MonoBehaviour
 {
-    [SerializeField] private Transform vrCamera; // La caméra ou le casque VR
-    [SerializeField] private Transform canvasTransform; // Le Transform du Canvas à aligner
-    [SerializeField] private float smoothSpeed = 5f; // Vitesse de glissement
-    [SerializeField] private float distanceFromCamera = 2f; // Distance du Canvas par rapport à la caméra
-    [SerializeField] private Vector3 offset = Vector3.zero; // Décalage personnalisé (optionnel)
+    [SerializeField] private Transform vrCamera;
+    [SerializeField] private Transform canvasTransform;
+    [SerializeField] private float smoothSpeed = 5f;
+    [SerializeField] private float distanceFromCamera = 2f;
+    [SerializeField] private Vector3 offset = Vector3.zero;
+    [SerializeField] private float maxTilt = 70f; // limite d’inclinaison pour éviter le retournement
+    [SerializeField] bool useSmartPositioning = false;
 
     private Vector3 targetPosition;
 
     void Update()
     {
-        if (vrCamera == null || canvasTransform == null || !canvasTransform.gameObject.GetComponent<Canvas>().enabled) return;
+        if (!vrCamera || !canvasTransform || !canvasTransform.gameObject.activeInHierarchy) return;
 
-        targetPosition = vrCamera.position + vrCamera.forward * distanceFromCamera + offset;
+        if (useSmartPositioning)
+        {
+            // --- POSITION ---
+            targetPosition = vrCamera.position + vrCamera.forward * distanceFromCamera + offset;
+            canvasTransform.position = Vector3.Lerp(
+                canvasTransform.position,
+                targetPosition,
+                Time.unscaledDeltaTime * smoothSpeed
+            );
 
-        canvasTransform.position = Vector3.Lerp(canvasTransform.position, targetPosition, Time.unscaledDeltaTime * smoothSpeed);
+            // --- ROTATION ---
+            Vector3 euler = vrCamera.eulerAngles;
 
-        Quaternion flatRotation = Quaternion.Euler(0f, vrCamera.eulerAngles.y, 0f);
-        canvasTransform.rotation = Quaternion.Slerp(canvasTransform.rotation, flatRotation, Time.unscaledDeltaTime * smoothSpeed);
+            // Normaliser les angles
+            euler.x = NormalizeAngle(euler.x);
+            euler.x = Mathf.Clamp(euler.x, -maxTilt, maxTilt);
+
+            // Ne pas toucher au roll (z)
+            // Garder le yaw et le roll naturels de la caméra
+            Quaternion limitedPitch = Quaternion.Euler(euler.x, vrCamera.eulerAngles.y, vrCamera.eulerAngles.z);
+
+            canvasTransform.rotation = Quaternion.Slerp(
+                canvasTransform.rotation,
+                limitedPitch,
+                Time.unscaledDeltaTime * smoothSpeed
+            );
+        }
+
+        else
+        {
+            targetPosition = vrCamera.position + vrCamera.forward * distanceFromCamera + offset;
+
+            canvasTransform.position = Vector3.Lerp(canvasTransform.position, targetPosition, Time.unscaledDeltaTime * smoothSpeed);
+
+            Quaternion targetRotation = vrCamera.rotation;
+            canvasTransform.rotation = Quaternion.Slerp(canvasTransform.rotation, targetRotation, Time.unscaledDeltaTime * smoothSpeed);
+        }
+    }
+
+    private float NormalizeAngle(float angle)
+    {
+        if (angle > 180f) angle -= 360f;
+        return angle;
     }
 }

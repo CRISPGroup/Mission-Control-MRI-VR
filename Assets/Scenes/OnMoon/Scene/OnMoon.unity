@@ -5889,6 +5889,7 @@ Transform:
   - {fileID: 1782700912}
   - {fileID: 1648730322}
   - {fileID: 675233956}
+  - {fileID: 965862110}
   m_Father: {fileID: 1495725474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &118740009
@@ -8233,7 +8234,7 @@ RenderTexture:
   m_TextureSettings:
     serializedVersion: 2
     m_FilterMode: 1
-    m_Aniso: 1
+    m_Aniso: 0
     m_MipBias: 0
     m_WrapU: 1
     m_WrapV: 1
@@ -8386,7 +8387,7 @@ RenderTexture:
   m_TextureSettings:
     serializedVersion: 2
     m_FilterMode: 1
-    m_Aniso: 1
+    m_Aniso: 0
     m_MipBias: 0
     m_WrapU: 1
     m_WrapV: 1
@@ -17049,13 +17050,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965862109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 59272917}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 113141088}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &990636162 stripped
 RectTransform:
@@ -17588,7 +17589,7 @@ RenderTexture:
   m_TextureSettings:
     serializedVersion: 2
     m_FilterMode: 1
-    m_Aniso: 1
+    m_Aniso: 0
     m_MipBias: 0
     m_WrapU: 1
     m_WrapV: 1
@@ -21866,8 +21867,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318844329}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8.04}
+  m_LocalRotation: {x: -0, y: 0.995562, z: -0, w: -0.094108224}
+  m_LocalPosition: {x: 0, y: 0, z: 20.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21876,7 +21877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.68, y: 4.05}
+  m_AnchoredPosition: {x: 19.9, y: 5.38}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318844332
@@ -21978,6 +21979,8 @@ MonoBehaviour:
   smoothSpeed: 1
   distanceFromCamera: 1.5
   offset: {x: 0, y: -0.15, z: 0}
+  verticalFollowFactor: 1
+  maxTilt: 70
 --- !u!1 &1324393300
 GameObject:
   m_ObjectHideFlags: 0
@@ -35421,7 +35424,7 @@ RenderTexture:
   m_TextureSettings:
     serializedVersion: 2
     m_FilterMode: 1
-    m_Aniso: 1
+    m_Aniso: 0
     m_MipBias: 0
     m_WrapU: 1
     m_WrapV: 1
@@ -36760,4 +36763,3 @@ SceneRoots:
   - {fileID: 1067347521}
   - {fileID: 1960809149}
   - {fileID: 167528073}
-  - {fileID: 965862110}

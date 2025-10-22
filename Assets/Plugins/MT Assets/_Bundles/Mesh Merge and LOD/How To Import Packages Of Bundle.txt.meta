@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8b58d17c071cf1d43ae0d36d9cbb4066
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233204
+  packageName: Mesh Merger and LOD MT - Bundle
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/MT Assets/_Bundles/Mesh Merge and LOD/How To Import Packages
+    Of Bundle.txt
+  uploadId: 700887
