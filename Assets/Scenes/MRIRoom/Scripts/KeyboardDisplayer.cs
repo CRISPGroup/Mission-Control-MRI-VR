@@ -68,7 +68,13 @@ public class KeyboardDisplayer : MonoBehaviour
         {
             inputField.text = keyboard.InputField.text;
             inputField.ForceLabelUpdate();
-            inputField.DeactivateInputField();
+
+            // Supprimer cette ligne :
+            // inputField.DeactivateInputField();
+
+            // Réactiver le focus pour permettre le clic et repositionnement du curseur
+            inputField.ActivateInputField();
+            inputField.Select();
         }
     }
 
@@ -107,8 +113,6 @@ public class KeyboardDisplayer : MonoBehaviour
     private void SetCaretVisibility(bool visible)
     {
         inputField.customCaretColor = true;
-        Color caretColor = inputField.caretColor;
-        caretColor.a = visible ? 1f : 0f;
-        inputField.caretColor = caretColor;
+        inputField.caretColor = visible ? Color.white : Color.clear;
     }
 }

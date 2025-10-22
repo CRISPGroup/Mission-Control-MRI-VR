@@ -1870,8 +1870,7 @@ MonoBehaviour:
   smoothSpeed: 2
   distanceFromCamera: 1.3
   offset: {x: 0, y: 0, z: 0}
-  maxTilt: 70
-  useSmartPositioning: 1
+  useHorizontalRotationOnly: 1
 --- !u!1 &41855492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,8 +5100,7 @@ MonoBehaviour:
   smoothSpeed: 5
   distanceFromCamera: 0.5
   offset: {x: 0, y: 0, z: 0}
-  maxTilt: 70
-  useSmartPositioning: 0
+  useHorizontalRotationOnly: 0
 --- !u!114 &71925391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251576,6 +251574,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 39946342}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &506807054
 GameObject:
   m_ObjectHideFlags: 0
@@ -283647,7 +283657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1285126781
 Transform:
   m_ObjectHideFlags: 0
@@ -314669,77 +314679,19 @@ MonoBehaviour:
     Event:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6971536998143862218}
-          m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
-          m_MethodName: SetFadeDuration
-          m_Mode: 4
+        - m_Target: {fileID: 8294255383234657628}
+          m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+          m_MethodName: LoadSceneByName
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 6971536998143862218}
-          m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
+            m_FloatArgument: 30
+            m_StringArgument: OnMoon
             m_BoolArgument: 1
           m_CallState: 2
     Tag: next-scene
-    GotoTag: 
-  - Type: 0
-    WaitTime: 1
-    Triggers:
-    - Trigger: audio_completed
-      Tag: b5a47
-    TriggerAND: 0
-    Event:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8294255383234657628}
-          m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-          m_MethodName: LoadSceneByName
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 30
-            m_StringArgument: OnMoon
-            m_BoolArgument: 1
-          m_CallState: 2
-    Tag: 
-    GotoTag: 
-  - Type: 2
-    WaitTime: 3
-    Triggers:
-    - Trigger: audio_completed
-      Tag: b5a47
-    TriggerAND: 0
-    Event:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 8294255383234657628}
-          m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-          m_MethodName: LoadSceneByName
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 30
-            m_StringArgument: OnMoon
-            m_BoolArgument: 1
-          m_CallState: 2
-    Tag: next-scene2
     GotoTag: 
   SequenceComplete:
     m_PersistentCalls:
@@ -329349,8 +329301,7 @@ MonoBehaviour:
   smoothSpeed: 2
   distanceFromCamera: 1.3
   offset: {x: 0, y: 0, z: 0}
-  maxTilt: 70
-  useSmartPositioning: 1
+  useHorizontalRotationOnly: 1
 --- !u!114 &2087603077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343391,6 +343342,7 @@ PrefabInstance:
     - {fileID: 7413834098733102771, guid: 7174a54e1a1d7db4eab44ca155ee8997, type: 3}
     - {fileID: 8223044736319331705, guid: 7174a54e1a1d7db4eab44ca155ee8997, type: 3}
     - {fileID: 4149116930342798592, guid: 7174a54e1a1d7db4eab44ca155ee8997, type: 3}
+    - {fileID: 369470316966086927, guid: 7174a54e1a1d7db4eab44ca155ee8997, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7634010826667087310, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}

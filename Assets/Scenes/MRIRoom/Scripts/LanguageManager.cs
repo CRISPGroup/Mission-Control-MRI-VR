@@ -17,7 +17,7 @@ public class LanguageManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(transform.root.gameObject); // Optional, if you want it to persist across scenes
+        //DontDestroyOnLoad(transform.root.gameObject); // Optional, if you want it to persist across scenes
 
         string savedLang = PlayerPrefs.GetString("Language", "English");
         SetLanguage(savedLang);

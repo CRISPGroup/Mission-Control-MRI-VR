@@ -87,6 +87,8 @@ public class FadeScreen : MonoBehaviour
 
     public void SetFadeDuration(float duration) => fadeDuration = Mathf.Max(0f, duration);
 
+    public float GetFadeDuration() => fadeDuration;
+
     public void Fade(float alphaIn, float alphaOut)
     {
         if (fadeRoutine != null)

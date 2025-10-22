@@ -91,7 +91,7 @@ public class GraphicsImprover : MonoBehaviour
             case HeadsetType.Quest3:
                 return 1.2f;
             default:
-                return 1.0f;
+                return 1.1f;
         }
     }
 
