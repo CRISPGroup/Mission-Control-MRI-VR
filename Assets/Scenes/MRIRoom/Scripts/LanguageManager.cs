@@ -1,15 +1,23 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class LanguageManager : MonoBehaviour
 {
     public enum Lang { English, French }
 
     public static LanguageManager Instance { get; private set; }
-    public Lang CurrentLang { get; private set; } = Lang.English;
 
-    private void Awake()
+    [SerializeField] private Lang currentLangInspector = Lang.English;
+    public Lang CurrentLang
     {
-        // Singleton pattern
+        get => currentLangInspector;
+        private set => currentLangInspector = value;
+    }
+
+    private bool isInitialized = false;
+
+    public void Init()
+    {
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -17,30 +25,54 @@ public class LanguageManager : MonoBehaviour
         }
 
         Instance = this;
-        //DontDestroyOnLoad(transform.root.gameObject); // Optional, if you want it to persist across scenes
 
-        string savedLang = PlayerPrefs.GetString("Language", "English");
-        SetLanguage(savedLang);
+        // Si déjà initialisé, ne rien refaire
+        if (isInitialized) return;
+
+        // Si PlayerPrefs contient déjà une langue: on la charge
+        string savedLang = PlayerPrefs.GetString("Language", "");
+        if (!string.IsNullOrEmpty(savedLang))
+        {
+            ApplyLanguage(savedLang);
+            Debug.Log($"[LanguageManager] Loaded saved language: {CurrentLang}");
+        }
+
+        isInitialized = true;
     }
 
     public void SetLanguage(string newLang)
     {
-        if (newLang == "French")
-        {
-            CurrentLang = Lang.French;
-        }
-        else if (newLang == "English")
-        {
-            CurrentLang = Lang.English;
-        }
-        else
-        {
-            Debug.LogWarning($"Unsupported language: {newLang}. Defaulting to English.");
-            CurrentLang = Lang.English;
-        }
+        // Récupère qui a déclenché le changement (utile pour debug)
+        string caller = EventSystem.current?.currentSelectedGameObject?.name ?? "Unknown";
 
+        ApplyLanguage(newLang);
         PlayerPrefs.SetString("Language", newLang);
         PlayerPrefs.Save();
-        //Debug.Log($"Language set to: {CurrentLang}");
+
+        Debug.Log($"[LanguageManager] Language set to: {CurrentLang} by {caller}");
     }
+
+    private void ApplyLanguage(string newLang)
+    {
+        if (newLang == "French")
+            CurrentLang = Lang.French;
+        else if (newLang == "English")
+            CurrentLang = Lang.English;
+        else
+        {
+            Debug.LogWarning($"[LanguageManager] Unsupported language: {newLang}. Defaulting to English.");
+            CurrentLang = Lang.English;
+        }
+    }
+
+#if UNITY_EDITOR
+    // Si on change la langue manuellement dans l’inspector
+    private void OnValidate()
+    {
+        if (Application.isPlaying && Instance == this)
+        {
+            SetLanguage(CurrentLang.ToString());
+        }
+    }
+#endif
 }

@@ -28,6 +28,8 @@ public class CountdownAudioPlayer : MonoBehaviour
 
     private bool holdRoutine = false;
 
+    private List<int> scheduledIndexes = new List<int>();
+    private int scheduledPointer = 0;
 
     bool playing;
 
@@ -307,33 +309,56 @@ public class CountdownAudioPlayer : MonoBehaviour
 
     public void StartIndexIncrementCountdown()
     {
-
         if (moonMovementScript == null)
         {
             Debug.LogError("MoonMovement script not assigned or incorrect type.");
             return;
         }
 
-        /*float totalDuration = moonMovementScript.GetDuration();
-
+        tripDuration = moonMovementScript.GetDuration();
         var clips = GetCurrentAudioClips();
 
-        if (clips == null || clips.Count == 0 || totalDuration <= 0f)
+        if (clips == null || clips.Count == 0)
         {
-            Debug.LogWarning("Invalid audio clip list or duration.");
+            Debug.LogWarning("Invalid audio clip list.");
             return;
         }
 
-        autoIncrementInterval = totalDuration / (clips.Count + 1);
-        */
-        autoIncrementInterval = 30; //Change if need to be automatically set
-        nextAutoIncrementTime = Time.time + autoIncrementInterval*2-2;
-        enableAutoIncrement = true;
-        tripDuration = moonMovementScript.GetDuration();
-        currentClipIndex = 0;
+        // --- Sélection des index selon la durée ---
+        scheduledIndexes.Clear();
 
-        //Debug.Log($"[AutoIncrement] Will increment every {autoIncrementInterval} seconds");
+        if (Mathf.Approximately(tripDuration, 120f))
+        {
+            scheduledIndexes.AddRange(new int[] { 2, 4, 6 });
+        }
+        else if (Mathf.Approximately(tripDuration, 180f))
+        {
+            scheduledIndexes.AddRange(new int[] { 0, 2, 4, 6, 8 });
+        }
+        else if (Mathf.Approximately(tripDuration, 240f))
+        {
+            scheduledIndexes.AddRange(new int[] { 0, 2, 3, 4, 5, 6, 8 });
+        }
+        else if (tripDuration >= 300f)
+        {
+            // 5 minutes ou plus: tous les clips une seule fois
+            for (int i = 0; i < clips.Count; i++)
+                scheduledIndexes.Add(i);
+        }
+        else
+        {
+            Debug.LogWarning($"[AutoIncrement] Unexpected duration: {tripDuration}");
+        }
+
+        // --- Réglage de l'incrément ---
+        autoIncrementInterval = 30f; // Toutes les 30 secondes
+        nextAutoIncrementTime = Time.time + autoIncrementInterval;
+        currentClipIndex = 0;
+        enableAutoIncrement = true;
+
+        Debug.Log($"[AutoIncrement] Trip={tripDuration}s | Scheduled={scheduledIndexes.Count} clips | Every {autoIncrementInterval}s");
     }
+
 
     public void StopIndexIncrementCountdown()
     {
@@ -356,31 +381,25 @@ public class CountdownAudioPlayer : MonoBehaviour
 
         var clips = GetCurrentAudioClips();
 
-        // Gestion de l'incrément automatique
-        if (enableAutoIncrement && Time.time >= nextAutoIncrementTime && currentClipIndex < clips.Count)
+        if (enableAutoIncrement && scheduledPointer < scheduledIndexes.Count)
         {
+            // Déclenche le changement d’index 1s avant le moment exact
+            while (Time.time >= nextAutoIncrementTime - 1f && scheduledPointer < scheduledIndexes.Count)
+            {
+                int clipIndex = scheduledIndexes[scheduledPointer];
+                this.currentClipIndex = clipIndex; // autre script lira bien la bonne valeur
 
-            if (tripDuration == 120f && (currentClipIndex == 0 || currentClipIndex == 4))
-            {
-                currentClipIndex = currentClipIndex + 2;
-            }
+                Debug.Log($"[AutoIncrement]: Set currentClipIndex = {clipIndex} (scheduledPointer {scheduledPointer}) at {Time.time - Time.timeSinceLevelLoad:F1}s");
 
-            else if (tripDuration == 180f && (currentClipIndex == 0 || currentClipIndex == 2 || currentClipIndex == 4 || currentClipIndex == 6))
-            {
-                currentClipIndex = currentClipIndex+2;
+                // On avance le pointeur pour la prochaine itération
+                scheduledPointer++;
+                nextAutoIncrementTime += autoIncrementInterval;
             }
-            else if (tripDuration == 240f && currentClipIndex == 0 || currentClipIndex == 6)
-            {
-                currentClipIndex = currentClipIndex + 2;
-            }
-            else
-                currentClipIndex++;
-            //Debug.Log($"[AutoIncrement] currentClipIndex incremented to {currentClipIndex}");
-            nextAutoIncrementTime += autoIncrementInterval;
         }
 
-        if (enableAutoIncrement && currentClipIndex >= clips.Count)
+        if (enableAutoIncrement && scheduledPointer >= scheduledIndexes.Count)
         {
+            Debug.Log("[AutoIncrement] All scheduled indexes reached.");
             StopIndexIncrementCountdown();
         }
     }

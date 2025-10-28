@@ -5,8 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Displays and manages a <see cref="NonNativeKeyboard"/> for a <see cref="TMP_InputField"/> in XR.
-/// Handles keyboard positioning, text synchronization, and focus behavior to ensure text is retained
-/// after pressing Enter.
+/// Handles keyboard positioning, text synchronization, focus, and automatic closing when switching inputs.
 /// </summary>
 public class KeyboardDisplayer : MonoBehaviour
 {
@@ -24,9 +23,22 @@ public class KeyboardDisplayer : MonoBehaviour
     [Tooltip("Vertical offset relative to the position source.")]
     [SerializeField] private float verticalOffset = -0.5f;
 
-    /// <summary>
-    /// Registers the keyboard open handler when the input field is selected.
-    /// </summary>
+    // --- Static event for global management ---
+    public static event Action<KeyboardDisplayer> OnKeyboardOpenedGlobal;
+
+    private bool isKeyboardOpen = false;
+    private NonNativeKeyboard keyboard;
+
+    private void OnEnable()
+    {
+        OnKeyboardOpenedGlobal += HandleOtherKeyboardOpened;
+    }
+
+    private void OnDisable()
+    {
+        OnKeyboardOpenedGlobal -= HandleOtherKeyboardOpened;
+    }
+
     private void Start()
     {
         if (inputField == null)
@@ -38,13 +50,12 @@ public class KeyboardDisplayer : MonoBehaviour
         inputField.onSelect.AddListener(_ => OpenKeyboard());
     }
 
-    /// <summary>
-    /// Opens the <see cref="NonNativeKeyboard"/>, attaches event handlers,
-    /// and positions the keyboard relative to the specified <see cref="positionSource"/>.
-    /// </summary>
     private void OpenKeyboard()
     {
-        var keyboard = NonNativeKeyboard.Instance;
+        // Close all others
+        OnKeyboardOpenedGlobal?.Invoke(this);
+
+        keyboard = NonNativeKeyboard.Instance;
         keyboard.InputField = inputField;
         keyboard.PresentKeyboard(inputField.text);
 
@@ -53,66 +64,65 @@ public class KeyboardDisplayer : MonoBehaviour
 
         PositionKeyboard(keyboard);
         SetCaretVisibility(true);
+        isKeyboardOpen = true;
     }
 
-    /// <summary>
-    /// Handles the keyboard text submission event.
-    /// Updates the associated <see cref="TMP_InputField"/> with the submitted text
-    /// and ensures the text remains visible after pressing Enter.
-    /// </summary>
-    /// <param name="sender">The keyboard instance that raised the event.</param>
-    /// <param name="e">Event data (unused).</param>
     private void HandleTextSubmitted(object sender, EventArgs e)
     {
-        if (sender is NonNativeKeyboard keyboard && keyboard.InputField != null)
+        if (sender is NonNativeKeyboard k && k.InputField != null)
         {
-            inputField.text = keyboard.InputField.text;
+            inputField.text = k.InputField.text;
             inputField.ForceLabelUpdate();
-
-            // Supprimer cette ligne :
-            // inputField.DeactivateInputField();
-
-            // Réactiver le focus pour permettre le clic et repositionnement du curseur
             inputField.ActivateInputField();
             inputField.Select();
         }
+
+        CloseKeyboard(); // behave like Enter -> close
     }
 
-    /// <summary>
-    /// Handles keyboard closure events by hiding the caret and cleaning up event subscriptions.
-    /// </summary>
-    /// <param name="sender">The keyboard instance that raised the event.</param>
-    /// <param name="e">Event data (unused).</param>
     private void HandleKeyboardClosed(object sender, EventArgs e)
     {
         SetCaretVisibility(false);
+        isKeyboardOpen = false;
 
-        var keyboard = NonNativeKeyboard.Instance;
-        keyboard.OnClosed -= HandleKeyboardClosed;
-        keyboard.OnTextSubmitted -= HandleTextSubmitted;
+        if (keyboard != null)
+        {
+            keyboard.OnClosed -= HandleKeyboardClosed;
+            keyboard.OnTextSubmitted -= HandleTextSubmitted;
+        }
     }
 
-    /// <summary>
-    /// Positions the keyboard relative to the <see cref="positionSource"/> transform.
-    /// </summary>
-    /// <param name="keyboard">The <see cref="NonNativeKeyboard"/> instance to reposition.</param>
-    private void PositionKeyboard(NonNativeKeyboard keyboard)
+    private void HandleOtherKeyboardOpened(KeyboardDisplayer sender)
+    {
+        if (sender != this && isKeyboardOpen)
+        {
+            Debug.Log("[KeyboardDisplayer] Another input was selected, closing current keyboard.");
+            CloseKeyboard();
+        }
+    }
+
+    private void CloseKeyboard()
+    {
+        if (!isKeyboardOpen || keyboard == null)
+            return;
+
+        keyboard.Close();
+        isKeyboardOpen = false;
+    }
+
+    private void PositionKeyboard(NonNativeKeyboard kbd)
     {
         Vector3 direction = positionSource.forward;
         direction.y = 0f;
         direction.Normalize();
 
         Vector3 targetPosition = positionSource.position + direction * distance + Vector3.up * verticalOffset;
-        keyboard.RepositionKeyboard(targetPosition);
+        kbd.RepositionKeyboard(targetPosition);
     }
 
-    /// <summary>
-    /// Toggles the visibility of the text caret by adjusting its alpha channel.
-    /// </summary>
-    /// <param name="visible">True to make the caret visible, false to hide it.</param>
     private void SetCaretVisibility(bool visible)
     {
         inputField.customCaretColor = true;
-        inputField.caretColor = visible ? Color.white : Color.clear;
+        inputField.caretColor = visible ? Color.black : Color.white;
     }
 }

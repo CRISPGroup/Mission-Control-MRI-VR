@@ -8129,6 +8129,18 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 167528073}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &167528077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4339749973354652888, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+    type: 3}
+  m_PrefabInstance: {fileID: 167528073}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db2595a04bcfbf4ead332a0da9b274c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &167528080 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1885937355940472684, guid: 7174a54e1a1d7db4eab44ca155ee8997,
@@ -22552,6 +22564,18 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 167528077}
+          m_TargetAssemblyTypeName: LanguageManager, Assembly-CSharp
+          m_MethodName: Init
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
