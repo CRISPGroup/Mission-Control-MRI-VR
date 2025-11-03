@@ -1,6 +1,10 @@
 using UnityEngine;
 
-[ExecuteAlways] // Pour que ça marche aussi dans l’éditeur sans Play mode
+/// <summary>
+/// Ensures the attached camera maintains a specified rendering depth,
+/// updating automatically both in Play mode and the Unity Editor.
+/// </summary>
+[ExecuteAlways] // Runs in edit mode and play mode
 [RequireComponent(typeof(Camera))]
 public class CameraDepthSetter : MonoBehaviour
 {
@@ -10,17 +14,27 @@ public class CameraDepthSetter : MonoBehaviour
 
     private Camera cam;
 
+    /// <summary>
+    /// Called when the script is loaded or a value is changed in the Inspector.
+    /// Ensures the camera depth is updated in the Editor.
+    /// </summary>
     void OnValidate()
     {
         UpdateCameraDepth();
     }
 
+    /// <summary>
+    /// Initializes the camera reference and applies the configured depth.
+    /// </summary>
     void Awake()
     {
         cam = GetComponent<Camera>();
         UpdateCameraDepth();
     }
 
+    /// <summary>
+    /// Updates the camera's rendering depth based on the serialized value.
+    /// </summary>
     void UpdateCameraDepth()
     {
         if (cam == null) cam = GetComponent<Camera>();

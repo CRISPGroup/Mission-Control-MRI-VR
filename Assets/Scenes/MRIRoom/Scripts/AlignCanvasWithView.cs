@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Keeps a world-space canvas facing the VR camera at a fixed distance,
+/// with optional horizontal-only rotation and smooth interpolation.
+/// </summary>
 public class AlignCanvasWithView : MonoBehaviour
 {
-    [SerializeField] private Transform vrCamera; // La caméra ou le casque VR
-    [SerializeField] private Transform canvasTransform; // Le Transform du Canvas à aligner
-    [SerializeField] private float smoothSpeed = 5f; // Vitesse de glissement
-    [SerializeField] private float distanceFromCamera = 2f; // Distance du Canvas par rapport à la caméra
-    [SerializeField] private Vector3 offset = Vector3.zero; // Décalage personnalisé (optionnel)
-    [SerializeField] private bool useHorizontalRotationOnly = false; // Utiliser une rotation fixe (optionnel)
+    [SerializeField] private Transform vrCamera; // Reference to the VR camera
+    [SerializeField] private Transform canvasTransform; // Canvas to align
+    [SerializeField] private float smoothSpeed = 5f; // Lerp speed
+    [SerializeField] private float distanceFromCamera = 2f; // Distance from camera
+    [SerializeField] private Vector3 offset = Vector3.zero; // Position offset
+    [SerializeField] private bool useHorizontalRotationOnly = false; // Ignore vertical rotation
 
     private Vector3 targetPosition;
 
+    /// <summary>
+    /// Updates canvas position and rotation each frame to follow the VR camera smoothly.
+    /// </summary>
     void Update()
     {
         if (vrCamera == null || canvasTransform == null || !canvasTransform.gameObject.GetComponent<Canvas>().enabled) return;
