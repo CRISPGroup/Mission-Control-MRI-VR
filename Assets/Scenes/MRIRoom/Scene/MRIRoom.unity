@@ -3193,6 +3193,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 146120, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 146124, guid: c4e389e44d96da64ea974ab237ce1a9a, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -340136,6 +340140,76 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowVariantCollection
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7141160727413177327}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7141160727413177327}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PerformPauseAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPauser, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuPauser, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onPaused.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231710349519462784, guid: 7174a54e1a1d7db4eab44ca155ee8997,
+        type: 3}
+      propertyPath: onResumed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6235741133340209285, guid: 7174a54e1a1d7db4eab44ca155ee8997,
         type: 3}

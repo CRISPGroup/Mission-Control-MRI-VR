@@ -5,12 +5,16 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.XR;
 using UnityEngine.XR.Management;
 using UnityEngine.XR.OpenXR.Features.Meta;
+using UnityEngine.Events;
 
 public class GraphicsImprover : MonoBehaviour
 {
     public enum HeadsetType { Unknown, Quest1, Quest2, Quest3, QuestPro }
     private XRDisplaySubsystem display;
 
+    [Header("On Pause Events")]
+    public UnityEvent onPaused;
+    public UnityEvent onResumed;
 
     void Awake()
     {
@@ -104,6 +108,17 @@ public class GraphicsImprover : MonoBehaviour
     {
         var urp = (UniversalRenderPipelineAsset)GraphicsSettings.currentRenderPipeline;
         urp.renderScale = 1f;
+    }
+    void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus)
+        {
+            onPaused?.Invoke();
+        }
+        else
+        {
+            onResumed?.Invoke();
+        }
     }
 
     void OnApplicationQuit()

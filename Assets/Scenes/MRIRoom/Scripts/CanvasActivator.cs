@@ -1,23 +1,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Manages activation and deactivation of all canvases in the current scene except specified ones,
+/// with support for ignored canvases and state restoration.
+/// Useful for temporarily disabling all active UI elements except specified ones (e.g., during a pause).
+/// </summary>
 public class CanvasActivator : MonoBehaviour
 {
+    /// <summary>
+    /// Represents a canvas to ignore during activation/deactivation,
+    /// optionally including its child canvases.
+    /// </summary>
     [System.Serializable]
     public class IgnoredCanvas
     {
+        [Tooltip("Canvas to exclude from activation/deactivation.")]
         public Canvas canvas;
+
+        [Tooltip("If true, also ignores all child canvases of this one.")]
         public bool ignoreChildren;
     }
 
+    [Header("Ignored Canvases")]
+    [Tooltip("List of canvases that will remain unaffected by activation/deactivation.")]
     [SerializeField] private List<IgnoredCanvas> ignoredCanvases = new();
+
     private List<Canvas> allCanvases = new();
     private Dictionary<Canvas, bool> savedCanvasStates = new();
 
     // -------------------- FIND --------------------
 
     /// <summary>
-    /// Trouve tous les canvases actifs dans la scène (enabled + actifs dans la hiérarchie)
+    /// Finds all currently active canvases in the scene (enabled and active in hierarchy),
+    /// excluding those specified in the ignored list.
     /// </summary>
     public void FindAllActiveCanvases()
     {
@@ -26,16 +42,18 @@ public class CanvasActivator : MonoBehaviour
 
         foreach (Canvas canvas in canvases)
         {
-            // On ne garde que les canvases *actuellement actifs et visibles*
             if (canvas != null && canvas.enabled && canvas.gameObject.activeInHierarchy && !ShouldIgnoreCanvas(canvas))
             {
                 allCanvases.Add(canvas);
             }
         }
 
-        Debug.Log($"[CanvasActivator] Found {allCanvases.Count} active canvases.");
+        //Debug.Log($"[CanvasActivator] Found {allCanvases.Count} active canvases.");
     }
 
+    /// <summary>
+    /// Determines whether a canvas should be ignored based on the ignore list and hierarchy rules.
+    /// </summary>
     private bool ShouldIgnoreCanvas(Canvas canvas)
     {
         foreach (var ignored in ignoredCanvases)
@@ -48,6 +66,9 @@ public class CanvasActivator : MonoBehaviour
         return false;
     }
 
+    /// <summary>
+    /// Checks if a given transform is a child of another transform.
+    /// </summary>
     private bool IsChildOf(Transform child, Transform parent)
     {
         while (child != null)
@@ -62,7 +83,8 @@ public class CanvasActivator : MonoBehaviour
     // -------------------- DISABLE / RESTORE --------------------
 
     /// <summary>
-    /// Désactive seulement les canvases actuellement actifs, tout en sauvegardant leur état.
+    /// Disables all currently active canvases except the ignored ones,
+    /// saving their previous enabled state for later restoration.
     /// </summary>
     public void DisableAllCanvasesExceptIgnored()
     {
@@ -72,16 +94,16 @@ public class CanvasActivator : MonoBehaviour
         {
             if (canvas == null) continue;
 
-            savedCanvasStates[canvas] = canvas.enabled; // sauvegarde état
+            savedCanvasStates[canvas] = canvas.enabled;
             if (canvas.enabled)
                 canvas.enabled = false;
         }
 
-        Debug.Log($"[CanvasActivator] Disabled {savedCanvasStates.Count} canvases (states saved).");
+        //Debug.Log($"[CanvasActivator] Disabled {savedCanvasStates.Count} canvases (states saved).");
     }
 
     /// <summary>
-    /// Réactive uniquement les canvases qui étaient actifs avant désactivation.
+    /// Restores the enabled state of all canvases previously disabled by <see cref="DisableAllCanvasesExceptIgnored"/>.
     /// </summary>
     public void RestoreCanvasStates()
     {
@@ -94,8 +116,6 @@ public class CanvasActivator : MonoBehaviour
                 canvas.enabled = true;
         }
 
-        Debug.Log("[CanvasActivator] Restored previous canvas states.");
+        //Debug.Log("[CanvasActivator] Restored previous canvas states.");
     }
-
-
 }

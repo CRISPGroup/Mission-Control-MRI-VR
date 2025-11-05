@@ -3,8 +3,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 /// <summary>
-/// Replace le caret d’un TMP_InputField exactement à l’endroit du clic.
-/// Compatible VR / UI (pas besoin de caméra).
+/// Positions the caret of a <see cref="TMP_InputField"/> exactly at the user's click location.
+/// Designed for VR and UI contexts — does not require a camera reference.
+/// Prevents full text selection on focus and disables soft keyboard display.
 /// </summary>
 [RequireComponent(typeof(TMP_InputField))]
 public class CaretHandler : MonoBehaviour, IPointerDownHandler
@@ -12,25 +13,32 @@ public class CaretHandler : MonoBehaviour, IPointerDownHandler
     private TMP_InputField inputField;
     private TMP_Text textComponent;
 
+    /// <summary>
+    /// Initializes references and configures the input field to avoid full selection and unwanted keyboard display.
+    /// </summary>
     private void Awake()
     {
         inputField = GetComponent<TMP_InputField>();
         textComponent = inputField.textComponent;
 
-        // Empêche la sélection complète du texte
         inputField.onFocusSelectAll = false;
         inputField.shouldHideSoftKeyboard = true;
         inputField.shouldHideMobileInput = true;
     }
 
+    /// <summary>
+    /// Called when the user clicks or taps on the text field.
+    /// Moves the caret to the closest character to the click position and consumes the event.
+    /// </summary>
+    /// <param name="eventData">Pointer event data containing click position.</param>
     public void OnPointerDown(PointerEventData eventData)
     {
         inputField.ActivateInputField();
 
-        // Force la mise à jour des infos de texte avant calcul
+        // Ensure text mesh is up to date before calculating caret position
         textComponent.ForceMeshUpdate();
 
-        // Position du clic dans le repère local du texte
+        // Convert click position to local coordinates relative to the text
         if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(
             textComponent.rectTransform, eventData.position, eventData.pressEventCamera, out Vector2 localClick))
             return;
@@ -41,10 +49,15 @@ public class CaretHandler : MonoBehaviour, IPointerDownHandler
         inputField.selectionFocusPosition = nearestIndex;
         inputField.ForceLabelUpdate();
 
-        Debug.Log($"[CaretHandler] Caret déplacé à l'index {nearestIndex}");
+        //Debug.Log($"[CaretHandler] Caret déplacé à l'index {nearestIndex}");
         eventData.Use();
     }
 
+    /// <summary>
+    /// Finds the index of the character closest to the click position within the text.
+    /// </summary>
+    /// <param name="localClick">Local click coordinates relative to the text rectangle.</param>
+    /// <returns>Index of the nearest character for caret placement.</returns>
     private int GetNearestCharacterIndex(Vector2 localClick)
     {
         TMP_TextInfo textInfo = textComponent.textInfo;
@@ -58,7 +71,6 @@ public class CaretHandler : MonoBehaviour, IPointerDownHandler
             if (!textInfo.characterInfo[i].isVisible)
                 continue;
 
-            // Position du caractère dans le repère local du texte
             float charX = textInfo.characterInfo[i].bottomLeft.x;
             float nextX = textInfo.characterInfo[i].topRight.x;
             float midX = (charX + nextX) * 0.5f;
@@ -71,7 +83,7 @@ public class CaretHandler : MonoBehaviour, IPointerDownHandler
             }
         }
 
-        // Si clic après le dernier caractère
+        // If the click is beyond the last character, move caret to end
         if (localClick.x > textInfo.characterInfo[textInfo.characterCount - 1].topRight.x)
             nearestIndex = textInfo.characterCount;
 
