@@ -1,19 +1,31 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.XR;
 
+/// <summary>
+/// Detects and manages VR controller input for both real devices and the XR Device Simulator.
+/// Handles primary, trigger, and menu buttons, as well as combo inputs (Y + joystick direction).
+/// Includes support for long press detection with visual and audio feedback.
+/// </summary>
 public class ControllerInputDetector : MonoBehaviour
 {
+    [Header("XR Controller References")]
+    [Tooltip("Left-hand XR controller device.")]
     public UnityEngine.XR.InputDevice left;
+
+    [Tooltip("Right-hand XR controller device.")]
     public UnityEngine.XR.InputDevice right;
 
+    [Header("Initialization Flags")]
     public bool leftInitialized = false;
     public bool rightInitialized = false;
 
+    [Header("Hold Settings")]
+    [Tooltip("Duration in seconds required to trigger a hold event.")]
     private float holdTimeThreshold = 3f;
+
     private float buttonHoldTimeL = 0.0f;
     private float buttonHoldTimeR = 0.0f;
     private bool holdingDetected = false;
@@ -23,22 +35,47 @@ public class ControllerInputDetector : MonoBehaviour
     private bool wasPrimaryButtonPressedR = false;
     private bool wasPrimaryButtonPressedL = false;
     private bool wasMenuButtonPressedL = false;
+    private bool wasMenuButtonPressedR = false;
 
+    [Header("Unity Events")]
+    [Tooltip("Event invoked when a primary button (A/X) is pressed.")]
     [SerializeField] UnityEvent OnPrimaryButtonPressed;
-    [SerializeField] private AudioSource audioHold;
-    [SerializeField] private GameObject holdingCanvas;
+
+    [Tooltip("Event invoked when a trigger button is held for the required duration.")]
     [SerializeField] UnityEvent OnTriggerButtonHeld;
+
+    [Tooltip("Event invoked when Y button is held while joystick is tilted left.")]
     [SerializeField] UnityEvent OnYLeftCombo;
+
+    [Tooltip("Event invoked when Y button is held while joystick is tilted right.")]
     [SerializeField] UnityEvent OnYRightCombo;
 
-    // XR Device Simulator support via InputActionReference
+    [Header("Audio & UI Feedback")]
+    [SerializeField] private AudioSource audioHold;
+    [SerializeField] private GameObject holdingCanvas;
+
     [Header("XR Device Simulator Input Actions")]
+    [Tooltip("Root object of the XR Device Simulator.")]
     public GameObject XRDeviceSimulator;
+
+    [Tooltip("Simulator primary button (left hand).")]
     public InputActionReference leftPrimaryButtonAction;
+
+    [Tooltip("Simulator primary button (right hand).")]
     public InputActionReference rightPrimaryButtonAction;
+
+    [Tooltip("Simulator trigger (left hand).")]
     public InputActionReference leftTriggerAction;
+
+    [Tooltip("Simulator trigger (right hand).")]
     public InputActionReference rightTriggerAction;
+
+    [Tooltip("Simulator menu button (left hand).")]
     public InputActionReference leftMenuAction;
+
+    [Tooltip("Simulator menu button (right hand).")]
+    public InputActionReference rightMenuAction;
+
     [SerializeField] private InputActionReference leftSecondaryButtonAction;
     [SerializeField] private InputActionReference rightSecondaryButtonAction;
     [SerializeField] private InputActionReference leftPrimary2DAxisAction;
@@ -47,6 +84,7 @@ public class ControllerInputDetector : MonoBehaviour
     private bool wasSimPrimaryButtonL = false;
     private bool wasSimPrimaryButtonR = false;
     private bool wasSimMenuButtonL = false;
+    private bool wasSimMenuButtonR = false;
 
     private bool isHoldingLoadingActiveL = false;
     private bool isHoldingLoadingActiveR = false;
@@ -54,6 +92,9 @@ public class ControllerInputDetector : MonoBehaviour
     private bool _comboLockL = false;
     private bool _comboLockR = false;
 
+    /// <summary>
+    /// Enables or disables hold detection behavior globally.
+    /// </summary>
     public void SetHoldingEnabled(bool enabled)
     {
         holdingEnabled = enabled;
@@ -62,11 +103,10 @@ public class ControllerInputDetector : MonoBehaviour
 
     void Start()
     {
-        //DisableLeftJoystick();
-        //DisableSimulatorLeftJoystick();
         InitializeDevices();
 
-        if (XRDeviceSimulator.activeInHierarchy)
+        // Enable simulator input actions
+        if (XRDeviceSimulator != null && XRDeviceSimulator.activeInHierarchy)
         {
             // Enable input actions if assigned
             leftPrimaryButtonAction?.action.Enable();
@@ -81,31 +121,10 @@ public class ControllerInputDetector : MonoBehaviour
         }
     }
 
-    /*
-    void DisableSimulatorLeftJoystick()
-    {
-        if (leftJoystickActionSimulator != null)
-        {
-            leftJoystickActionSimulator.action.Disable();
-        }
-        else
-        {
-            Debug.LogError("Left joystick simulator action reference is not set.");
-        }
-    }
-
-    void DisableLeftJoystick()
-    {
-        if (leftJoystickAction != null)
-        {
-            leftJoystickAction.action.Disable();
-        }
-        else
-        {
-            Debug.LogError("Left joystick action reference is not set.");
-        }
-    }
-    */
+    /// <summary>
+    /// Updates input state each frame.
+    /// Ensures controllers are initialized and processes input for both real XR devices and the XR Device Simulator.
+    /// </summary>
     void Update()
     {
         if (!leftInitialized || !rightInitialized)
@@ -118,6 +137,9 @@ public class ControllerInputDetector : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Initializes XR input devices for left and right hands.
+    /// </summary>
     void InitializeDevices()
     {
         List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
@@ -136,23 +158,33 @@ public class ControllerInputDetector : MonoBehaviour
             rightInitialized = true;
         }
     }
+
+    /// <summary>
+    /// Handles hardware controller inputs for both hands.
+    /// </summary>
     private void HandleDefaultInput()
     {
-        // Vérifiez les entrées du contrôleur droit
+        // RIGHT CONTROLLER
         if (rightInitialized)
         {
             right.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxisClick, out bool isPressedR);
 
-            // Détecte une transition de "relâché" à "pressé" pour le bouton droit
             if (isPressedR && !wasPrimaryButtonPressedR)
             {
-                OnPrimaryButtonPressed.Invoke(); // Appelle l'événement une seule fois
+                OnPrimaryButtonPressed.Invoke();
             }
-            wasPrimaryButtonPressedR = isPressedR; // Met à jour l'état précédent
+            wasPrimaryButtonPressedR = isPressedR;
 
             right.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out bool isPressedRT);
             HandleHoldInput(isPressedRT, false);
 
+            // Right menu button
+            right.TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out bool isPressedRM);
+            if (isPressedRM && !wasMenuButtonPressedR)
+            {
+                OnTriggerButtonHeld.Invoke();
+            }
+            wasMenuButtonPressedR = isPressedRM;
 
             // Test secret button combo
             bool yPressed = false;
@@ -166,17 +198,16 @@ public class ControllerInputDetector : MonoBehaviour
 
         }
 
-        // Vérifiez les entrées du contrôleur gauche
+        // LEFT CONTROLLER
         if (leftInitialized)
         {
             left.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxisClick, out bool isPressedL);
 
-            // Détecte une transition de "relâché" à "pressé" pour le bouton gauche
             if (isPressedL && !wasPrimaryButtonPressedL)
             {
-                OnPrimaryButtonPressed.Invoke(); // Appelle l'événement une seule fois
+                OnPrimaryButtonPressed.Invoke();
             }
-            wasPrimaryButtonPressedL = isPressedL; // Met à jour l'état précédent
+            wasPrimaryButtonPressedL = isPressedL;
 
             left.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out bool isPressedLT);
             HandleHoldInput(isPressedLT, true);
@@ -199,11 +230,13 @@ public class ControllerInputDetector : MonoBehaviour
             DetectSecretButtonCombo(yPressed, stick, true);
         }
     }
-
+    /// <summary>
+    /// Handles XR Device Simulator inputs (keyboard/mouse-based testing).
+    /// </summary>
     private void HandleSimulatorInput()
     {
         if (!XRDeviceSimulator.activeInHierarchy) return;
-        // Bouton principal gauche
+        // Primary buttons
         bool simPrimaryButtonL = leftPrimaryButtonAction != null && leftPrimaryButtonAction.action.IsPressed();
         if (simPrimaryButtonL && !wasSimPrimaryButtonL)
         {
@@ -211,7 +244,6 @@ public class ControllerInputDetector : MonoBehaviour
         }
         wasSimPrimaryButtonL = simPrimaryButtonL;
 
-        // Bouton principal droit
         bool simPrimaryButtonR = rightPrimaryButtonAction != null && rightPrimaryButtonAction.action.IsPressed();
         if (simPrimaryButtonR && !wasSimPrimaryButtonR)
         {
@@ -219,15 +251,14 @@ public class ControllerInputDetector : MonoBehaviour
         }
         wasSimPrimaryButtonR = simPrimaryButtonR;
 
-        // Trigger gauche
+        // Triggers
         bool simTriggerL = leftTriggerAction != null && leftTriggerAction.action.IsPressed();
         HandleHoldInput(simTriggerL, true);
 
-        // Trigger droit
         bool simTriggerR = rightTriggerAction != null && rightTriggerAction.action.IsPressed();
         HandleHoldInput(simTriggerR, false);
 
-        // Menu gauche
+        // Menu buttons
         bool simMenuL = leftMenuAction != null && leftMenuAction.action.IsPressed();
         if (simMenuL && !wasSimMenuButtonL)
         {
@@ -235,29 +266,33 @@ public class ControllerInputDetector : MonoBehaviour
         }
         wasSimMenuButtonL = simMenuL;
 
-        // Test secret button combo dans le simulateur
+        bool simMenuR = rightMenuAction != null && rightMenuAction.action.IsPressed();
+        if (simMenuR && !wasSimMenuButtonR)
+        {
+            OnTriggerButtonHeld.Invoke();
+        }
+        wasSimMenuButtonR = simMenuR;
 
-        // Bouton Y gauche
+        // Secret combos
         bool simYPressedL = leftSecondaryButtonAction != null && leftSecondaryButtonAction.action.IsPressed();
         Vector2 simStickL = Vector2.zero;
         if (leftPrimary2DAxisAction != null)
         {
             simStickL = leftPrimary2DAxisAction.action.ReadValue<Vector2>();
         }
-
         DetectSecretButtonCombo(simYPressedL, simStickL, true);
 
-        // Bouton Y droit
         bool simYPressedR = rightSecondaryButtonAction != null && rightSecondaryButtonAction.action.IsPressed();
         Vector2 simStickR = Vector2.zero;
         if (rightPrimary2DAxisAction != null)
         {
             simStickR = rightPrimary2DAxisAction.action.ReadValue<Vector2>();
         }
-
         DetectSecretButtonCombo(simYPressedR, simStickR, false);
-
     }
+    /// <summary>
+    /// Handles trigger button hold detection and associated visual/audio feedback.
+    /// </summary>
     private void HandleHoldInput(bool isPressed, bool isLeft)
     {
         if (!holdingEnabled)
@@ -276,7 +311,7 @@ public class ControllerInputDetector : MonoBehaviour
 
                 if (buttonHoldTimeL > 0.5f && !isHoldingLoadingActiveL)
                 {
-                    //Debug.Log(">> Activer audio + canvas L");
+                    //Debug.Log(">> Playing Audio + canvas L");
                     //holdingCanvas.SetActive(true);
                     holdingCanvas.gameObject.GetComponent<Canvas>().enabled = true;
                     holdingCanvas.GetComponent<LoadingFillImage>().StartLoading(holdTimeThreshold - buttonHoldTimeL);
@@ -299,7 +334,7 @@ public class ControllerInputDetector : MonoBehaviour
 
                 if (buttonHoldTimeR > 0.5f && !isHoldingLoadingActiveR)
                 {
-                    //Debug.Log(">> Activer audio + canvas R");
+                    //Debug.Log(">> Playing audio + canvas R");
                     //holdingCanvas.SetActive(true);
                     holdingCanvas.gameObject.GetComponent<Canvas>().enabled = true;
                     holdingCanvas.GetComponent<LoadingFillImage>().StartLoading(holdTimeThreshold - buttonHoldTimeR);
@@ -329,7 +364,7 @@ public class ControllerInputDetector : MonoBehaviour
                 isHoldingLoadingActiveR = false;
             }
 
-            // Si les deux boutons sont relâchés, on stoppe tout
+            // If both buttons are released, stop everything
             if (!IsAnyHandPressed())
             {
                 holdingDetected = false;
@@ -339,18 +374,21 @@ public class ControllerInputDetector : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Determines whether any hand (left or right) currently has its trigger button pressed.
+    /// Includes checks for both XR devices and XR Device Simulator input actions.
+    /// </summary>
+    /// <returns>True if at least one hand trigger is pressed; otherwise, false.</returns>
     private bool IsAnyHandPressed()
     {
         bool isPressedL = false;
         bool isPressedR = false;
 
-        // Input device direct (fallback si pas simulateur)
         if (leftInitialized)
             left.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out isPressedL);
         if (rightInitialized)
             right.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out isPressedR);
 
-        // En plus, si simulateur actif
         if (XRDeviceSimulator.activeInHierarchy)
         {
             if (leftTriggerAction != null)
@@ -362,9 +400,13 @@ public class ControllerInputDetector : MonoBehaviour
         return isPressedL || isPressedR;
     }
 
-    private bool _wasYPressed = false;
-    private Vector2 _lastStickValue = Vector2.zero;
-
+    /// <summary>
+    /// Detects a hidden button combination using the Y button and joystick direction.
+    /// Invokes <see cref="OnYLeftCombo"/> or <see cref="OnYRightCombo"/> when the combo is valid and prevents repeated triggering while held.
+    /// </summary>
+    /// <param name="yPressed">True if the Y button is pressed.</param>
+    /// <param name="stick">Current joystick axis value.</param>
+    /// <param name="isLeft">True if the input is from the left controller; false if from the right.</param>
     private void DetectSecretButtonCombo(bool yPressed, Vector2 stick, bool isLeft)
     {
         ref bool comboLock = ref isLeft ? ref _comboLockL : ref _comboLockR;
@@ -392,6 +434,10 @@ public class ControllerInputDetector : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Invokes the configured UnityEvent when a hold action has been successfully detected.
+    /// Prevents multiple invocations until all triggers are released.
+    /// </summary>
     private void OnHoldTriggered()
     {
         OnTriggerButtonHeld.Invoke();

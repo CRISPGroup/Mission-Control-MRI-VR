@@ -1,11 +1,12 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.XR;
 using UnityEngine.XR.Management;
 using UnityEngine.XR.OpenXR.Features.Meta;
-using UnityEngine.Events;
 
 public class GraphicsImprover : MonoBehaviour
 {
@@ -15,6 +16,15 @@ public class GraphicsImprover : MonoBehaviour
     [Header("On Pause Events")]
     public UnityEvent onPaused;
     public UnityEvent onResumed;
+
+    [Header("On Focus Events")]
+    [Tooltip("Invoked when the application loses focus (e.g., system menu, overlay).")]
+    [SerializeField] private UnityEvent onFocusLost;
+
+    [Tooltip("Invoked when the application regains focus.")]
+    [SerializeField] private UnityEvent onFocusGained;
+
+    private bool isFocused = true;
 
     void Awake()
     {
@@ -118,6 +128,20 @@ public class GraphicsImprover : MonoBehaviour
         else
         {
             onResumed?.Invoke();
+        }
+    }
+
+    void OnApplicationFocus(bool hasFocus)
+    {
+        isFocused = hasFocus;
+
+        if (!hasFocus)
+        {
+            onFocusLost?.Invoke();
+        }
+        else
+        {
+            onFocusGained?.Invoke();
         }
     }
 
