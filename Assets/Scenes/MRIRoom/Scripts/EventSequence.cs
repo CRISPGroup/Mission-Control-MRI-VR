@@ -17,6 +17,7 @@ public class EventSequence : MonoBehaviour {
     //RUNTIME
     [SerializeField] List<string>   Triggers;
     [SerializeField] int            SequenceStep;
+    private int savedStep = -1;
 
     Coroutine   SequenceCoroutine;
     bool        Paused;
@@ -43,6 +44,7 @@ public class EventSequence : MonoBehaviour {
     {
         onDisable.Invoke();
     }
+
 
     [ContextMenu("Trigger sequence")]
     public void StartSequence() => StartSequence(null);
