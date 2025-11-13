@@ -8,10 +8,22 @@
 </div>
 
 ## Trailer Video
-https://www.youtube.com/watch?v=DJ-NxDSIV08
+https://youtu.be/TqKYYMTgo8E
 
 ## Project description
-Children undergoing MRI scans can often feel anxious and restless, leading to movement artifacts and the potential need for sedation during the procedure. To enhance patient experience and reduce the need for sedation, we created Mission Control, an immersive VR simulation that simulates a rocket landing to prepare children for the MRI process. After familiarizing themselves with the MRI room and scanner, children board their spaceship and observe the launch and landing through a window. To successfully land, they must focus on the target, keep their head still, and follow visual and audio cues to minimize head movement and safely reach the moon.
+You will embark on an immersive, story-driven VR adventure that prepares you for an MRI scan. From the moment you arrive at the facility to the completion of your brain images, you will experience every step of the MRI journey in a playful, interactive way.
+You will step into the shoes of a special astronaut with one mission: to reach the Moon. To succeed, you must board your spaceship and stay on course at all times. Our Mission Control center will be watching over you! We will send real-time feedback if you move and your ship drifts off its path.
+
+Are you ready, astronaut?
+
+---
+
+Created by the CRIPGroup at the Douglas Research Centre in Canada, together with MRI specialists, designers, and mental health researchers, this realistic simulation helps you explore the MRI procedure and prepare for your scan from the comfort of your home.
+
+You can begin the experience sitting on your bed, until the moment comes to lie down as your virtual bed glides into the MRI scanner.
+
+The simulation can also be used by caregivers and MRI specialists to help prepare participants for their examinations. It was designed so that the participant can use one controller while the accompanying person uses the other. We encourage you to consult the in-game menu to discover the special controller inputs available to the accompanying person.
+However, as the efficacy of our simulation is still under scientific validation, it is currently offered in a non-validated, preliminary form.
 
 Note: This is the updated version of the [previous repository](https://github.com/J-Scan/MRIExperience), which contains the early versions of Mission Control.
 
