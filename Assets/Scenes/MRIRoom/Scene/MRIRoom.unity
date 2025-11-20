@@ -251272,27 +251272,6 @@ MonoBehaviour:
           m_CallState: 2
     Tag: e0
     GotoTag: 
-  - Type: 2
-    WaitTime: 5
-    Triggers: []
-    TriggerAND: 0
-    Event:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1039957321452631347}
-          m_TargetAssemblyTypeName: ManagedAudioSource, Assembly-CSharp
-          m_MethodName: PlayFromInspector
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    Tag: 
-    GotoTag: 
   - Type: 1
     WaitTime: 18
     Triggers:
@@ -251345,7 +251324,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -251404,7 +251383,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -251476,6 +251455,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1039957321452631347}
+          m_TargetAssemblyTypeName: ManagedAudioSource, Assembly-CSharp
+          m_MethodName: PlayFromInspector
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -262581,11 +262572,11 @@ MonoBehaviour:
   shortStatementText: {fileID: 1003297385}
   segments:
   - title: 
-    shortStatement: "JE COMPRENDS LES RISQUES ET J\u2019ACCEPTE DE CONTINUER"
+    shortStatement: I UNDERSTAND THE RISKS AND AGREE TO CONTINUE
     buttonSet: {fileID: 0}
   segmentsFR:
   - title: 
-    shortStatement: I UNDERSTAND THE RISKS AND AGREE TO CONTINUE
+    shortStatement: "JE COMPRENDS LES RISQUES ET J\u2019ACCEPTE DE CONTINUER"
     buttonSet: {fileID: 0}
 --- !u!1 &784787808
 GameObject:
