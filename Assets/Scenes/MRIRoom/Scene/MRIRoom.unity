@@ -1738,31 +1738,35 @@ MonoBehaviour:
       application. This includes, without limitation, any loss of data, interruption
       of service, or damage to your device or equipment. We do not guarantee the
       accuracy, completeness, or reliability of the content provided on the application,
-      and are not responsible for any errors or omissions."
+      and are not responsible for any errors or omissions. This VR experience may
+      cause discomfort or motion sensitivity. Use in a safe environment and stop
+      if you feel unwell."
     buttonSet: {fileID: 783666873}
   - title: Sit confortably (1/4)
-    shortStatement: "<b>Sit in a quiet, comfy spot</b>. Make sure you\u2019ll be
+    shortStatement: "\n<b>Sit in a quiet, comfy spot</b>. Make sure you\u2019ll be
       able to lie down straight later, without turning your body."
     buttonSet: {fileID: 479276130}
   - title: Adjust position (2/4)
-    shortStatement: Ready? <b>Sit straight, face forward</b>, and <b>click to align
-      your position</b>.
+    shortStatement: "\nReady? <b>Sit straight, face forward</b>, and <b>click to
+      align your \nposition</b>."
     buttonSet: {fileID: 74010068}
   - title: Readjust position (3/4)
-    shortStatement: To readjust your position anytime, <b>hold the trigger button
-      for 3s</b> to open the menu, go to the <b>Settings</b> and choose <b>Adjust
-      Position</b>.
+    shortStatement: '
+
+      To readjust your position anytime, <b>hold the trigger
+      button for 3s</b> to open the menu, go to the <b>Settings</b> and choose <b>Adjust
+      Position</b>.'
     buttonSet: {fileID: 876959170}
   - title: Record data (4/4)
     shortStatement: "\nIf you wish to record the data from the moon trip (stillness
-      training), please enter your ID and session number. The file will be stored
-      on the headset in: \n/sdcard/Android/data/com.dakoure.missioncontrol/files/\n\n\n\nBy
+      training), please enter your ID and session number. \nThe file will be stored
+      on the headset in: /sdcard/Android/data/com.dakoure.missioncontrol/files/\n\n\n\nBy
       starting the recording, I consent to my data being recorded (time spent holding
       the moon on target or off target). I confirm that I have only entered information
       that does not allow me to be identified."
     buttonSet: {fileID: 1201230039}
   segmentsFR:
-  - title: "Avis de non-responsabilit\xE9"
+  - title: "Avis de non-responsabilit\xE9<br><br>"
     shortStatement: "NOUS NE GARANTISSONS PAS QUE VOTRE UTILISATION DE L\u2019APPLICATION
       SERA SANS ERREUR. L\u2019APPLICATION N\u2019EST PAS CON\xC7UE \xC0 DES FINS
       DIAGNOSTIQUES, TH\xC9RAPEUTIQUES OU M\xC9DICALES. L\u2019APPLICATION EST FOURNIE
@@ -1773,24 +1777,26 @@ MonoBehaviour:
       perte de donn\xE9es, interruption de service ou dommage \xE0 votre \xE9quipement.
       Nous ne garantissons pas l\u2019exactitude, l\u2019exhaustivit\xE9 ou la fiabilit\xE9
       du contenu fourni dans l'application et ne pouvons \xEAtre tenus responsables
-      de toute erreur ou omission."
+      de toute erreur ou omission. Cette exp\xE9rience VR peut causer de l\u2019inconfort
+      ou une sensibilit\xE9 au mouvement. Utilisez-la dans un espace s\xE9curitaire
+      et cessez si vous ressentez un malaise."
     buttonSet: {fileID: 783666873}
   - title: Position assise (1/4)
-    shortStatement: "<b>Assieds-toi dans un endroit calme et confortable</b>. Assure-toi
+    shortStatement: "\n<b>Assieds-toi dans un endroit calme et confortable</b>. Assure-toi
       de pouvoir t\u2019allonger ensuite en ligne droite, sans avoir \xE0 tourner
       ton corps."
     buttonSet: {fileID: 479276130}
   - title: Ajuste ta position (2/4)
-    shortStatement: "Pr\xEAt(e) ? <b>Assieds-toi droit(e), regarde droit devant</b>,
+    shortStatement: "\nPr\xEAt(e) ? <b>Assieds-toi droit(e), regarde droit devant</b>,
       puis <b>clique pour aligner ta position</b>."
     buttonSet: {fileID: 74010068}
   - title: "R\xE9ajuster ta position (3/4)"
-    shortStatement: "Pour r\xE9ajuster ta position \xE0 tout moment, <b>maintiens
+    shortStatement: "\nPour r\xE9ajuster ta position \xE0 tout moment, <b>maintiens
       la g\xE2chette pendant 3 s</b> pour ouvrir le menu, va dans les <b>Param\xE8tres</b>
       et choisis <b>Ajuster la position</b>."
     buttonSet: {fileID: 876959170}
   - title: "Enregistrer les donn\xE9es (4/4)"
-    shortStatement: "Si tu souhaites enregistrer les donn\xE9es de ton voyage lunaire
+    shortStatement: "\nSi tu souhaites enregistrer les donn\xE9es de ton voyage lunaire
       (entra\xEEnement \xE0 l\u2019immobilit\xE9), entre ton ID et ton num\xE9ro
       de session. Le fichier sera sauvegard\xE9 sur le casque dans :\n/sdcard/Android/data/com.dakoure.missioncontrol/files/\n\n\n\nEn
       d\xE9marrant l\u2019enregistrement, je consens \xE0 ce que mes donn\xE9es soient
@@ -8105,8 +8111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -5.8}
-  m_SizeDelta: {x: 179.7, y: 0}
+  m_AnchoredPosition: {x: 100, y: 0.70000076}
+  m_SizeDelta: {x: 200.6, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &144923526
 MonoBehaviour:
@@ -8162,7 +8168,7 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 8192
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -241590,7 +241596,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 125}
+  m_SizeDelta: {x: 220, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269262490
 MonoBehaviour:
@@ -259255,7 +259261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 49.999985, y: -0.212}
+  m_AnchoredPosition: {x: 49.999985, y: -0.2}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &696897729
@@ -282485,7 +282491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 49.999992, y: -50.0648}
+  m_AnchoredPosition: {x: 49.999992, y: -50.06}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1230519081
@@ -285329,7 +285335,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 125}
+  m_SizeDelta: {x: 220, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1312036691
 MonoBehaviour:
@@ -327815,7 +327821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: 6}
+  m_AnchoredPosition: {x: 100, y: 8}
   m_SizeDelta: {x: 175, y: 10.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055059703
