@@ -11,21 +11,31 @@
 https://youtu.be/TqKYYMTgo8E
 
 ## Project description
-You will embark on an immersive, story-driven VR adventure that prepares you for an MRI scan. From the moment you arrive at the facility to the completion of your brain images, you will experience every step of the MRI journey in a playful, interactive way.
+You will embark on an immersive, story-driven VR adventure that familiarizes you with the MRI procedure. Discover every step of the MRI journey in a playful, interactive way.
 You will step into the shoes of a special astronaut with one mission: to reach the Moon. To succeed, you must board your spaceship and stay on course at all times. Our Mission Control center will be watching over you! We will send real-time feedback if you move and your ship drifts off its path.
 
 Are you ready, astronaut?
 
 ---
 
-Created by the CRIPGroup at the Douglas Research Centre in Canada, together with MRI specialists, designers, and mental health researchers, this realistic simulation helps you explore the MRI procedure and prepare for your scan from the comfort of your home.
+Additional Information:
+This simulation was created by a multidisciplinary team bringing together VR development, MRI experience, design, and mental health research.
 
-You can begin the experience sitting on your bed, until the moment comes to lie down as your virtual bed glides into the MRI scanner.
+You can begin the experience sitting on your bed, until the moment comes to lie down as your virtual bed glides into the MRI machine.
 
-The simulation can also be used by caregivers and MRI specialists to help prepare participants for their examinations. It was designed so that the participant can use one controller while the accompanying person uses the other. We encourage you to consult the in-game menu to discover the special controller inputs available to the accompanying person.
+The simulation can also be used by caregivers as an informational tool. It was designed so that the participant can use one controller while the accompanying person uses the other. We encourage you to consult the in-game menu to discover the special controller inputs available to the accompanying person.
 However, as the efficacy of our simulation is still under scientific validation, it is currently offered in a non-validated, preliminary form.
 
 Note: This is the updated version of the [previous repository](https://github.com/J-Scan/MRIExperience), which contains the early versions of Mission Control.
+
+## Disclaimer
+WE DO NOT WARRANT THAT YOUR USE OF THE APPLICATION WILL BE ERROR-FREE OR UNINTERRUPTED. THE APPLICATION IS NOT DESIGNED FOR DIAGNOSTIC, THERAPEUTIC, OR OTHER MEDICAL PURPOSES. THE APPLICATION IS PROVIDED ‘AS IS’. 
+
+Use is at your own risk. The developers and collaborators assume no responsibility for any form of damages that may result from your use or inability to use the application. This includes, without limitation, any loss of data, interruption of service, or damage to your device or equipment. 
+
+The content provided on the application is for informational purposes only. We do not guarantee the accuracy, completeness, or reliability of any content, and are not responsible for any errors or omissions.
+
+This VR experience may cause discomfort or motion sensitivity. Use in a safe environment and stop if you feel unwell. By using this application, you acknowledge and accept the potential risks associated with VR use.
 
 ## Technologies/features used
 We created a Virtual Reality environment with the Unity Game Engine designed for the Oculus Quest 2, Quest 3 (HTC, Pico, etc., need to be tested but they should be compatible as we used OpenXR).
