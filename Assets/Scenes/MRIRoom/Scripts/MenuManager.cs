@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
 
     // Références aux GameObjects
     public GameObject selectScenario;
-    public GameObject moonTripSettings;
+    public GameObject moonTripSettings; 
 
     private void Start()
     {

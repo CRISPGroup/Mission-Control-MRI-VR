@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 9168bd0e7d7ff4e409b67e0c31e28ca7
+timeCreated: 1571441231
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/Editor/Datasets/MeshCombinerPreferences.cs
+  uploadId: 704311

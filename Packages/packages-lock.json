@@ -294,7 +294,7 @@
     },
     "com.unity.xr.compositionlayers": {
       "version": "2.1.0",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.inputsystem": "1.6.3",
@@ -313,7 +313,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.hands": {
-      "version": "1.5.0",
+      "version": "1.6.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -388,14 +388,6 @@
         "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
-    },
-    "dev.mikesky.openxrextensions": {
-      "version": "file:unity-openxr-extensions-main",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.xr.openxr": "1.13.0"
-      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
@@ -496,18 +488,9 @@
     },
     "com.unity.modules.terrain": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
-    },
-    "com.unity.modules.terrainphysics": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.terrain": "1.0.0"
-      }
     },
     "com.unity.modules.ui": {
       "version": "1.0.0",

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0341114734e87944fb004d56844702c9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/_ScenesDemo/Materials/ContainerRods.mat
+  uploadId: 704311

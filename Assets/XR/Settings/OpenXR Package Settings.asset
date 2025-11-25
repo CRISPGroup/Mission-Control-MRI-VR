@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Name: FBCompositionLayerDepthTest Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.FBCompositionLayerDepthTest
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: FB Composition Layer Depth Test
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.fbcompositionlayeralphablend
@@ -114,6 +115,7 @@ MonoBehaviour:
   m_Name: OpenXRAndroidSettings Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.OpenXRAndroidSettings
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: Android Settings
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.androidmanifest
@@ -430,6 +432,7 @@ MonoBehaviour:
   m_Name: FBBodyTracking Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.FBBodyTracking
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: FB Body Tracking + META Body Tracking Full Body
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.fbbodytracking
@@ -472,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d28f705476c80d47acb3dfade3d3142, type: 3}
   m_Name: MetaXRFoveationFeature Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Meta XR Foveation
   version: 1.0.0
   featureIdInternal: com.meta.openxr.feature.foveation
@@ -519,8 +522,8 @@ MonoBehaviour:
   forceRemoveInternetPermission: 0
   symmetricProjection: 0
   foveatedRenderingApi: 0
-  systemSplashScreen: {fileID: 0}
-  optimizeBufferDiscards: 1
+  systemSplashScreen: {fileID: 2800000, guid: 4be8b5c85e03a4b4fb0830b0d819be79, type: 3}
+  optimizeBufferDiscards: 0
   lateLatchingMode: 0
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
@@ -559,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d28f705476c80d47acb3dfade3d3142, type: 3}
   m_Name: MetaXRFoveationFeature Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Meta XR Foveation
   version: 1.0.0
   featureIdInternal: com.meta.openxr.feature.foveation
@@ -646,7 +649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380ed73f3efd2fa43af94bae88b6ad53, type: 3}
   m_Name: FBCompositionLayerAlphaBlend Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.FBCompositionLayerAlphaBlend
-  m_enabled: 1
+  m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: FB Composition Layer Alpha Blend
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.fbcompositionlayeralphablend
@@ -668,22 +672,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: -1667276859362709894}
-  - {fileID: -5408822722857641356}
-  - {fileID: 3615685737337609703}
-  - {fileID: -8786499429148314569}
   - {fileID: 8777980955875100175}
   - {fileID: 1336862467390903644}
   - {fileID: 6371014534655013366}
   - {fileID: 3330742269088741992}
   - {fileID: -6043579956693898220}
-  - {fileID: -2379218014039876067}
-  - {fileID: -8956082975535912854}
-  - {fileID: 3866886651143054237}
   - {fileID: -8679360029575777759}
   - {fileID: 2688692108540374689}
   - {fileID: -4441325076558507188}
   - {fileID: 933473258954166471}
-  - {fileID: 4445542469346871114}
   - {fileID: -1471266844637074503}
   - {fileID: -4612621146470104379}
   - {fileID: -9131005075493304954}
@@ -719,7 +716,7 @@ MonoBehaviour:
     m_List: 00000000
   m_depthSubmissionMode: 0
   m_spacewarpMotionVectorTextureFormat: 0
-  m_optimizeBufferDiscards: 1
+  m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
@@ -1302,22 +1299,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: 8651878147118680509}
-  - {fileID: 5597253261150763730}
-  - {fileID: 5538263204276535207}
   - {fileID: -8518938576423430147}
   - {fileID: 5388536623643110210}
   - {fileID: 1388022919883177081}
   - {fileID: 7808143374051672742}
-  - {fileID: -944503209887472159}
-  - {fileID: 3515465282870637324}
-  - {fileID: -6086473655870344540}
   - {fileID: 621469037849029227}
   - {fileID: 5489034033449962316}
   - {fileID: -8076030303596567874}
   - {fileID: 8177000481756124036}
   - {fileID: 979912606861504834}
   - {fileID: 4863113430972957777}
-  - {fileID: -7485609772216837190}
   - {fileID: -5991219317454943717}
   - {fileID: 366507465887349759}
   - {fileID: 4966334328272493154}
@@ -1445,6 +1436,7 @@ MonoBehaviour:
   m_Name: FBDisplayRefreshRate Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.FBDisplayRefreshRate
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: FB Display Refresh Rate
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.fbdisplayrefreshrate
@@ -1505,6 +1497,7 @@ MonoBehaviour:
   m_Name: FBPassthrough Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.FBPassthrough
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: FB Passthrough
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.fbpassthrough
@@ -1514,6 +1507,7 @@ MonoBehaviour:
   required: 0
   RequiredFeature: 0
   StartEnabled: 0
+  _layerProviderSubscribed: 0
 --- !u!114 &3884466448084825286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +1582,7 @@ MonoBehaviour:
   m_Name: METABoundaryVisibility Android
   m_EditorClassIdentifier: OpenXR.Extensions::OpenXR.Extensions.METABoundaryVisibility
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: META Boundary Visibility
   version: 0.1.0
   featureIdInternal: dev.mikesky.openxr.extensions.metaboundaryvisibility

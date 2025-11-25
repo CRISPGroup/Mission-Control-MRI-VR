@@ -1,18 +1,28 @@
 using UnityEngine;
 
+/// <summary>
+/// Rotates an object (e.g., an arrow) to smoothly point toward a target in 3D space.
+/// Can optionally aim toward the center of the target's Renderer instead of its pivot.
+/// </summary>
 public class ArrowPointer : MonoBehaviour
 {
-    public Transform target;            // Cible vers laquelle pointer
-    public bool useRendererCenter = true; // Si vrai, pointe vers le centre du Renderer au lieu du pivot
-    public float rotationSpeed = 5f;    // Vitesse de rotation
+    [Tooltip("The target Transform the arrow should point toward.")]
+    public Transform target;
+    [Tooltip("If true, points toward the center of the target's Renderer instead of its pivot.")]
+    public bool useRendererCenter = true;
+    [Tooltip("Speed at which the arrow rotates toward the target.")]
+    public float rotationSpeed = 5f;
 
+    /// <summary>
+    /// Updates the arrow's rotation each frame to face the target smoothly.
+    /// </summary>
     void Update()
     {
         if (target == null) return;
 
-        // 1. Calcul de la direction vers le centre
         Vector3 targetPoint = target.position;
 
+        // Use the renderer's center if requested
         if (useRendererCenter)
         {
             Renderer renderer = target.GetComponentInChildren<Renderer>();
@@ -24,20 +34,18 @@ public class ArrowPointer : MonoBehaviour
 
         Vector3 direction = targetPoint - transform.position;
 
-        // 2. Vérifie que la direction est significative
+        // Ensure there is a valid direction before rotating
         if (direction.sqrMagnitude > 0.001f)
         {
-            // 3. Calcule la rotation vers la cible
             Quaternion targetRotation = Quaternion.LookRotation(direction);
 
-            // 4. Corrige selon l’orientation de ton modèle (ici si la flèche pointe vers Y+)
+            // Adjust orientation if the arrow model points upward (Y+)
             targetRotation *= Quaternion.Euler(90f, 0f, 0f);
 
-            // 5. Rotation fluide
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
         }
 
-        // Debug facultatif : affiche la ligne de visée
+        // Optional: draw a line toward the target for debugging
         Debug.DrawLine(transform.position, targetPoint, Color.green);
     }
 }

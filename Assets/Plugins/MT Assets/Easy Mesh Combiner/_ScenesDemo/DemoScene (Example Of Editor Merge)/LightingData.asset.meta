@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f53cdff9e2666a643901ba9bd4efe0e6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/_ScenesDemo/DemoScene (Example
+    Of Editor Merge)/LightingData.asset
+  uploadId: 704311

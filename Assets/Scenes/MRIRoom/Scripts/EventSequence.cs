@@ -7,7 +7,13 @@ using Malee.List;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-
+/// <summary>
+/// Manages a sequence of timed and event-driven steps.
+/// Originally developed by Michel Mohr; extended to include:
+/// - UnityEvents triggered when the script is disabled.
+/// - Optional automatic restart when re-enabled.
+/// Support for pausing, resuming, and custom external triggers.
+/// </summary>
 public class EventSequence : MonoBehaviour {
     [SerializeField] List<SequenceEntry> SequenceEntries    = new List<SequenceEntry>();
     [SerializeField] UnityEvent SequenceComplete;
@@ -17,6 +23,7 @@ public class EventSequence : MonoBehaviour {
     //RUNTIME
     [SerializeField] List<string>   Triggers;
     [SerializeField] int            SequenceStep;
+    private int savedStep = -1;
 
     Coroutine   SequenceCoroutine;
     bool        Paused;
@@ -25,12 +32,18 @@ public class EventSequence : MonoBehaviour {
     UnityAction onComplete;
     [SerializeField] UnityEvent onDisable;
 
+    /// <summary>
+    /// Starts the sequence on Awake if enabled.
+    /// </summary>
     void Awake(){ 
         if(!StartOnAwake) 
             return;
         StartSequence(null);
     }
 
+    /// <summary>
+    /// Restarts the sequence if already started.
+    /// </summary>
     private void OnEnable()
     {
         if (SequenceStarted)
@@ -39,13 +52,23 @@ public class EventSequence : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Invokes the onDisable event when disabled.
+    /// </summary>
     private void OnDisable()
     {
         onDisable.Invoke();
     }
 
+    /// <summary>
+    /// Starts the sequence.
+    /// </summary>
     [ContextMenu("Trigger sequence")]
     public void StartSequence() => StartSequence(null);
+
+    /// <summary>
+    /// Starts the sequence with an optional completion callback.
+    /// </summary>
     public void StartSequence(UnityAction _onComplete){
         if(SequenceEntries==null || SequenceEntries.Count==0 || SequenceStarted) 
             return;
@@ -56,24 +79,9 @@ public class EventSequence : MonoBehaviour {
         SequenceCoroutine = StartCoroutine(SequenceEnumerator());
     }
 
-    /*
-     *   public void RestartSequence()
-    {
-        if (SequenceCoroutine != null)
-            StopCoroutine(SequenceCoroutine);
-
-        SequenceStarted = false;
-        SequenceStep = 0;
-        Triggers.Clear();
-        Paused = false;
-        WaitTimer = 0;
-
-        StartSequence();
-    }
-     * */
-
-
-
+    /// <summary>
+    /// Restarts the sequence from the beginning.
+    /// </summary>
     public void RestartSequence()
     {
         if (SequenceCoroutine != null)
@@ -89,6 +97,9 @@ public class EventSequence : MonoBehaviour {
         StartSequence(null);
     }
 
+    /// <summary>
+    /// Adds or updates a trigger.
+    /// </summary>
     public void SetTrigger(string trigger){
 
         //Debug.Log("Trigger received: "+trigger);
@@ -108,6 +119,9 @@ public class EventSequence : MonoBehaviour {
             Triggers.Add(trigger);
     }
 
+    /// <summary>
+    /// Coroutine that processes the sequence entries.
+    /// </summary>
     IEnumerator SequenceEnumerator(){
         //process sequence
         SequenceEntry entry;
@@ -217,9 +231,16 @@ public class EventSequence : MonoBehaviour {
             onComplete.Invoke();
     }
 
+    /// <summary>
+    /// Pauses or resumes the sequence.
+    /// </summary>
     public void SetPause(bool pause){ 
         Paused = pause;   
     }
+
+    /// <summary>
+    /// Updates the wait timer if not paused.
+    /// </summary>
     void Update(){ 
         if(Paused) 
             return;
@@ -227,10 +248,16 @@ public class EventSequence : MonoBehaviour {
             WaitTimer-=Time.deltaTime;
     }
 
+    /// <summary>
+    /// Sets whether to clear triggers after each trigger.
+    /// </summary>
     public void SetClearTriggersAfterTriggers(bool value){
         ClearTriggersAfterTrigger = value;
     }
-    
+
+    /// <summary>
+    /// Represents a single entry in the event sequence.
+    /// </summary>
     [System.Serializable]
     public class SequenceEntry{ 
         public enum EntryType{Wait, Trigger, Event, Goto}
@@ -243,6 +270,10 @@ public class EventSequence : MonoBehaviour {
         public string       Tag;
         public string       GotoTag;
     }
+
+    /// <summary>
+    /// Associates a trigger string with a tag.
+    /// </summary>
     [System.Serializable]
     public class TriggerTagPair{ 
         public string Trigger;

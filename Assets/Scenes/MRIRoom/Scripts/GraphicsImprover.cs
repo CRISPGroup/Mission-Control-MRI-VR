@@ -1,4 +1,7 @@
+using System.Collections;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.XR;
@@ -10,6 +13,18 @@ public class GraphicsImprover : MonoBehaviour
     public enum HeadsetType { Unknown, Quest1, Quest2, Quest3, QuestPro }
     private XRDisplaySubsystem display;
 
+    [Header("On Pause Events")]
+    public UnityEvent onPaused;
+    public UnityEvent onResumed;
+
+    [Header("On Focus Events")]
+    [Tooltip("Invoked when the application loses focus (e.g., system menu, overlay).")]
+    [SerializeField] private UnityEvent onFocusLost;
+
+    [Tooltip("Invoked when the application regains focus.")]
+    [SerializeField] private UnityEvent onFocusGained;
+
+    private bool isFocused = true;
 
     void Awake()
     {
@@ -21,7 +36,8 @@ public class GraphicsImprover : MonoBehaviour
         urp.renderScale = GetTargetRenderScale();
         InitXRDisplay();
         SetRefreshRate();
-        SetFoveatedRenderingLevel(1);
+        SetFoveatedRenderingLevel(2);
+        Application.backgroundLoadingPriority = ThreadPriority.Low;
     }
     private void InitXRDisplay()
     {
@@ -31,16 +47,18 @@ public class GraphicsImprover : MonoBehaviour
             display = loader.GetLoadedSubsystem<XRDisplaySubsystem>();
             if (display != null)
             {
-                Debug.Log("[GraphicsImprover] XRDisplaySubsystem actif.");
+                //Debug.Log("[GraphicsImprover] XRDisplaySubsystem actif.");
             }
             else
             {
-                Debug.LogWarning("[GraphicsImprover] Aucun XRDisplaySubsystem trouvé.");
+                //Debug.LogWarning("[GraphicsImprover] Aucun XRDisplaySubsystem trouvé.");
             }
         }
     }
     public void SetRefreshRate()
     {
+        XRSettings.eyeTextureResolutionScale = 0.8f;
+
         if (display == null) return;
 
         if (DetectHeadset() == HeadsetType.Quest3)
@@ -81,12 +99,13 @@ public class GraphicsImprover : MonoBehaviour
 
     private float GetTargetRenderScale()
     {
+        XRSettings.eyeTextureResolutionScale = 0.9f;
         switch (DetectHeadset())
         {
             case HeadsetType.Quest3:
                 return 1.2f;
             default:
-                return 1.0f;
+                return 1.1f;
         }
     }
 
@@ -99,6 +118,31 @@ public class GraphicsImprover : MonoBehaviour
     {
         var urp = (UniversalRenderPipelineAsset)GraphicsSettings.currentRenderPipeline;
         urp.renderScale = 1f;
+    }
+    void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus)
+        {
+            onPaused?.Invoke();
+        }
+        else
+        {
+            onResumed?.Invoke();
+        }
+    }
+
+    void OnApplicationFocus(bool hasFocus)
+    {
+        isFocused = hasFocus;
+
+        if (!hasFocus)
+        {
+            onFocusLost?.Invoke();
+        }
+        else
+        {
+            onFocusGained?.Invoke();
+        }
     }
 
     void OnApplicationQuit()

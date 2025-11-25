@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 972d00b3b374a254e9ec952565d949a2
+timeCreated: 1549147083
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 138805
+  packageName: Easy Mesh Combiner MT - Scene Mesh Merge, Atlasing Support & More
+  packageVersion: 3.1.0
+  assetPath: Assets/Plugins/MT Assets/Easy Mesh Combiner/_ScenesDemo/Materials/Grass.mat
+  uploadId: 704311

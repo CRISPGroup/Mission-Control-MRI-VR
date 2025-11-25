@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using static UnityEngine.XR.Interaction.Toolkit.Interactors.NearFarInteractor;
 
 /// <summary>
 /// Logs feedback events with timestamps and exports them as a CSV file,
@@ -17,6 +18,9 @@ public class FeedbackLogger : MonoBehaviour
 
     [Tooltip("Session identifier.")]
     [SerializeField] private string recordSession = "";
+
+    [Tooltip("Reason for saving: default, pause, focus loss, or quit")]
+    [SerializeField] private string context = "default";
 
     [Tooltip("If false, recording is disabled even if StartRegister() is called.")]
     [SerializeField] private bool shouldRecord = true;
@@ -42,14 +46,28 @@ public class FeedbackLogger : MonoBehaviour
     private void OnApplicationQuit()
     {
         if (isRegistering)
+        {
+            SetContext("appQuit");
             StopRegister();
+        }
     }
 
     private void OnApplicationPause(bool pause)
     {
-        if (isRegistering)
+        if (pause && isRegistering)
         {
             CalculateDurations();
+            SetContext("appPause");
+            SaveLogToCsv();
+        }
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus && isRegistering)
+        {
+            CalculateDurations();
+            SetContext("appFocusLost");
             SaveLogToCsv();
         }
     }
@@ -78,6 +96,14 @@ public class FeedbackLogger : MonoBehaviour
 
         recordID = inputField.text.Trim();
         //Debug.Log($"Record ID set to: {recordID}");
+    }
+
+    /// <summary>
+    /// Sets the pause context used in the CSV filename.
+    /// </summary>
+    public void SetContext(string context)
+    {
+        this.context = context;
     }
 
     /// <summary>
@@ -173,8 +199,10 @@ public class FeedbackLogger : MonoBehaviour
         string safeID = string.IsNullOrEmpty(recordID) ? "unknownID" : recordID;
         string safeSession = string.IsNullOrEmpty(recordSession) ? "unknownSession" : recordSession;
 
+        string pauseContext = string.IsNullOrEmpty(this.context) ? "default" : this.context;
+
         string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-        string filename = $"{safeID}_{safeSession}__logs_moontrip_{timestamp}.csv";
+        string filename = $"{safeID}_{safeSession}__logs_moontrip_{pauseContext}_{timestamp}.csv";
         string path = Path.Combine(Application.persistentDataPath, filename);
 
         try

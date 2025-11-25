@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Windows;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.Video;
+using UnityEngine.Windows;
 
 public class MenuPauser : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class MenuPauser : MonoBehaviour
 
     private bool canShowMenu = true;
 
+    private bool isPauseSystem = false;
+    private List<VideoPlayer> pausedVideos = new List<VideoPlayer>();
+
     void Start()
     {
         canvasGroup = menuCanvas.GetComponent<CanvasGroup>();
@@ -41,6 +45,11 @@ public class MenuPauser : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void SetIsPauseSystem(bool isPauseSystem)
+    {
+        this.isPauseSystem = isPauseSystem;
     }
 
     public void SetMenuReady(bool ready)
@@ -110,7 +119,7 @@ public class MenuPauser : MonoBehaviour
         OnEnterPause.Invoke();
 
         PauseGame();
-        if (isMoonTrip && !isAutomaticPause)
+        if (isMoonTrip && !isAutomaticPause && !isPauseSystem)
         {
             menuAudioSource.PlayOneShot(GetCurrentMoonClip());
         }
@@ -156,6 +165,16 @@ public class MenuPauser : MonoBehaviour
                 audioSource.Pause();
             }
         }
+
+        VideoPlayer[] videoPlayers = FindObjectsOfType<VideoPlayer>();
+        foreach (var videoPlayer in videoPlayers)
+        {
+            if (videoPlayer.isPlaying)
+            {
+                videoPlayer.Pause();
+                pausedVideos.Add(videoPlayer);
+            }
+        }
     }
 
     public void UnpauseGame()
@@ -168,6 +187,13 @@ public class MenuPauser : MonoBehaviour
         {
             audioSource.UnPause();
         }
+
+        foreach (var video in pausedVideos)
+        {
+            if (video != null)
+                video.Play();
+        }
+        pausedVideos.Clear();
     }
 
     public bool GetInPause()

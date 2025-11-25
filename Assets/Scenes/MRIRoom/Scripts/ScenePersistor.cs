@@ -10,11 +10,11 @@ public class ScenePersistor : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Garde ce GameObject entre les scènes
+            //DontDestroyOnLoad(gameObject); // Garde ce GameObject entre les scènes
         }
         else
         {
-            Destroy(gameObject); // Détruit ce GameObject s'il existe déjà
+            //Destroy(gameObject); // Détruit ce GameObject s'il existe déjà
         }
     }
 }
