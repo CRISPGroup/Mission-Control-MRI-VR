@@ -4,8 +4,30 @@ using UnityEngine;
 using UnityEditor.SceneManagement;
 using System.IO;
 
+/// <summary>
+/// Provides a set of editor tools for safely cleaning a Unity project.
+/// Includes utilities for:
+/// - Removing missing MonoBehaviour scripts
+/// - Detecting renderers without materials
+/// - Clearing project cache folders (Library, Temp, obj)
+/// - Clearing editor-specific caches (Inspector, ScriptAssemblies)
+/// - Resetting lightmap-related material keywords
+///
+/// These tools are accessible via the Unity Editor menu under:
+/// <b>Tools > Clean</b>
+/// </summary>
+/// <remarks>
+/// <para><b>Safety Note:</b> The cleaning actions here modify project assets and files.
+/// Always commit or back up your project before running the cache deletion functions.</para>
+/// <para>This script is editor-only and excluded from runtime builds.</para>
+/// </remarks>
 public static class FullProjectCleaner
 {
+    /// <summary>
+    /// Scans all scene GameObjects for missing MonoBehaviours and
+    /// renderers without assigned materials.  
+    /// Removes missing scripts safely and logs detected issues.
+    /// </summary>
     [MenuItem("Tools/Clean/Clean Missing Scripts & Renderers (Safe)")]
     static void CleanMissingAndBrokenRenderers()
     {
@@ -47,6 +69,11 @@ public static class FullProjectCleaner
         Debug.Log("Clean done: " + removedScripts + " missing scripts removed, " + missingMats + " missing materials detected.");
     }
 
+    /// <summary>
+    /// Deletes the <b>Library/</b>, <b>Temp/</b>, and <b>obj/</b> folders in the project.
+    /// Unity will automatically rebuild them the next time it opens.  
+    /// This can help fix serialization or import cache issues.
+    /// </summary>
     [MenuItem("Tools/Clean/Clear Unity Cache (Library, Temp, obj)")]
     static void ClearUnityCache()
     {
@@ -79,6 +106,10 @@ public static class FullProjectCleaner
         EditorUtility.DisplayDialog("Done", "Cache cleared. Please restart Unity.", "OK");
     }
 
+    /// <summary>
+    /// Clears cached editor data such as <b>ScriptAssemblies</b> and Inspector settings.
+    /// This can resolve persistent editor errors without affecting project assets.
+    /// </summary>
     [MenuItem("Tools/Clean/Clear Editor Cache (Inspector, ScriptAssemblies)")]
     static void ClearEditorCache()
     {
@@ -114,6 +145,11 @@ public static class FullProjectCleaner
         EditorUtility.DisplayDialog("Cache cleared", "Editor cache cleared.\nPlease restart Unity manually now.", "OK");
     }
 
+    /// <summary>
+    /// Scans all materials in the project and disables obsolete lightmap keywords
+    /// such as <c>LIGHTMAP_ON</c> and <c>DIRLIGHTMAP_COMBINED</c>.  
+    /// Helps reduce shader variant clutter in builds.
+    /// </summary>
     [MenuItem("Tools/Cleanup Lightmap Keywords")]
     public static void Cleanup()
     {
