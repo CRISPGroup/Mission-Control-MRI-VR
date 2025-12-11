@@ -1,16 +1,31 @@
 using UnityEngine;
 
+/// <summary>
+/// Controls the position, orientation, and scale of a reticle (crosshair)
+/// based on an <see cref="UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor"/>.
+/// </summary>
+/// <remarks>
+/// This component dynamically positions the reticle at the ray intersection point or,
+/// if no hit is detected, extends it forward toward the camera’s far clip plane.
+/// It also scales the reticle proportionally to the distance to maintain visual consistency
+/// and optionally allows alignment toward a specific target.
+/// </remarks>
 public class ReticleController : MonoBehaviour
 {
+    [Header("References")]
+    [Tooltip("The XRRayInteractor whose ray defines the reticle direction.")]
     [SerializeField]
     private UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor; // The XRRayInteractor to follow
 
+    [Tooltip("The reticle’s GameObject (crosshair visual).")]
     [SerializeField]
-    private GameObject crosshair; // The GameObject of the reticle
+    private GameObject crosshair;
 
+    [Tooltip("The camera used to determine forward direction and scaling distance.")]
     [SerializeField]
     private Camera CameraFacing;
 
+    [Tooltip("Optional transform the reticle can align to when required (e.g., realigning on the moon target).")]
     [SerializeField]
     private Transform target;
 
@@ -30,12 +45,18 @@ public class ReticleController : MonoBehaviour
         lastKnownDistance = CameraFacing.farClipPlane * 0.55f;
     }
 
+    /// <summary>
+    /// Reorients the ray interactor so that the reticle is centered in front of the camera.
+    /// </summary>
     public void ResetReticleToCenter()
     {
         Vector3 forwardDirection = CameraFacing.transform.forward;
         rayInteractor.transform.rotation = Quaternion.LookRotation(forwardDirection, Vector3.up);
     }
 
+    /// <summary>
+    /// Adjusts the ray interactor to face the assigned <see cref="target"/>, if active.
+    /// </summary>
     public void AdjustReticleToTarget()
     {
         // Position the reticle on the target the first time the offset is calculated
@@ -47,6 +68,9 @@ public class ReticleController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Disables the reticle object if currently active, and remembers this state for reactivation.
+    /// </summary>
     public void DisableIfGOEnabled()
     {
         if (gameObject.activeInHierarchy)
@@ -56,6 +80,9 @@ public class ReticleController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Re-enables the reticle object only if it was previously deactivated by <see cref="DisableIfGOEnabled"/>.
+    /// </summary>
     public void EnableIfGOEnabled()
     {
         if (wasGOenabled)
@@ -65,6 +92,9 @@ public class ReticleController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Continuously updates the reticle position, scale, and rotation based on the ray interactor.
+    /// </summary>
     private void Update()
     {
         if (rayInteractor == null || crosshair == null)
@@ -98,7 +128,6 @@ public class ReticleController : MonoBehaviour
             lastKnownDistance *= 1 + 5 * Mathf.Exp(-lastKnownDistance);
         }
 
-
         // Smoothly adjust the scale to reduce abrupt changes
         float smoothFactor = 0.1f; // Adjust the smoothness as needed
         currentScale = Vector3.Lerp(currentScale, originalScale * lastKnownDistance, smoothFactor);
@@ -118,7 +147,5 @@ public class ReticleController : MonoBehaviour
             transform.LookAt(CameraFacing.transform.position);
             transform.Rotate(0f, 180f, 0f); // Ensures the reticle faces correctly
          */
-
-
     }
 }
