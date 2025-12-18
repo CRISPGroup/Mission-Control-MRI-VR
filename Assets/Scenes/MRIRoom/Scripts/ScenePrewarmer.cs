@@ -3,17 +3,33 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
+/// <summary>
+/// Prewarms shaders, materials, and UI canvases to eliminate stutters
+/// during the first few frames of scene rendering.
+/// </summary>
+/// <remarks>
+/// This script forces Unity to compile and load all shader variants used in a scene
+/// by briefly rendering small invisible quads using each material.  
+/// It also initializes all <see cref="Canvas"/> and <see cref="TMP_InputField"/> components
+/// to ensure UI meshes and layouts are built before the scene becomes interactive.
+/// </remarks>
+[DisallowMultipleComponent]
 public class ScenePrewarmer : MonoBehaviour
 {
+    [Header("Scene References")]
     [Tooltip("Parent object containing all renderers whose materials should be prewarmed.")]
     public GameObject parentRoot;
 
+    [Tooltip("A small quad prefab used to display materials briefly for shader warming.")]
     public GameObject quadPreloader;
 
-    [Tooltip("Size of the mini-quads in meters (keep very small).")]
+
+    [Header("Settings")]
+    [Tooltip("Size of each invisible quad used for prewarming (in meters).")]
     public float quadSize = 0.01f;
 
-    [Tooltip("If true, print which materials are being used for prewarm.")]
+    [Tooltip("If true, logs each material and canvas being prewarmed.")]
     public bool verbose = false;
 
     private List<GameObject> quads = new List<GameObject>();
@@ -23,6 +39,14 @@ public class ScenePrewarmer : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Forces all active and inactive canvases in the scene to build their geometry and layout data.
+    /// </summary>
+    /// <remarks>
+    /// - Temporarily activates canvases to force <see cref="Canvas.ForceUpdateCanvases"/>.  
+    /// - Refreshes <see cref="TMP_InputField"/> components to ensure their labels and meshes are ready.  
+    /// - Optionally unloads unused assets afterward to clean up temporary allocations.
+    /// </remarks>
     public void PrewarmAllCanvases()
     {
         Canvas[] canvases = FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
@@ -31,25 +55,33 @@ public class ScenePrewarmer : MonoBehaviour
         {
             bool wasActive = canvas.gameObject.activeSelf;
 
-            // Active temporairement pour forcer layout + mesh
+            // Temporarily enable to force layout rebuild
             canvas.gameObject.SetActive(true);
             Canvas.ForceUpdateCanvases();
 
-            // Force aussi les TMP InputFields à générer leur mesh
+            // Force TMP input fields to build meshes
             var inputs = canvas.GetComponentsInChildren<TMP_InputField>(true);
             foreach (var input in inputs)
                 input.ForceLabelUpdate();
 
-            // Restaure l'état d'origine
+            // Restore original active state
             canvas.gameObject.SetActive(wasActive);
 
             if (verbose)
                 Debug.Log($"[UIPrewarm] Prewarmed canvas: {canvas.name}");
         }
 
-        Resources.UnloadUnusedAssets(); // optionnel : nettoie les GC temp
+        Resources.UnloadUnusedAssets(); // Restore original active state
     }
 
+    /// <summary>
+    /// Coroutine that gathers all unique materials under <see cref="parentRoot"/>,
+    /// renders them briefly using mini-quads, then destroys them after a short delay.
+    /// </summary>
+    /// <remarks>
+    /// This effectively "pre-compiles" shaders and loads all required GPU states,
+    /// reducing hitches and stalls when these materials are used later during gameplay.
+    /// </remarks>
     private IEnumerator Start()
     {
         if (parentRoot == null)
@@ -147,7 +179,10 @@ public class ScenePrewarmer : MonoBehaviour
         StartCoroutine(DestroyAfterDelay(0.5f));
     }
 
-    private System.Collections.IEnumerator DestroyAfterDelay(float delay)
+    /// <summary>
+    /// Destroys all prewarm quads after a short delay to ensure all materials are loaded.
+    /// </summary>
+    private IEnumerator DestroyAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         foreach (var q in quads)

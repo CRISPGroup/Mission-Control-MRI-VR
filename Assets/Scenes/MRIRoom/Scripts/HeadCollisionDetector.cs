@@ -2,18 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Periodically performs ray-based proximity detection around the head (or camera),
+/// checking for nearby obstacles or walls to prevent clipping in VR.
+/// </summary>
+/// <remarks>
+/// - Uses 3 rays (forward, right, left) to detect nearby colliders.  
+/// - Updates at a configurable interval for performance efficiency.  
+/// - Provides visual debug Gizmos to indicate detection state.  
+/// </remarks>
 public class HeadCollisionDetector : MonoBehaviour
 {
+    [Header("Detection Settings")]
+    [Tooltip("Minimum delay between two detection checks (in seconds).")]
     [SerializeField, Range(0, 0.5f)]
     private float _detectionDelay = 0.05f;
+
+    [Tooltip("Maximum distance for each raycast detection.")]
     [SerializeField]
     private float _detectionDistance = 0.2f;
+
+    [Tooltip("Layer mask used to filter which colliders should be detected.")]
     [SerializeField]
     private LayerMask _detectionLayers;
+
+    /// <summary>
+    /// List of currently detected colliders (updated periodically).
+    /// </summary>
     public List<RaycastHit> DetectedColliderHits { get; private set; }
 
     private float _currentTime = 0;
 
+    /// <summary>
+    /// Performs a ray-based detection in forward, right, and left directions.
+    /// </summary>
+    /// <param name="position">Starting position of the rays (typically the head/camera position).</param>
+    /// <param name="distance">Maximum raycast distance.</param>
+    /// <param name="mask">Layer mask for valid collision targets.</param>
+    /// <returns>List of detected RaycastHits within the given parameters.</returns>
     private List<RaycastHit> PreformDetection
     (Vector3 position, float distance, LayerMask mask)
     {
@@ -33,11 +59,19 @@ public class HeadCollisionDetector : MonoBehaviour
         return detectedHits;
     }
 
+    /// <summary>
+    /// Initializes the first detection when the scene starts.
+    /// </summary>
     private void Start()
     {
         DetectedColliderHits = PreformDetection(transform.position,
            _detectionDistance, _detectionLayers);
     }
+
+    /// <summary>
+    /// Periodically updates head collision detection based on the configured delay.
+    /// Helps avoid unnecessary raycasts every frame.
+    /// </summary>
     void Update()
     {
         _currentTime += Time.deltaTime;
@@ -49,6 +83,9 @@ public class HeadCollisionDetector : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Draws gizmos to visualize detection rays and proximity sphere in the Scene view.
+    /// </summary>
     private void OnDrawGizmos()
     {
         if (Application.isPlaying == false)

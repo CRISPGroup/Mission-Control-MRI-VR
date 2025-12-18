@@ -1,18 +1,37 @@
 using UnityEngine;
 
+/// <summary>
+/// Plays looping background sounds or ambient audio through a configured <see cref="AudioSource"/>.
+/// </summary>
+/// <remarks>
+/// This script allows simple playback of looping audio clips, such as ambient background sounds,
+/// machine hums, or environmental effects.  
+/// It assumes that the <see cref="AudioSource"/> component is already configured in the Inspector.
+/// </remarks>
 public class PlaySoundLoopSimple : MonoBehaviour
 {
+    [Tooltip("The AudioSource component used to play the sound.")]
     public AudioSource audioSource;
 
-    public void Start()
+    /// <summary>
+    /// Initializes the AudioSource and ensures that it loops continuously.
+    /// </summary>
+    private void Start()
     {
-        // Add an AudioSource component to the GameObject if not already added
+        // Ensure the AudioSource is configured for looping
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource reference is missing on " + gameObject.name);
+            return;
+        }
 
-        // Configure the AudioSource for looping
         audioSource.loop = true;
     }
 
-    // Function to play a sound
+    /// <summary>
+    /// Plays a specified audio clip in a continuous loop.
+    /// </summary>
+    /// <param name="clip">The audio clip to be played.</param>
     public void PlaySound(AudioClip clip)
     {
         if (clip == null)
@@ -26,7 +45,9 @@ public class PlaySoundLoopSimple : MonoBehaviour
         audioSource.Play();
     }
 
-    // Function to stop playing the sound
+    /// <summary>
+    /// Stops the currently playing sound if the AudioSource is active.
+    /// </summary>
     public void StopSound()
     {
         if (audioSource.isPlaying)

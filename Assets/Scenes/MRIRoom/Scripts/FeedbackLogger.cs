@@ -7,9 +7,22 @@ using UnityEngine;
 using static UnityEngine.XR.Interaction.Toolkit.Interactors.NearFarInteractor;
 
 /// <summary>
-/// Logs feedback events with timestamps and exports them as a CSV file,
-/// including session metadata (ID, session, date).
+/// Collects and records user feedback events over time, including timestamps and session metadata,
+/// and exports the results to a structured CSV file for later analysis.
 /// </summary>
+/// <remarks>
+/// The logger automatically handles key app lifecycle events (pause, focus loss, quit) to ensure
+/// logs are saved even if the session ends unexpectedly.  
+/// Each event entry contains:
+/// - The participant or record ID  
+/// - The session identifier  
+/// - The local date and time  
+/// - The event timestamp (relative to app time)  
+/// - The feedback type  
+///
+/// Example filename:
+/// <c>Participant01_SessionA__logs_moontrip_appPause_20251127_2042.csv</c>
+/// </remarks>
 public class FeedbackLogger : MonoBehaviour
 {
     [Header("Recording Settings")]
@@ -30,6 +43,9 @@ public class FeedbackLogger : MonoBehaviour
     private readonly List<FeedbackEvent> feedbackLog = new List<FeedbackEvent>();
     private DateTime sessionStartTime;
 
+    /// <summary>
+    /// Represents a single feedback event, containing a type label and a timestamp.
+    /// </summary>
     [Serializable]
     public class FeedbackEvent
     {
@@ -43,6 +59,9 @@ public class FeedbackLogger : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Ensures logs are automatically saved when the application quits.
+    /// </summary>
     private void OnApplicationQuit()
     {
         if (isRegistering)
@@ -52,6 +71,9 @@ public class FeedbackLogger : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Automatically saves progress when the app is paused (e.g., system interruptions).
+    /// </summary>
     private void OnApplicationPause(bool pause)
     {
         if (pause && isRegistering)
@@ -62,6 +84,9 @@ public class FeedbackLogger : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Saves logs when the app loses focus (e.g., user opens system menu or Meta button).
+    /// </summary>
     private void OnApplicationFocus(bool focus)
     {
         if (!focus && isRegistering)
@@ -73,13 +98,15 @@ public class FeedbackLogger : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets the record ID used in the CSV filename and header.
+    /// Sets the record ID used in the CSV filename and file header.
     /// </summary>
+    /// <param name="id">The participant or record identifier.</param>
     public void SetRecordID(string id) => recordID = id;
 
     /// <summary>
-    /// Sets the session number or name used in the CSV filename and header.
+    /// Sets the session identifier used in the CSV filename and file header.
     /// </summary>
+    /// <param name="session">A unique session name or number.</param>
     public void SetRecordSession(string session) => recordSession = session;
 
     /// <summary>
