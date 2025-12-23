@@ -95,7 +95,7 @@ Here, . refers to the destination folder on your local machine where the data wi
 
 ## API Documentation
 
-The API Documentation will be available soon.
+The API Documentation is available at https://CRISPGroup.github.io/Mission-Control-MRI-VR/ or in the 'docs' folder
 
 ## Authors
 
