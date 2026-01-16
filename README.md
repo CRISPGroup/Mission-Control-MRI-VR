@@ -1,6 +1,6 @@
-# Mission Control (MRI VR)
+# Mission Control (MRI VR) [FREE]
 **Project Links:**  
-[GitHub Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint](https://osf.io/preprints/psyarxiv/v8fhu) | [Download Mission Control VR app](https://github.com/CRISPGroup/Mission-Control-MRI-VR/releases)
+[GitHub Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint](https://osf.io/preprints/psyarxiv/v8fhu) | [Download Mission Control VR app (FREE)](https://github.com/CRISPGroup/Mission-Control-MRI-VR/releases)
 
 <div align="center">
 <img height="320px" src="https://raw.githubusercontent.com/CRISPGroup/Mission-Control-MRI-VR/refs/heads/main/Submission/mission-control-logo.png">
