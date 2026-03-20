@@ -27,6 +27,8 @@ However, as the efficacy of our simulation is still under scientific validation,
 
 Note: This is the updated version of the [previous repository](https://github.com/J-Scan/MRIExperience), which contains the early versions of Mission Control.
 
+By using this app you agree to the [Privacy Policy](https://carodak.github.io/Mission-Control-MRI-Simulation-Info/privacy-en.html) and [Terms of Service](https://carodak.github.io/Mission-Control-MRI-Simulation-Info/terms-en.html).
+
 ## Disclaimer
 WE DO NOT WARRANT THAT YOUR USE OF THE APPLICATION WILL BE ERROR-FREE OR UNINTERRUPTED. THE APPLICATION IS NOT DESIGNED FOR DIAGNOSTIC, THERAPEUTIC, OR OTHER MEDICAL PURPOSES. THE APPLICATION IS PROVIDED ‘AS IS’. 
 
