@@ -1,6 +1,6 @@
 # Mission Control (MRI VR) [FREE]
 **Project Links:**  
-[GitHub Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint](https://osf.io/preprints/psyarxiv/v8fhu) | [Download Mission Control VR app (FREE)](https://github.com/CRISPGroup/Mission-Control-MRI-VR/releases)
+[Meta Store](https://www.meta.com/fr-ca/experiences/mission-control-mri-simulation/25569630005982759/) | [GitHub Information Page](https://carodak.github.io/Mission-Control-MRI-Simulation-Info/) | [GitHub Code Repository](https://github.com/CRISPGroup/Mission-Control-MRI-VR/) | [OSF Project](https://doi.org/10.17605/OSF.IO/NT4GX) | [Preprint](https://osf.io/preprints/psyarxiv/v8fhu) | [Download Mission Control VR apk (FREE)](https://github.com/CRISPGroup/Mission-Control-MRI-VR/releases)
 
 <div align="center">
 <img height="320px" src="https://raw.githubusercontent.com/CRISPGroup/Mission-Control-MRI-VR/refs/heads/main/Submission/mission-control-logo.png">
@@ -19,7 +19,6 @@ Are you ready, astronaut?
 ---
 
 Additional Information:
-This simulation was created by a multidisciplinary team bringing together VR development, MRI experience, design, and mental health research.
 
 You can begin the experience sitting on your bed, until the moment comes to lie down as your virtual bed glides into the MRI machine.
 
